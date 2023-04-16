@@ -1,12 +1,26 @@
+import AboutMe from "@/components/AboutMe";
+import Greeting from "@/components/Greeting";
 import Hero from "@/components/Hero";
-import { Inter } from "next/font/google";
+import Skills from "@/components/Skills";
+import Wow from "@/components/Wow";
+import Container from "@/components/layout/Container";
 
-const inter = Inter({ subsets: ["latin"] });
+export const metadata = {
+	title: "Jiří Šimeček's personal portfolio website.",
+	description:
+		"The most important information about me summed up, including my personality and coding experience.",
+};
 
 export default function Home() {
 	return (
-		<main>
-			<Hero />
-		</main>
+		<>
+			<Container>
+				<Hero />
+				<Greeting />
+				<Skills />
+			</Container>
+			<AboutMe />
+			<Wow />
+		</>
 	);
 }

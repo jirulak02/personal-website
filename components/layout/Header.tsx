@@ -9,19 +9,19 @@ const links = [
 	{ path: "/contact", name: "Contact" },
 ];
 
-export default function MainHeader() {
+export default function Header() {
 	return (
-		<header className="border-b-2 border-slate-900 w-full sm:justify-right fixed">
-			<div className="max-w-6xl m-auto flex justify-between h-20 items-center">
-				<Link className="font-bold" href={"/"}>
+		<header className="border-b-2 border-slate-800 w-full sm:justify-right fixed bg-neutral-100">
+			<div className="max-w-6xl m-auto flex justify-between h-16 items-center">
+				<Link className="font-semibold text-2xl" href="/">
 					Jiří Šimeček
 				</Link>
 				<nav>
 					<ul className="flex space-x-1">
 						{links.map((link) => (
-							<li>
+							<li key={link.path}>
 								<Link
-									className="rounded-lg px-3 py-2 font-medium hover:bg-slate-100 hover:text-slate-900"
+									className="px-3 py-2 font-medium hover:border-b-2 border-neutral-800"
 									href={link.path}
 								>
 									{link.name}
