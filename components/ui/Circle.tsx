@@ -19,9 +19,9 @@ export default function Circle({ name, amount }: CircleProps) {
 					<circle
 						className={classes.circle}
 						stroke="rgb(63 98 18)"
-						stroke-dasharray="251.32, 251.32"
-						stroke-dashoffset={offset}
-						stroke-width="20"
+						strokeDasharray="251.32, 251.32"
+						strokeDashoffset={offset}
+						strokeWidth="20"
 						fill="transparent"
 						r="40"
 						cx="50"

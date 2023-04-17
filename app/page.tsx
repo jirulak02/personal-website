@@ -1,9 +1,10 @@
-import AboutMe from "@/components/AboutMe";
-import Greeting from "@/components/Greeting";
-import Hero from "@/components/Hero";
-import Skills from "@/components/Skills";
-import Wow from "@/components/Wow";
+import AboutMe from "@/components/HomePage/AboutMe";
+import Greeting from "@/components/HomePage/Greeting";
+import Hero from "@/components/HomePage/Hero";
+import Skills from "@/components/HomePage/Skills";
+import Wow from "@/components/HomePage/Wow";
 import Container from "@/components/layout/Container";
+import Wave from "@/components/ui/Wave";
 
 export const metadata = {
 	title: "Jiří Šimeček's personal portfolio website.",
@@ -19,7 +20,9 @@ export default function Home() {
 				<Greeting />
 				<Skills />
 			</Container>
+			<Wave />
 			<AboutMe />
+			<Wave rotated />
 			<Wow />
 		</>
 	);

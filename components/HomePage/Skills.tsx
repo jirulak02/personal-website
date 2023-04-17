@@ -1,4 +1,4 @@
-import Circle from "./ui/Circle";
+import Circle from "../ui/Circle";
 
 const skills = [
 	{ name: "TypeScript", amount: 55 },
@@ -11,7 +11,7 @@ const skills = [
 
 export default function Skills() {
 	return (
-		<div className="flex justify-center text-center space-x-3">
+		<div className="flex justify-center text-center space-x-3 mb-24">
 			{skills.map((skill) => (
 				<Circle
 					key={skill.name}

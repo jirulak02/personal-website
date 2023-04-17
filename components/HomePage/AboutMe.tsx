@@ -1,9 +1,10 @@
 import Link from "next/link";
-import Card from "./ui/Card";
+
+import Card from "../ui/Card";
 
 export default function AboutMe() {
 	return (
-		<section className="mt-36 bg-neutral-200 w-full">
+		<section className="bg-neutral-200 w-full py-2">
 			<h1 className="text-center py-8">A few bits about me</h1>
 			<div className="grid grid-cols-2 gap-8 max-w-6xl m-auto pb-12">
 				<Card white>

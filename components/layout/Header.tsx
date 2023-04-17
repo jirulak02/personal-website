@@ -11,7 +11,7 @@ const links = [
 
 export default function Header() {
 	return (
-		<header className="border-b-2 border-slate-800 w-full sm:justify-right fixed bg-neutral-100">
+		<header className="z-10 border-b-2 border-slate-800 w-full sm:justify-right fixed bg-neutral-100">
 			<div className="max-w-6xl m-auto flex justify-between h-16 items-center">
 				<Link className="font-semibold text-2xl" href="/">
 					Jiří Šimeček
