@@ -1,3 +1,6 @@
+import Container from "@/components/layout/Container";
+import Title from "@/components/ui/Title";
+
 export const metadata = {
 	title: "Projects",
 	description:
@@ -6,8 +9,13 @@ export const metadata = {
 
 export default function Projects() {
 	return (
-		<main>
-			<h1>Projects Page</h1>
-		</main>
+		<>
+			<Title title="<Projects>" />
+			<Container>
+				<div className="mt-20 mb-4 text-center">
+					<h1 className="font-normal">{"</Projects>"}</h1>
+				</div>
+			</Container>
+		</>
 	);
 }
