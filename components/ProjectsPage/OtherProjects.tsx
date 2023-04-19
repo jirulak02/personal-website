@@ -10,7 +10,7 @@ export default function OtherProjects() {
 						You can view all my projects on GitHub.
 					</p>
 					<a
-						href="https://github.com/jirulak02/Sudoku"
+						href="https://github.com/jirulak02/"
 						className="underline"
 					>
 						Show me{">"}
