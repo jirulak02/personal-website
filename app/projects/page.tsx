@@ -1,3 +1,6 @@
+import GroupProjects from "@/components/ProjectsPage/GroupProjects";
+import OtherProjects from "@/components/ProjectsPage/OtherProjects";
+import SoloProjects from "@/components/ProjectsPage/SoloProjects";
 import Container from "@/components/layout/Container";
 import Title from "@/components/ui/Title";
 
@@ -12,6 +15,9 @@ export default function Projects() {
 		<>
 			<Title title="<Projects>" />
 			<Container>
+				<SoloProjects />
+				<GroupProjects />
+				<OtherProjects />
 				<div className="mt-20 mb-4 text-center">
 					<h1 className="font-normal">{"</Projects>"}</h1>
 				</div>

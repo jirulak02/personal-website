@@ -14,7 +14,7 @@ export default function Hero() {
 				<div className="col-span-3">
 					<div className="float-right">
 						<Image
-							src="/Profile picture.png"
+							src="/HomePage/Profile picture.png"
 							width="436"
 							height="436"
 							alt="A handsome young man in a grass field."
@@ -25,7 +25,7 @@ export default function Hero() {
 			<div className="h-10 pr-16 mt-5">
 				<div className="float-right">
 					<Image
-						src="/42Prague logo.png"
+						src="/HomePage/42Prague logo.png"
 						width="96"
 						height="37"
 						alt="Logo of 42 Prague school."
@@ -33,7 +33,7 @@ export default function Hero() {
 				</div>
 				<div className="float-right mr-4">
 					<Image
-						src="/VSE logo.png"
+						src="/HomePage/VSE logo.png"
 						width="182"
 						height="37"
 						alt="Logo of Prague University of Economics and Business."

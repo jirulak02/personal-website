@@ -1,3 +1,4 @@
+import HobbiesList from "@/components/HobbiesPage/HobbiesList";
 import Container from "@/components/layout/Container";
 import Title from "@/components/ui/Title";
 
@@ -12,6 +13,7 @@ export default function Hobbies() {
 		<>
 			<Title title="<Hobbies>" />
 			<Container>
+				<HobbiesList />
 				<div className="mt-20 mb-4 text-center">
 					<h1 className="font-normal">{"</Hobbies>"}</h1>
 				</div>

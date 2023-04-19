@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import Card from "../ui/Card";
 
 export default function Story() {
@@ -18,7 +19,7 @@ export default function Story() {
 			<div className="mt-14">
 				<div className="relative -start-4 top-2">
 					<Image
-						src="/Arrow 1.png"
+						src="/MyLifePage/Arrow 1.png"
 						width="183"
 						height="77"
 						alt="An arrow symbolizing a pointer to continue in the string of life. From first to second part."
@@ -42,7 +43,7 @@ export default function Story() {
 			<div className="-mt-24">
 				<div className="relative left-32 top-2.5">
 					<Image
-						src="/Arrow 2.png"
+						src="/MyLifePage/Arrow 2.png"
 						width="456"
 						height="95"
 						alt="An arrow symbolizing a pointer to continue in the string of life. From second to third part."
@@ -68,7 +69,7 @@ export default function Story() {
 			<div className="mt-24">
 				<div className="relative -start-4 top-1.5">
 					<Image
-						src="/Arrow 3.png"
+						src="/MyLifePage/Arrow 3.png"
 						width="183"
 						height="107"
 						alt="An arrow symbolizing a pointer to continue in the string of life. From third to fourth part."
@@ -96,7 +97,7 @@ export default function Story() {
 			<div className="-mt-32">
 				<div className="relative left-32 top-2">
 					<Image
-						src="/Arrow 4.png"
+						src="/MyLifePage/Arrow 4.png"
 						width="456"
 						height="131"
 						alt="An arrow symbolizing a pointer to continue in the string of life. From fourth to fifth part."
