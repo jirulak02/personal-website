@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+
 import AboutMe from "@/components/HomePage/AboutMe";
 import Greeting from "@/components/HomePage/Greeting";
 import Hero from "@/components/HomePage/Hero";
@@ -24,6 +26,7 @@ export default function Home() {
 			<AboutMe />
 			<Wave rotated />
 			<Wow />
+			<Analytics />
 		</>
 	);
 }
