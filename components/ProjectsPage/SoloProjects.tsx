@@ -10,8 +10,8 @@ export default function SoloProjects() {
 				<Card>
 					<div className="flex items-center space-x-1">
 						<Image
-							src="/ProjectsPage/Python logo.png"
-							width="23"
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+							width="25"
 							height="25"
 							alt="Python language logo"
 						/>
@@ -37,6 +37,8 @@ export default function SoloProjects() {
 					<a
 						href="https://github.com/jirulak02/Sudoku"
 						className="underline"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						View the code{">"}
 					</a>
@@ -45,7 +47,7 @@ export default function SoloProjects() {
 							href="https://github.com/jirulak02/Sudoku/raw/main/Sudoku.exe"
 							className="w-56 rounded-3xl inline-block"
 						>
-							<div className="text-2xl py-2 rounded-3xl bg-lime-800 text-white border-2 border-lime-800 hover:bg-neutral-100 hover:text-lime-800 hover:border-2">
+							<div className="text-2xl py-2 rounded-3xl bg-lime-800 text-white border-2 border-lime-800 hover:bg-neutral-200 hover:text-lime-800">
 								Download game
 							</div>
 						</a>
@@ -54,33 +56,35 @@ export default function SoloProjects() {
 				<Card>
 					<div className="flex items-center space-x-1">
 						<Image
-							src="/ProjectsPage/Python logo.png"
-							width="23"
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+							width="25"
 							height="25"
-							alt="Python language logo"
+							alt="Nextjs language logo"
 						/>
-						<h4>Sudoku app</h4>
+						<Image
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+							width="25"
+							height="25"
+							alt="TypeScript language logo"
+						/>
+						<h4>Personal website</h4>
 					</div>
-					<div className="flex justify-between">
+					<div className="flex justify-center">
 						<Image
-							src="/ProjectsPage/Sudoku 1.png"
-							width="140"
-							height="184"
+							src="/ProjectsPage/Personal website.png"
+							width="411"
+							height="866"
 							alt="Playing sudoku"
-						/>
-						<Image
-							src="/ProjectsPage/Sudoku 2.png"
-							width="139"
-							height="184"
-							alt="Victory screen of sudoku app"
 						/>
 					</div>
 					<p className="pb-4">
-						A fully functional Sudoku game application for Windows.
+						The very same website you are on right now.
 					</p>
 					<a
-						href="https://github.com/jirulak02/Sudoku"
+						href="https://github.com/jirulak02/Personal-website"
 						className="underline"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						View the code{">"}
 					</a>
@@ -88,27 +92,30 @@ export default function SoloProjects() {
 				<Card>
 					<div className="flex items-center space-x-1">
 						<Image
-							src="/ProjectsPage/Python logo.png"
-							width="23"
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+							width="25"
 							height="25"
 							alt="Python language logo"
 						/>
-						<h4>Sudoku app</h4>
+						<h4>YouTube downloader</h4>
 					</div>
 					<div className="flex justify-center">
 						<Image
 							src="/ProjectsPage/Ytb.png"
 							width="141"
 							height="162"
-							alt="Playing sudoku"
+							alt="YouTube to MP4"
 						/>
 					</div>
 					<p className="pb-4">
-						A fully functional Sudoku game application for Windows.
+						A script that can download videos or entire playlists of
+						videos from YouTube in the MP4 format.
 					</p>
 					<a
-						href="https://github.com/jirulak02/Sudoku"
+						href="https://github.com/jirulak02/YouTube-downloader"
 						className="underline"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						View the code{">"}
 					</a>

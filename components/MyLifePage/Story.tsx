@@ -110,11 +110,17 @@ export default function Story() {
 							<p>
 								Began studying at Prague University of Economics
 								and Business with a focus on Applied
-								informatics.
+								informatics, where I started learning Java and
+								SQL.
 							</p>
 							<p>
 								I also attend 42 Prague, a world-renowned chain
 								of schools for C/C++ programming languages.
+							</p>
+							<p>
+								Started learning everything for being a
+								full-stack developer, including React, Nextjs,
+								Nodejs, TypeScript and MongoDB.
 							</p>
 						</div>
 						<div className="col-span-1 p-6 flex items-center justify-center border-l-2 border-neutral-800">

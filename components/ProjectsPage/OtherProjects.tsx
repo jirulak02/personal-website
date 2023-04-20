@@ -12,6 +12,8 @@ export default function OtherProjects() {
 					<a
 						href="https://github.com/jirulak02/"
 						className="underline"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						Show me{">"}
 					</a>

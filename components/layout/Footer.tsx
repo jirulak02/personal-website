@@ -1,3 +1,20 @@
+import Image from "next/image";
+
+const links = [
+	{
+		name: "GitHub",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+		href: "https://github.com/jirulak02",
+	},
+	{
+		name: "Instagram",
+		src: "/Instagram logo.png",
+		href: "https://www.instagram.com/jirulak02/",
+	},
+	{ name: "Mail", src: "/Mail logo.png", href: "mailto:jirulak02@gmail.com" },
+	{ name: "Phone", src: "/Phone logo.png", href: "tel:+420777898501" },
+];
+
 export default function Footer() {
 	const date = new Date().getFullYear();
 
@@ -8,8 +25,21 @@ export default function Footer() {
 					<p>Copyright © {date}</p>
 				</div>
 				<div className="flex space-x-4">
-					<a href="tel:+420777898501">777 898 501</a>
-					<a href="mailto:jirulak02@gmail.com">jirulak02@gmail.com</a>
+					{links.map((link) => (
+						<a
+							href={link.href}
+							key={link.name}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<Image
+								alt={link.name}
+								width="25"
+								height="25"
+								src={link.src}
+							/>
+						</a>
+					))}
 				</div>
 			</div>
 		</footer>

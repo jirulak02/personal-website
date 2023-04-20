@@ -10,8 +10,8 @@ export default function GroupProjects() {
 				<Card>
 					<div className="flex items-center space-x-1">
 						<Image
-							src="/ProjectsPage/C logo.png"
-							width="23"
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+							width="25"
 							height="25"
 							alt="C language logo"
 						/>
@@ -38,6 +38,8 @@ export default function GroupProjects() {
 					<a
 						href="https://github.com/jirulak02/42-piscine/tree/main/bsq"
 						className="underline"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						View the code{">"}
 					</a>
@@ -45,8 +47,8 @@ export default function GroupProjects() {
 				<Card>
 					<div className="flex items-center space-x-1">
 						<Image
-							src="/ProjectsPage/C logo.png"
-							width="23"
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+							width="25"
 							height="25"
 							alt="C language logo"
 						/>
@@ -67,6 +69,8 @@ export default function GroupProjects() {
 					<a
 						href="https://github.com/jirulak02/42-piscine/tree/main/rush02/ex00"
 						className="underline"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						View the code{">"}
 					</a>
@@ -74,8 +78,8 @@ export default function GroupProjects() {
 				<Card>
 					<div className="flex items-center space-x-1">
 						<Image
-							src="/ProjectsPage/C logo.png"
-							width="23"
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+							width="25"
 							height="25"
 							alt="C language logo"
 						/>
@@ -103,6 +107,8 @@ export default function GroupProjects() {
 					<a
 						href="https://github.com/jirulak02/42-piscine/tree/main/rush01/ex00"
 						className="underline"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						View the code{">"}
 					</a>

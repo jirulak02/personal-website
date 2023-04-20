@@ -42,6 +42,8 @@ export default function Contact() {
 							<a
 								href="https://www.instagram.com/jirulak02/"
 								className="underline"
+								target="_blank"
+								rel="noopener noreferrer"
 							>
 								@jirulak02
 							</a>
