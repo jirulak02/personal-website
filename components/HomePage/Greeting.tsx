@@ -2,7 +2,7 @@ import Card from "../ui/Card";
 
 export default function Greeting() {
 	return (
-		<section className="grid grid-cols-2 gap-8 py-12">
+		<section className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12">
 			<Card>
 				<h3>Greetings</h3>
 				<p>
@@ -14,7 +14,7 @@ export default function Greeting() {
 				</p>
 				<p>Hope you find my website informative and fun.</p>
 			</Card>
-			<Card className="mt-52">
+			<Card className="md:mt-52">
 				<h3>Experience</h3>
 				<p>
 					I have experience working with a variety of programming

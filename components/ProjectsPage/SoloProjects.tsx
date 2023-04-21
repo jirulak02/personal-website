@@ -4,10 +4,12 @@ import Card from "../ui/Card";
 
 export default function SoloProjects() {
 	return (
-		<section className="mt-12">
-			<h2 className="font-semibold ml-4">Top 3 solo projects</h2>
-			<div className="grid grid-cols-3 gap-8 mt-2">
-				<Card>
+		<section className="mt-8 lg:mt-12">
+			<h2 className="font-semibold ml-4 text-center md:text-left">
+				Top 3 solo projects
+			</h2>
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-2">
+				<Card className="max-w-sm mx-auto">
 					<div className="flex items-center space-x-1">
 						<Image
 							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
@@ -17,7 +19,7 @@ export default function SoloProjects() {
 						/>
 						<h4>Sudoku app</h4>
 					</div>
-					<div className="flex justify-between">
+					<div className="flex justify-between min-w-max">
 						<Image
 							src="/ProjectsPage/Sudoku 1.png"
 							width="140"
@@ -45,15 +47,15 @@ export default function SoloProjects() {
 					<div className="text-center">
 						<a
 							href="https://github.com/jirulak02/Sudoku/raw/main/Sudoku.exe"
-							className="w-56 rounded-3xl inline-block"
+							className="w-48 md:w-56 rounded-3xl inline-block"
 						>
-							<div className="text-2xl py-2 rounded-3xl bg-lime-800 text-white border-2 border-lime-800 hover:bg-neutral-200 hover:text-lime-800">
+							<div className="text-lg sm:text-xl md:text-2xl py-2 rounded-3xl bg-lime-800 text-white border-2 border-lime-800 hover:bg-neutral-200 hover:text-lime-800">
 								Download game
 							</div>
 						</a>
 					</div>
 				</Card>
-				<Card>
+				<Card className="max-w-sm mx-auto">
 					<div className="flex items-center space-x-1">
 						<Image
 							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
@@ -69,11 +71,11 @@ export default function SoloProjects() {
 						/>
 						<h4>Personal website</h4>
 					</div>
-					<div className="flex justify-center">
+					<div className="flex justify-center min-w-max">
 						<Image
 							src="/ProjectsPage/Personal website.png"
-							width="411"
-							height="866"
+							width="280"
+							height="140"
 							alt="Playing sudoku"
 						/>
 					</div>
@@ -89,7 +91,7 @@ export default function SoloProjects() {
 						View the code{">"}
 					</a>
 				</Card>
-				<Card>
+				<Card className="max-w-sm mx-auto">
 					<div className="flex items-center space-x-1">
 						<Image
 							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"

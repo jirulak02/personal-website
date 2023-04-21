@@ -4,20 +4,20 @@ import Card from "../ui/Card";
 
 export default function Story() {
 	return (
-		<section className="grid grid-cols-2 gap-4 mt-12">
+		<section className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 lg:mt-12">
 			<Card noPadding>
-				<div className="grid grid-cols-5 gap-6">
-					<div className="col-span-4 space-y-3 p-6 pr-0">
+				<div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
+					<div className="col-span-3 lg:col-span-4 space-y-3 p-6 md:pr-0">
 						<h3>2002 - 2014</h3>
 						<p>Born and raised in the Czech Republic.</p>
 					</div>
-					<div className="col-span-1 p-6 flex items-center justify-center border-l-2 border-neutral-800">
+					<div className="col-span-1 min-w-max items-center justify-center border-l-2 border-neutral-800 hidden md:flex">
 						<h2>0x1</h2>
 					</div>
 				</div>
 			</Card>
-			<div className="mt-14">
-				<div className="relative -start-4 top-2">
+			<div className="md:mt-14">
+				<div className="relative -start-4 top-2 hidden md:block z-20">
 					<Image
 						src="/MyLifePage/Arrow 1.png"
 						width="183"
@@ -25,12 +25,12 @@ export default function Story() {
 						alt="An arrow symbolizing a pointer to continue in the string of life. From first to second part."
 					/>
 				</div>
-				<Card noPadding>
-					<div className="grid grid-cols-5 gap-6">
-						<div className="col-span-1 p-6 flex items-center justify-center border-r-2 border-neutral-800">
+				<Card noPadding className="relative z-10">
+					<div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
+						<div className="col-span-1 min-w-max hidden md:flex items-center justify-center border-r-2 border-neutral-800">
 							<h2>0x2</h2>
 						</div>
-						<div className="col-span-4 space-y-3 p-6 pl-0">
+						<div className="col-span-3 lg:col-span-4 space-y-3 p-6 md:pl-0">
 							<h3>2014 - 2019</h3>
 							<p>
 								Studied at Masarykovo klasické gymnázium in
@@ -40,8 +40,8 @@ export default function Story() {
 					</div>
 				</Card>
 			</div>
-			<div className="-mt-24">
-				<div className="relative left-32 top-2.5">
+			<div className="md:-mt-28 lg:-mt-24">
+				<div className="relative left-32 top-2.5 hidden md:block">
 					<Image
 						src="/MyLifePage/Arrow 2.png"
 						width="456"
@@ -50,8 +50,8 @@ export default function Story() {
 					/>
 				</div>
 				<Card noPadding>
-					<div className="grid grid-cols-5 gap-6">
-						<div className="col-span-4 space-y-3 p-6 pr-0">
+					<div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
+						<div className="col-span-3 lg:col-span-4 space-y-3 p-6 md:pr-0">
 							<h3>2019 - 2020</h3>
 							<p>
 								Spent a year as an exchange student in
@@ -60,14 +60,14 @@ export default function Story() {
 								broadened my perspective on life.
 							</p>
 						</div>
-						<div className="col-span-1 p-6 flex items-center justify-center border-l-2 border-neutral-800">
+						<div className="col-span-1 min-w-max hidden md:flex items-center justify-center border-l-2 border-neutral-800">
 							<h2>0x3</h2>
 						</div>
 					</div>
 				</Card>
 			</div>
-			<div className="mt-24">
-				<div className="relative -start-4 top-1.5">
+			<div className="md:mt-24">
+				<div className="relative -start-4 top-1.5 hidden md:block z-20">
 					<Image
 						src="/MyLifePage/Arrow 3.png"
 						width="183"
@@ -75,12 +75,12 @@ export default function Story() {
 						alt="An arrow symbolizing a pointer to continue in the string of life. From third to fourth part."
 					/>
 				</div>
-				<Card noPadding>
-					<div className="grid grid-cols-5 gap-6">
-						<div className="col-span-1 p-6 flex items-center justify-center border-r-2 border-neutral-800">
+				<Card noPadding className="relative z-10">
+					<div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
+						<div className="col-span-1 min-w-max hidden md:flex items-center justify-center border-r-2 border-neutral-800">
 							<h2>0x4</h2>
 						</div>
-						<div className="col-span-4 space-y-3 p-6 pl-0">
+						<div className="col-span-3 lg:col-span-4 space-y-3 p-6 md:pl-0">
 							<h3>2020 - 2022</h3>
 							<p>
 								Returned to the Czech Republic and graduated
@@ -94,8 +94,8 @@ export default function Story() {
 					</div>
 				</Card>
 			</div>
-			<div className="-mt-32">
-				<div className="relative left-32 top-2">
+			<div className="md:-mt-48 lg:-mt-32">
+				<div className="relative left-32 top-2 hidden md:block">
 					<Image
 						src="/MyLifePage/Arrow 4.png"
 						width="456"
@@ -104,8 +104,8 @@ export default function Story() {
 					/>
 				</div>
 				<Card noPadding>
-					<div className="grid grid-cols-5 gap-6">
-						<div className="col-span-4 space-y-3 p-6 pr-0">
+					<div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
+						<div className="col-span-3 lg:col-span-4 space-y-3 p-6 md:pr-0">
 							<h3>2022 - Now</h3>
 							<p>
 								Began studying at Prague University of Economics
@@ -123,7 +123,7 @@ export default function Story() {
 								Nodejs, TypeScript and MongoDB.
 							</p>
 						</div>
-						<div className="col-span-1 p-6 flex items-center justify-center border-l-2 border-neutral-800">
+						<div className="col-span-1 min-w-max hidden md:flex items-center justify-center border-l-2 border-neutral-800">
 							<h2>'\0'</h2>
 						</div>
 					</div>

@@ -4,9 +4,9 @@ import Card from "../ui/Card";
 
 export default function AboutMe() {
 	return (
-		<section className="bg-neutral-200 w-full py-2">
+		<section className="bg-neutral-200 w-full py-2 px-3">
 			<h1 className="text-center py-8">A few bits about me</h1>
-			<div className="grid grid-cols-2 gap-8 max-w-6xl m-auto pb-12">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl m-auto pb-12">
 				<Card white>
 					<h3>My life</h3>
 					<p>
@@ -28,7 +28,7 @@ export default function AboutMe() {
 						</Link>
 					</div>
 				</Card>
-				<Card white className="mt-72">
+				<Card white className="md:mt-72">
 					<h3>Personality</h3>
 					<p>
 						Even though I consider myself to be more of an
@@ -46,7 +46,7 @@ export default function AboutMe() {
 						</Link>
 					</div>
 				</Card>
-				<Card white className="-mt-28">
+				<Card white className="md:-mt-28">
 					<h3>My projects</h3>
 					<p>
 						I have worked on a bunch of projects, from personal

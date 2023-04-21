@@ -3,7 +3,7 @@ import Card from "../ui/Card";
 
 export default function Wow() {
 	return (
-		<Card className="max-w-2xl m-auto my-20">
+		<Card className="max-w-2xl m-auto my-12 lg:my-20 px-3">
 			<div className="text-center">
 				<h3>Wow!</h3>
 			</div>

@@ -13,7 +13,7 @@ export type Children = {
 export default function RootLayout({ children }: Children) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body className={`${inter.className} flex flex-col min-h-screen`}>
 				<Header />
 				<main className="pt-16">{children}</main>
 				<Footer />

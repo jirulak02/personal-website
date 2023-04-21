@@ -13,7 +13,7 @@ export default function Contact() {
 		<>
 			<Title title="<Contact>" />
 			<Container>
-				<section className="grid grid-cols-7 gap-8 mt-12">
+				<section className="grid sm:grid-cols-6 lg:grid-cols-7 gap-8 mt-12">
 					<Card className="col-span-3">
 						<h3>Get in touch</h3>
 						<p>
@@ -27,7 +27,7 @@ export default function Contact() {
 							miss it.
 						</p>
 					</Card>
-					<div className="col-end-8 col-span-3 space-y-8">
+					<div className="lg:col-end-8 col-span-3 space-y-8 pl-6">
 						<div>
 							<h2 className="font-semibold">Email:</h2>
 							<a
@@ -56,7 +56,7 @@ export default function Contact() {
 						</div>
 					</div>
 				</section>
-				<div className="mt-20 mb-4 text-center">
+				<div className="pt-12 md:pt-20 mb-4 text-center">
 					<h1 className="font-normal">{"</Contact>"}</h1>
 				</div>
 			</Container>

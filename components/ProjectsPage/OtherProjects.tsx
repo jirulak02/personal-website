@@ -3,9 +3,11 @@ import Card from "../ui/Card";
 export default function OtherProjects() {
 	return (
 		<section className="mt-12">
-			<h2 className="font-semibold ml-4">Other projects</h2>
-			<div className="grid grid-cols-3 gap-8 mt-2">
-				<Card>
+			<h2 className="font-semibold ml-4 text-center md:text-left">
+				Other projects
+			</h2>
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-2">
+				<Card className="max-w-sm mx-auto">
 					<p className="pb-4">
 						You can view all my projects on GitHub.
 					</p>
@@ -18,7 +20,7 @@ export default function OtherProjects() {
 						Show me{">"}
 					</a>
 				</Card>
-				<Card>
+				<Card className="max-w-sm mx-auto">
 					<p className="pb-4">
 						Currently I'm learning more about Nextjs.
 					</p>

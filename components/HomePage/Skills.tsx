@@ -52,7 +52,7 @@ const tools = [
 export default function Skills() {
 	return (
 		<>
-			<div className="flex justify-center text-center space-x-3 mb-12">
+			<div className="flex flex-wrap justify-center text-center space-x-3 mb-12">
 				{skills.map((skill) => (
 					<Circle
 						key={skill.name}
@@ -61,7 +61,7 @@ export default function Skills() {
 					/>
 				))}
 			</div>
-			<div className="flex justify-center text-center space-x-3 mb-24">
+			<div className="flex flex-wrap justify-center text-center space-x-3 mb-12 lg:mb-20">
 				{tools.map((tool) => (
 					<Image
 						key={tool.name}
