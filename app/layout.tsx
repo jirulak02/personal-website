@@ -16,7 +16,7 @@ export default function RootLayout({ children }: Children) {
 			<body
 				className={`${inter.className} flex flex-col min-h-screen relative`}
 			>
-				<Header />
+				<Header normal />
 				<main className="pt-16">{children}</main>
 				<Footer />
 			</body>

@@ -14,7 +14,11 @@ const links = [
 	{ path: "/contact", name: "Contact" },
 ];
 
-function Header() {
+type HeaderProps = {
+	normal: boolean;
+};
+
+function Header({ normal }: HeaderProps) {
 	const [open, setOpen] = useState(false);
 
 	function toggleHandler() {
@@ -22,16 +26,29 @@ function Header() {
 	}
 
 	return (
-		<header className="z-50 w-full sm:justify-right fixed bg-neutral-100 sm:border-b-2 sm:border-slate-800">
+		<header
+			className={`${
+				normal ? "fixed z-30" : "absolute top-0 z-50"
+			} w-full sm:justify-right bg-neutral-100 sm:border-b-2 sm:border-slate-800`}
+		>
 			<div className="max-w-6xl m-auto flex justify-between h-16 items-center border-b-2 border-slate-800 sm:border-none">
-				<Link
-					className="font-semibold text-base sm:text-xl md:text-2xl px-3 py-2"
-					href="/"
-				>
-					Jiří Šimeček
-				</Link>
+				{normal ? (
+					<Link
+						className="font-semibold text-base sm:text-xl md:text-2xl px-3 py-2"
+						href="/"
+					>
+						Jiří Šimeček
+					</Link>
+				) : (
+					<a
+						className="font-semibold text-base sm:text-xl md:text-2xl px-3 py-2"
+						href="/"
+					>
+						Jiří Šimeček
+					</a>
+				)}
 				<div
-					className="px-5 py-5 sm:hidden cursor-pointer"
+					className="p-5 sm:hidden cursor-pointer"
 					onClick={toggleHandler}
 				>
 					<Image
@@ -43,29 +60,50 @@ function Header() {
 					/>
 				</div>
 				<nav className="space-x-1 hidden sm:flex">
-					{links.map((link) => (
-						<Link
-							key={link.path}
-							className="px-3 py-2 font-medium border-b-2 border-neutral-100 hover:border-neutral-800"
-							href={link.path}
-						>
-							{link.name}
-						</Link>
-					))}
+					{links.map((link) =>
+						normal ? (
+							<Link
+								key={link.path}
+								className="px-3 py-2 font-medium border-b-2 border-neutral-100 hover:border-neutral-800"
+								href={link.path}
+							>
+								{link.name}
+							</Link>
+						) : (
+							<a
+								key={link.path}
+								className="px-3 py-2 font-medium border-b-2 border-neutral-100 hover:border-neutral-800"
+								href={link.path}
+							>
+								{link.name}
+							</a>
+						)
+					)}
 				</nav>
 			</div>
 			{open && (
 				<nav className={classes.drop}>
-					{links.map((link) => (
-						<Link
-							key={link.path}
-							className="py-4 block sm:hidden text-center font-medium border-b border-neutral-800 hover:bg-neutral-200"
-							href={link.path}
-							onClick={toggleHandler}
-						>
-							{link.name}
-						</Link>
-					))}
+					{links.map((link) =>
+						normal ? (
+							<Link
+								key={link.path}
+								className="py-4 block sm:hidden text-center font-medium border-b border-neutral-800 hover:bg-neutral-200"
+								href={link.path}
+								onClick={toggleHandler}
+							>
+								{link.name}
+							</Link>
+						) : (
+							<a
+								key={link.path}
+								className="py-4 block sm:hidden text-center font-medium border-b border-neutral-800 hover:bg-neutral-200"
+								href={link.path}
+								onClick={toggleHandler}
+							>
+								{link.name}
+							</a>
+						)
+					)}
 				</nav>
 			)}
 		</header>

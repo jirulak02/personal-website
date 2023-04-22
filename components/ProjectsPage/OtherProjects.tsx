@@ -21,9 +21,7 @@ export default function OtherProjects() {
 					</a>
 				</Card>
 				<Card className="max-w-sm mx-auto">
-					<p className="pb-4">
-						Currently I'm learning more about Nextjs.
-					</p>
+					<p>Currently I'm learning more about Nextjs.</p>
 				</Card>
 			</div>
 		</section>

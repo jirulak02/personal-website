@@ -19,7 +19,7 @@ export default function Footer() {
 	const date = new Date().getFullYear();
 
 	return (
-		<footer className="mt-auto border-t-2 border-slate-800 w-full sm:justify-right bg-neutral-100">
+		<footer className="z-10 mt-auto border-t-2 border-slate-800 w-full sm:justify-right bg-neutral-100">
 			<div className="max-w-6xl m-auto flex justify-between h-16 items-center px-3">
 				<div>
 					<p>Copyright © {date}</p>
