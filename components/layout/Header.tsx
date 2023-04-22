@@ -14,12 +14,12 @@ const links = [
 	{ path: "/contact", name: "Contact" },
 ];
 
-const Header = () => {
+function Header() {
 	const [open, setOpen] = useState(false);
 
-	const toggleHandler = () => {
+	function toggleHandler() {
 		setOpen((prevState) => !prevState);
-	};
+	}
 
 	return (
 		<header className="z-50 w-full sm:justify-right fixed bg-neutral-100 sm:border-b-2 sm:border-slate-800">
@@ -70,6 +70,6 @@ const Header = () => {
 			)}
 		</header>
 	);
-};
+}
 
 export default Header;

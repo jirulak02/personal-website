@@ -49,7 +49,7 @@ export default function SoloProjects() {
 							href="https://github.com/jirulak02/Sudoku/raw/main/Sudoku.exe"
 							className="w-48 md:w-56 rounded-3xl inline-block"
 						>
-							<div className="text-lg sm:text-xl md:text-2xl py-2 rounded-3xl bg-lime-800 text-white border-2 border-lime-800 hover:bg-neutral-200 hover:text-lime-800">
+							<div className="text-lg sm:text-xl md:text-2xl py-2 rounded-3xl bg-lime-800 text-neutral-200 border-2 border-lime-800 hover:bg-neutral-200 hover:text-lime-800">
 								Download game
 							</div>
 						</a>
