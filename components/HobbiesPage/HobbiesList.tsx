@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const hobbies = [
+export const hobbies = [
 	{
 		img: "/HobbiesPage/Snowboarding.png",
 		name: "Snowboarding",

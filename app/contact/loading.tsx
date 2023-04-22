@@ -1,17 +1,11 @@
 import Container from "@/components/layout/Container";
 import Card from "@/components/ui/Card";
-import Title from "@/components/ui/Title";
+import TitleLoader from "@/components/ui/TitleLoader";
 
-export const metadata = {
-	title: "Contact",
-	description:
-		"All the important contact information, including my socials, e-mail and phone number.",
-};
-
-export default function Contact() {
+export default function ContactLoading() {
 	return (
 		<>
-			<Title title="<Contact>" />
+			<TitleLoader title="<Contact>" />
 			<Container>
 				<section className="grid sm:grid-cols-6 lg:grid-cols-7 gap-8 mt-12 mb-36">
 					<Card className="col-span-3">
