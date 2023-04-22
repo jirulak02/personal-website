@@ -10,7 +10,7 @@ export default function Circle({ name, amount }: CircleProps) {
 		<div className="w-32">
 			<h3>{name}</h3>
 			<div className="relative flex justify-center">
-				<div className="absolute flex justify-center items-center text-2xl w-24 h-24 m-1">
+				<div className="absolute flex justify-center items-center text-2xl w-24 h-24 m-0.5">
 					{amount}
 				</div>
 				<svg width="100" height="100">
