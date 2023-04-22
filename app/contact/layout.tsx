@@ -6,12 +6,10 @@ export default function ContactLayout({ children }: Children) {
 	return (
 		<>
 			<Title title="<Contact>" />
-			<Container>
-				{children}
-				<div className="mb-4 text-center absolute w-full bottom-16">
-					<h1 className="font-normal">{"</Contact>"}</h1>
-				</div>
-			</Container>
+			<Container>{children}</Container>
+			<div className="mb-4 text-center absolute w-full bottom-16">
+				<h1 className="font-normal">{"</Contact>"}</h1>
+			</div>
 		</>
 	);
 }

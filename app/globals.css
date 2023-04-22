@@ -7,6 +7,11 @@
 	--background-rgb: 245, 245, 245;
 }
 
+::selection {
+	color: rgb(245, 245, 245);
+	background: rgb(63 98 18);
+}
+
 /* @media (prefers-color-scheme: dark) {
 	:root {
 		--foreground-rgb: 245, 245, 245;
