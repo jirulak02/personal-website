@@ -57,17 +57,19 @@ export default function HobbiesList() {
 			{hobbies.map((hobby) => (
 				<div key={hobby.name} className="text-center m-auto">
 					<Image
+						style={{ width: "255px" }}
 						src={hobby.img}
-						width="255"
-						height="160"
+						width="765"
+						height="480"
 						alt={hobby.alt}
 					/>
 					<h4>{hobby.name}</h4>
 					<div className="flex justify-center items-center space-x-1">
 						<Image
+							style={{ width: "25px" }}
 							src="/HobbiesPage/Medal.png"
-							width="25"
-							height="25"
+							width="75"
+							height="75"
 							alt="Achievement medal"
 						/>
 						<p>{hobby.achievement}</p>

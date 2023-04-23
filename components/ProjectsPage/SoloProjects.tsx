@@ -21,15 +21,17 @@ export default function SoloProjects() {
 					</div>
 					<div className="flex justify-between min-w-max">
 						<Image
+							style={{ width: "140px" }}
 							src="/ProjectsPage/Sudoku 1.png"
-							width="140"
-							height="184"
+							width="420"
+							height="552"
 							alt="Playing sudoku"
 						/>
 						<Image
+							style={{ width: "139px" }}
 							src="/ProjectsPage/Sudoku 2.png"
-							width="139"
-							height="184"
+							width="417"
+							height="552"
 							alt="Victory screen of sudoku app"
 						/>
 					</div>
@@ -73,9 +75,10 @@ export default function SoloProjects() {
 					</div>
 					<div className="flex justify-center min-w-max">
 						<Image
+							style={{ width: "280px" }}
 							src="/ProjectsPage/Personal website.png"
-							width="280"
-							height="140"
+							width="840"
+							height="399"
 							alt="Playing sudoku"
 						/>
 					</div>
@@ -103,9 +106,10 @@ export default function SoloProjects() {
 					</div>
 					<div className="flex justify-center">
 						<Image
+							style={{ width: "141px" }}
 							src="/ProjectsPage/Ytb.png"
-							width="141"
-							height="162"
+							width="432"
+							height="486"
 							alt="YouTube to MP4"
 						/>
 					</div>

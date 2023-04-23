@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import Card from "../ui/Card";
 
 export default function Story() {
@@ -18,12 +16,18 @@ export default function Story() {
 			</Card>
 			<div className="md:mt-14">
 				<div className="relative -start-4 top-2 hidden md:block z-20">
-					<Image
-						src="/MyLifePage/Arrow 1.png"
+					<svg
 						width="183"
 						height="77"
-						alt="An arrow symbolizing a pointer to continue in the string of life. From first to second part."
-					/>
+						viewBox="0 0 183 77"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M181.624 70.364C182.377 70.0194 182.709 69.1293 182.364 68.376L176.748 56.0997C176.403 55.3463 175.513 55.015 174.76 55.3597C174.006 55.7043 173.675 56.5944 174.02 57.3477L179.012 68.26L168.1 73.2522C167.346 73.5969 167.015 74.487 167.36 75.2403C167.704 75.9936 168.594 76.325 169.348 75.9803L181.624 70.364ZM0.47674 3.40577L180.477 70.4058L181.523 67.5942L1.52326 0.594227L0.47674 3.40577Z"
+							fill="black"
+						/>
+					</svg>
 				</div>
 				<Card noPadding className="relative z-10">
 					<div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
@@ -42,12 +46,18 @@ export default function Story() {
 			</div>
 			<div className="md:-mt-28 lg:-mt-24">
 				<div className="relative left-32 top-2.5 hidden md:block">
-					<Image
-						src="/MyLifePage/Arrow 2.png"
-						width="456"
+					<svg
+						width="453"
 						height="95"
-						alt="An arrow symbolizing a pointer to continue in the string of life. From second to third part."
-					/>
+						viewBox="0 0 453 95"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M0.764538 84.1493C0.294721 84.8316 0.466991 85.7656 1.14931 86.2355L12.2684 93.8916C12.9507 94.3614 13.8847 94.1891 14.3545 93.5068C14.8243 92.8245 14.6521 91.8905 13.9698 91.4207L4.08612 84.6152L10.8916 74.7316C11.3614 74.0493 11.1891 73.1153 10.5068 72.6455C9.82445 72.1756 8.89046 72.3479 8.42064 73.0302L0.764538 84.1493ZM451.728 0.524882L1.72791 83.5249L2.27207 86.4751L452.272 3.47512L451.728 0.524882Z"
+							fill="black"
+						/>
+					</svg>
 				</div>
 				<Card noPadding>
 					<div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
@@ -68,12 +78,18 @@ export default function Story() {
 			</div>
 			<div className="md:mt-24">
 				<div className="relative -start-4 top-1.5 hidden md:block z-20">
-					<Image
-						src="/MyLifePage/Arrow 3.png"
+					<svg
 						width="183"
 						height="107"
-						alt="An arrow symbolizing a pointer to continue in the string of life. From third to fourth part."
-					/>
+						viewBox="0 0 183 107"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M181.418 102.441C182.214 102.21 182.671 101.377 182.441 100.582L178.677 87.6171C178.446 86.8215 177.613 86.3638 176.818 86.5948C176.022 86.8258 175.565 87.658 175.796 88.4535L179.141 99.9777L167.617 103.323C166.822 103.554 166.364 104.387 166.595 105.182C166.826 105.978 167.658 106.435 168.454 106.204L181.418 102.441ZM0.277122 3.31432L180.277 102.314L181.723 99.6857L1.72288 0.685676L0.277122 3.31432Z"
+							fill="black"
+						/>
+					</svg>
 				</div>
 				<Card noPadding className="relative z-10">
 					<div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
@@ -96,12 +112,18 @@ export default function Story() {
 			</div>
 			<div className="md:-mt-48 lg:-mt-32">
 				<div className="relative left-32 top-2 hidden md:block">
-					<Image
-						src="/MyLifePage/Arrow 4.png"
-						width="456"
+					<svg
+						width="453"
 						height="131"
-						alt="An arrow symbolizing a pointer to continue in the string of life. From fourth to fifth part."
-					/>
+						viewBox="0 0 453 131"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M0.701889 121.248C0.286817 121.965 0.531531 122.883 1.24847 123.298L12.9317 130.062C13.6487 130.477 14.5664 130.232 14.9814 129.516C15.3965 128.799 15.1518 127.881 14.4348 127.466L4.04972 121.453L10.0622 111.068C10.4772 110.351 10.2325 109.434 9.51557 109.019C8.79863 108.604 7.88095 108.848 7.46588 109.565L0.701889 121.248ZM451.614 0.550648L1.61353 120.551L2.38652 123.449L452.386 3.44935L451.614 0.550648Z"
+							fill="black"
+						/>
+					</svg>
 				</div>
 				<Card noPadding>
 					<div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">

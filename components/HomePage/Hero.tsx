@@ -16,7 +16,7 @@ export default function Hero() {
 						<Image
 							src="/HomePage/Profile picture.png"
 							fill
-							sizes="(max-width: 768px) 208px, (max-width: 1024px) 410px, 384px"
+							sizes="872px"
 							className="object-contain"
 							alt="A handsome young man in a grass field."
 							priority
@@ -29,7 +29,7 @@ export default function Hero() {
 					<Image
 						src="/HomePage/VSE logo.png"
 						fill
-						sizes="(max-width: 768px) 128px, (max-width: 1024px) 160px, 192px"
+						sizes="360px"
 						className="object-contain"
 						alt="Logo of Prague University of Economics and Business."
 						priority
@@ -39,7 +39,7 @@ export default function Hero() {
 					<Image
 						src="/HomePage/42Prague logo.png"
 						fill
-						sizes="(max-width: 1024px) 80px, 112px"
+						sizes="186px"
 						className="object-contain"
 						alt="Logo of 42 Prague school."
 						priority

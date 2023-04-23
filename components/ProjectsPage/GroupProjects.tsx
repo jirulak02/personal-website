@@ -21,15 +21,17 @@ export default function GroupProjects() {
 					</div>
 					<div className="flex justify-between min-w-max">
 						<Image
+							style={{ width: "128px" }}
 							src="/ProjectsPage/Bsq 1.png"
-							width="135"
-							height="180"
+							width="384"
+							height="543"
 							alt="Display of a map in terminal made of dots and zeros"
 						/>
 						<Image
+							style={{ width: "140px" }}
 							src="/ProjectsPage/Bsq 2.png"
-							width="140"
-							height="180"
+							width="420"
+							height="543"
 							alt="The same map filled with x's in place of the biggest gap"
 						/>
 					</div>
@@ -58,9 +60,10 @@ export default function GroupProjects() {
 					</div>
 					<div className="flex justify-center min-w-max">
 						<Image
+							style={{ width: "280px" }}
 							src="/ProjectsPage/Rush-02.png"
-							width="280"
-							height="130"
+							width="840"
+							height="363"
 							alt="Translating numbers into words in terminal"
 						/>
 					</div>
@@ -89,15 +92,17 @@ export default function GroupProjects() {
 					</div>
 					<div className="flex flex-col items-center">
 						<Image
+							style={{ width: "280px" }}
 							src="/ProjectsPage/Rush-01 1.png"
-							width="305"
-							height="22"
+							width="840"
+							height="60"
 							alt="Display of the input for skyscrapers game"
 						/>
 						<Image
+							style={{ width: "113px" }}
 							src="/ProjectsPage/Rush-01 2.png"
-							width="113"
-							height="124"
+							width="339"
+							height="372"
 							alt="Solved 4x4 skyscrapers grid"
 						/>
 					</div>

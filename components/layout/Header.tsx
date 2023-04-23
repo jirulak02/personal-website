@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -51,13 +50,29 @@ function Header({ normal }: HeaderProps) {
 					className="p-5 sm:hidden cursor-pointer"
 					onClick={toggleHandler}
 				>
-					<Image
-						src="/Menu icon.png"
+					<svg
 						width="28"
 						height="20"
-						alt="Hamburger toggle menu icon"
-						priority
-					/>
+						viewBox="0 0 28 20"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<rect width="28" height="4" rx="2" fill="#262626" />
+						<rect
+							y="8"
+							width="28"
+							height="4"
+							rx="2"
+							fill="#262626"
+						/>
+						<rect
+							y="16"
+							width="28"
+							height="4"
+							rx="2"
+							fill="#262626"
+						/>
+					</svg>
 				</div>
 				<nav className="space-x-1 hidden sm:flex">
 					{links.map((link) =>

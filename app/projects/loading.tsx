@@ -2,7 +2,7 @@ import Card from "@/components/ui/Card";
 
 export default function ProjectsLoading() {
 	return (
-		<section className="mt-8 lg:mt-12">
+		<section className="mt-8 lg:mt-12 mb-80">
 			<h2 className="font-semibold ml-4 text-center md:text-left">
 				Top 3 solo projects
 			</h2>
@@ -61,7 +61,7 @@ export default function ProjectsLoading() {
 					</div>
 					<div className="flex justify-center min-w-max">
 						<div
-							style={{ width: "280px", height: "140px" }}
+							style={{ width: "280px", height: "133px" }}
 							className="bg-neutral-300 animate-pulse"
 						></div>
 					</div>
