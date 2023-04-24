@@ -1,4 +1,5 @@
 import Story from "@/components/MyLifePage/Story";
+import ScrollUp from "@/components/layout/ScrollUp";
 export const metadata = {
 	title: "My life",
 	description:
@@ -6,5 +7,10 @@ export const metadata = {
 };
 
 export default function MyLife() {
-	return <Story />;
+	return (
+		<>
+			<ScrollUp />
+			<Story />
+		</>
+	);
 }
