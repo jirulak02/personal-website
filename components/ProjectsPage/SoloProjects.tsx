@@ -63,7 +63,7 @@ export default function SoloProjects() {
 							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
 							width="25"
 							height="25"
-							alt="Nextjs language logo"
+							alt="Nextjs logo"
 						/>
 						<Image
 							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
@@ -97,28 +97,35 @@ export default function SoloProjects() {
 				<Card className="max-w-sm mx-auto">
 					<div className="flex items-center space-x-1">
 						<Image
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
 							width="25"
 							height="25"
-							alt="Python language logo"
+							alt="Expressjs logo"
 						/>
-						<h4>YouTube downloader</h4>
+						<Image
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+							width="25"
+							height="25"
+							alt="Nodejs logo"
+						/>
+						<h4>User authentication</h4>
 					</div>
 					<div className="flex justify-center">
 						<Image
-							style={{ width: "141px" }}
-							src="/ProjectsPage/Ytb.png"
-							width="432"
-							height="486"
-							alt="YouTube to MP4"
+							style={{ width: "280px" }}
+							src="/ProjectsPage/Signin.png"
+							width="840"
+							height="415"
+							alt="Login screen with google and facebook options"
 						/>
 					</div>
 					<p className="pb-4">
-						A script that can download videos or entire playlists of
-						videos from YouTube in the MP4 format.
+						A simple page that let's you sign in with Google or
+						Facebook to unlock restricted content. I did this using
+						OAuth 2.0 and the passport library.
 					</p>
 					<a
-						href="https://github.com/jirulak02/YouTube-downloader"
+						href="https://github.com/jirulak02/WebDev-course/tree/main/Security"
 						className="underline"
 						target="_blank"
 						rel="noopener noreferrer"
