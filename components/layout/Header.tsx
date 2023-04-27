@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 
 import classes from "./Header.module.css";
 
@@ -19,6 +20,7 @@ type HeaderProps = {
 
 function Header({ normal }: HeaderProps) {
 	const [open, setOpen] = useState(false);
+	const pathname = usePathname();
 
 	function toggleHandler() {
 		setOpen((prevState) => !prevState);
@@ -74,12 +76,17 @@ function Header({ normal }: HeaderProps) {
 						/>
 					</svg>
 				</div>
-				<nav className="space-x-1 hidden sm:flex">
+				<nav className={`space-x-1 hidden sm:flex ${classes.nav}`}>
 					{links.map((link) =>
 						normal ? (
 							<Link
 								key={link.path}
-								className="px-3 py-2 font-medium border-b-2 border-neutral-100 hover:border-neutral-800"
+								className={`px-3 py-2 font-medium border-b-2 border-neutral-100 hover:border-neutral-800 ${
+									classes.borderAnimation
+								} ${
+									pathname === link.path &&
+									"border-neutral-800"
+								}`}
 								href={link.path}
 							>
 								{link.name}

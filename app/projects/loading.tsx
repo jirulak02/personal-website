@@ -83,20 +83,21 @@ export default function ProjectsLoading() {
 							style={{ width: "25px", height: "25px" }}
 							className="bg-neutral-300 animate-pulse"
 						></div>
-						<h4>YouTube downloader</h4>
+						<h4>User authentication</h4>
 					</div>
 					<div className="flex justify-center">
 						<div
-							style={{ width: "141px", height: "162px" }}
+							style={{ width: "280px", height: "138px" }}
 							className="bg-neutral-300 animate-pulse"
 						></div>
 					</div>
 					<p className="pb-4">
-						A script that can download videos or entire playlists of
-						videos from YouTube in the MP4 format.
+						A simple page that let's you sign in with Google or
+						Facebook to unlock restricted content. I did this using
+						OAuth 2.0 and the passport library.
 					</p>
 					<a
-						href="https://github.com/jirulak02/YouTube-downloader"
+						href="https://github.com/jirulak02/WebDev-course/tree/main/Security"
 						className="underline"
 						target="_blank"
 						rel="noopener noreferrer"
