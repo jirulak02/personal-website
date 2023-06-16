@@ -26,6 +26,8 @@ export default function SoloProjects() {
 							width="420"
 							height="552"
 							alt="Playing sudoku"
+							placeholder="blur"
+							blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 						/>
 						<Image
 							style={{ width: "139px" }}
@@ -33,6 +35,8 @@ export default function SoloProjects() {
 							width="417"
 							height="552"
 							alt="Victory screen of sudoku app"
+							placeholder="blur"
+							blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 						/>
 					</div>
 					<p className="pb-4">
@@ -80,6 +84,8 @@ export default function SoloProjects() {
 							width="840"
 							height="399"
 							alt="Playing sudoku"
+							placeholder="blur"
+							blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 						/>
 					</div>
 					<p className="pb-4">
@@ -97,40 +103,49 @@ export default function SoloProjects() {
 				<Card className="max-w-sm mx-auto">
 					<div className="flex items-center space-x-1">
 						<Image
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
 							width="25"
 							height="25"
-							alt="Expressjs logo"
+							alt="Nextjs logo"
 						/>
 						<Image
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
 							width="25"
 							height="25"
-							alt="Nodejs logo"
+							alt="TypeScript language logo"
 						/>
-						<h4>User authentication</h4>
+						<h4>Zelene staveni</h4>
 					</div>
 					<div className="flex justify-center">
 						<Image
 							style={{ width: "280px" }}
-							src="/ProjectsPage/Signin.png"
+							src="/ProjectsPage/Zelene staveni.png"
 							width="840"
-							height="415"
-							alt="Login screen with google and facebook options"
+							height="412"
+							alt="Business website for a client"
+							placeholder="blur"
+							blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 						/>
 					</div>
-					<p className="pb-4">
-						A simple page that let's you sign in with Google or
-						Facebook to unlock restricted content. I did this using
-						OAuth 2.0 and the passport library.
+					<p>
+						A business website for a client, who specialises in
+						building green roofs.
 					</p>
 					<a
-						href="https://github.com/jirulak02/WebDev-course/tree/main/Security"
-						className="underline"
+						href="https://github.com/jirulak02/Zelene-staveni"
+						className="underline block"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						View the code{">"}
+					</a>
+					<a
+						href="https://www.zelenestaveni.cz/"
+						className="underline"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Visit the website{">"}
 					</a>
 				</Card>
 			</div>

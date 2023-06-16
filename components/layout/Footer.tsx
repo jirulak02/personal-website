@@ -37,6 +37,8 @@ export default function Footer() {
 								width="25"
 								height="25"
 								src={link.src}
+								placeholder="blur"
+								blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 							/>
 						</a>
 					))}

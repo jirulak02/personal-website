@@ -62,6 +62,8 @@ export default function HobbiesList() {
 						width="765"
 						height="480"
 						alt={hobby.alt}
+						placeholder="blur"
+						blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 					/>
 					<h4>{hobby.name}</h4>
 					<div className="flex justify-center items-center space-x-1">
@@ -71,6 +73,8 @@ export default function HobbiesList() {
 							width="75"
 							height="75"
 							alt="Achievement medal"
+							placeholder="blur"
+							blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 						/>
 						<p>{hobby.achievement}</p>
 					</div>

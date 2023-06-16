@@ -26,6 +26,8 @@ export default function GroupProjects() {
 							width="384"
 							height="543"
 							alt="Display of a map in terminal made of dots and zeros"
+							placeholder="blur"
+							blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 						/>
 						<Image
 							style={{ width: "140px" }}
@@ -33,6 +35,8 @@ export default function GroupProjects() {
 							width="420"
 							height="543"
 							alt="The same map filled with x's in place of the biggest gap"
+							placeholder="blur"
+							blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 						/>
 					</div>
 					<p className="pb-4">
@@ -65,6 +69,8 @@ export default function GroupProjects() {
 							width="840"
 							height="363"
 							alt="Translating numbers into words in terminal"
+							placeholder="blur"
+							blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 						/>
 					</div>
 					<p className="pb-4">
@@ -97,6 +103,8 @@ export default function GroupProjects() {
 							width="840"
 							height="60"
 							alt="Display of the input for skyscrapers game"
+							placeholder="blur"
+							blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 						/>
 						<Image
 							style={{ width: "113px" }}
@@ -104,6 +112,8 @@ export default function GroupProjects() {
 							width="339"
 							height="372"
 							alt="Solved 4x4 skyscrapers grid"
+							placeholder="blur"
+							blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 						/>
 					</div>
 					<p className="pb-4">

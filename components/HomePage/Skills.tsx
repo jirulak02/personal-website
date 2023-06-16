@@ -69,6 +69,8 @@ export default function Skills() {
 						width="40"
 						height="40"
 						src={tool.src}
+						placeholder="blur"
+						blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 					/>
 				))}
 			</div>

@@ -1,5 +1,7 @@
 import HobbiesList from "@/components/HobbiesPage/HobbiesList";
+import Container from "@/components/layout/Container";
 import ScrollUp from "@/components/layout/ScrollUp";
+import Title from "@/components/ui/Title";
 
 export const metadata = {
 	title: "Hobbies",
@@ -11,7 +13,13 @@ export default function Hobbies() {
 	return (
 		<>
 			<ScrollUp />
-			<HobbiesList />
+			<Title title="<Hobbies>" />
+			<Container>
+				<HobbiesList />
+				<div className="mt-12 md:mt-20 mb-4 text-center">
+					<h1 className="font-normal">{"</Hobbies>"}</h1>
+				</div>
+			</Container>
 		</>
 	);
 }

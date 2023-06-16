@@ -20,6 +20,8 @@ export default function Hero() {
 							className="object-contain"
 							alt="A handsome young man in a grass field."
 							priority
+							placeholder="blur"
+							blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 						/>
 					</div>
 				</div>
@@ -33,6 +35,8 @@ export default function Hero() {
 						className="object-contain"
 						alt="Logo of Prague University of Economics and Business."
 						priority
+						placeholder="blur"
+						blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 					/>
 				</div>
 				<div className="relative ml-4 w-20 h-6 md:h-8 lg:w-28 lg:h-9">
@@ -43,6 +47,8 @@ export default function Hero() {
 						className="object-contain"
 						alt="Logo of 42 Prague school."
 						priority
+						placeholder="blur"
+						blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
 					/>
 				</div>
 			</div>
