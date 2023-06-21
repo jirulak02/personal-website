@@ -141,8 +141,8 @@ export default function Story() {
 							</p>
 							<p>
 								Started learning everything for being a
-								full-stack developer, including React, Nextjs,
-								Nodejs, TypeScript and MongoDB.
+								full-stack developer, including React, Next.js,
+								Node.js and TypeScript.
 							</p>
 						</div>
 						<div className="col-span-1 min-w-max hidden md:flex items-center justify-center border-l-2 border-neutral-800">

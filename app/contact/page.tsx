@@ -29,7 +29,7 @@ export default function Contact() {
 							miss it.
 						</p>
 					</Card>
-					<div className="lg:col-end-8 col-span-3 space-y-8 pl-6">
+					<div className="lg:col-end-8 col-span-3 space-y-6 pl-6">
 						<div>
 							<h2 className="font-semibold">Email:</h2>
 							<a
@@ -40,7 +40,18 @@ export default function Contact() {
 							</a>
 						</div>
 						<div>
-							<h3>Instagram:</h3>
+							<h3>LinkedIn:</h3>
+							<a
+								href="https://www.linkedin.com/in/ji%C5%99%C3%AD-%C5%A1ime%C4%8Dek-a95b5027b/"
+								className="underline"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Jiří Šimeček
+							</a>
+						</div>
+						<div>
+							<h4>Instagram:</h4>
 							<a
 								href="https://www.instagram.com/jirulak02/"
 								className="underline"

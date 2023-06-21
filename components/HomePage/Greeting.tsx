@@ -8,9 +8,8 @@ export default function Greeting() {
 				<p>
 					Welcome to my personal website! My name is Jiří and I am a
 					young and motivated programmer with a passion for coding,
-					problem-solving and design. I am currently seeking
-					employment opportunities as a front-end developer and am
-					excited to see what the future holds.
+					problem-solving and design. I am currently looking for a
+					full-time job as a front-end Next.js/React developer.
 				</p>
 				<p>Hope you find my website informative and fun.</p>
 			</Card>

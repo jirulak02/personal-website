@@ -19,8 +19,8 @@ export default function AboutMe() {
 					</p>
 					<p>
 						Currently, I am pursuing my education at the Prague
-						University of Economics and Business with a focus on
-						Applied informatics.
+						University of Economics and Business with a plan to quit
+						once I land a job.
 					</p>
 					<div className="text-right">
 						<Link href="/my-life" className="underline">
