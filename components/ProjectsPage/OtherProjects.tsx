@@ -1,3 +1,4 @@
+import Reveal from "../animations/Reveal";
 import Card from "../ui/Card";
 
 export default function OtherProjects() {
@@ -7,22 +8,28 @@ export default function OtherProjects() {
 				Other projects
 			</h2>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-2">
-				<Card className="max-w-sm mx-auto">
-					<p className="pb-4">
-						You can view all my projects on GitHub.
-					</p>
-					<a
-						href="https://github.com/jirulak02/"
-						className="underline"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Show me{">"}
-					</a>
-				</Card>
-				<Card className="max-w-sm mx-auto">
-					<p>Currently I'm building client projects in Next.js.</p>
-				</Card>
+				<Reveal>
+					<Card className="max-w-sm mx-auto">
+						<p className="pb-4">
+							You can view all my projects on GitHub.
+						</p>
+						<a
+							href="https://github.com/jirulak02/"
+							className="underline"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Show me{">"}
+						</a>
+					</Card>
+				</Reveal>
+				<Reveal>
+					<Card className="max-w-sm mx-auto">
+						<p>
+							Currently I'm building client projects in Next.js.
+						</p>
+					</Card>
+				</Reveal>
 			</div>
 		</section>
 	);

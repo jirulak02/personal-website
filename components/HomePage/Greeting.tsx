@@ -1,3 +1,4 @@
+import Reveal from "../animations/Reveal";
 import Card from "../ui/Card";
 
 export default function Greeting() {
@@ -13,20 +14,22 @@ export default function Greeting() {
 				</p>
 				<p>Hope you find my website informative and fun.</p>
 			</Card>
-			<Card className="md:mt-52">
-				<h3>Experience</h3>
-				<p>
-					I have experience working with a variety of programming
-					languages, including the ones seen below. I'm not an expert
-					in any of them, but I'm a quick learner and can become one,
-					if you let me.
-				</p>
-				<p>
-					My strong attention to detail and ability to think
-					critically have helped me to excel in my projects, both
-					individually and as part of a team.
-				</p>
-			</Card>
+			<Reveal>
+				<Card className="md:mt-52">
+					<h3>Experience</h3>
+					<p>
+						I have experience working with a variety of programming
+						languages, including the ones seen below. I'm not an
+						expert in any of them, but I'm a quick learner and can
+						become one, if you let me.
+					</p>
+					<p>
+						My strong attention to detail and ability to think
+						critically have helped me to excel in my projects, both
+						individually and as part of a team.
+					</p>
+				</Card>
+			</Reveal>
 		</section>
 	);
 }
