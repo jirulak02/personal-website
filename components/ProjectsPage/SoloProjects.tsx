@@ -150,7 +150,6 @@ export default function SoloProjects() {
 							href="https://www.zelenestaveni.cz/"
 							className="underline"
 							target="_blank"
-							rel="noopener noreferrer"
 						>
 							Visit the website{">"}
 						</a>
