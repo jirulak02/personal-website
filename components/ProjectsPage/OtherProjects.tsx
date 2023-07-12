@@ -26,7 +26,8 @@ export default function OtherProjects() {
 				<Reveal>
 					<Card className="max-w-sm mx-auto">
 						<p>
-							Currently I'm building client projects in Next.js.
+							Currently I'm learning web principles I am missing
+							for my job.
 						</p>
 					</Card>
 				</Reveal>

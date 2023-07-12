@@ -121,7 +121,7 @@ export default function SoloProjects() {
 								height="25"
 								alt="TypeScript language logo"
 							/>
-							<h4>Zelene staveni</h4>
+							<h4>Zelené stavění</h4>
 						</div>
 						<div className="flex justify-center">
 							<Image

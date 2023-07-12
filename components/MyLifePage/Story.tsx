@@ -103,8 +103,8 @@ export default function Story() {
 								from Masarykovo klasické gymnázium in Říčany.
 							</p>
 							<p>
-								Started learning programming in HTML, CSS and
-								Python, and also did Harvard's CS50 course.
+								Started learning programming in JavaScript and
+								Python, plus did Harvard's CS50 course.
 							</p>
 						</div>
 					</div>
@@ -128,11 +128,10 @@ export default function Story() {
 				<Card noPadding>
 					<div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
 						<div className="col-span-3 lg:col-span-4 space-y-3 p-6 md:pr-0">
-							<h3>2022 - Now</h3>
+							<h3>2022 - 2023</h3>
 							<p>
 								Began studying at Prague University of Economics
-								and Business with a focus on Applied
-								informatics, where I started learning Java and
+								and Business, where I learned basics of Java and
 								SQL.
 							</p>
 							<p>
@@ -140,13 +139,43 @@ export default function Story() {
 								of schools for C/C++ programming languages.
 							</p>
 							<p>
-								Started learning everything for being a
-								full-stack developer, including React, Next.js,
-								Node.js and TypeScript.
+								Learned a ton for being a full-stack developer,
+								including React, Next.js, Node.js and
+								TypeScript.
 							</p>
 						</div>
 						<div className="col-span-1 min-w-max hidden md:flex items-center justify-center border-l-2 border-neutral-800">
+							<h2>0x5</h2>
+						</div>
+					</div>
+				</Card>
+			</div>
+			<div className="md:mt-32 lg:mt-44">
+				<div className="relative -start-4 top-1 hidden md:block z-20">
+					<svg
+						width="184"
+						height="174"
+						viewBox="0 0 184 174"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M182.043 173.499C182.871 173.476 183.523 172.785 183.499 171.957L183.114 158.463C183.09 157.635 182.4 156.982 181.572 157.006C180.744 157.03 180.091 157.72 180.115 158.548L180.458 170.543L168.463 170.886C167.635 170.91 166.982 171.6 167.006 172.428C167.03 173.256 167.72 173.909 168.548 173.885L182.043 173.499ZM0.970065 3.09052L180.97 173.091L183.03 170.909L3.02994 0.90948L0.970065 3.09052Z"
+							fill="black"
+						/>
+					</svg>
+				</div>
+				<Card noPadding className="relative z-10">
+					<div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
+						<div className="col-span-1 min-w-max hidden md:flex items-center justify-center border-r-2 border-neutral-800">
 							<h2>'\0'</h2>
+						</div>
+						<div className="col-span-3 lg:col-span-4 space-y-3 p-6 md:pl-0">
+							<h3>2023 - Now</h3>
+							<p>Started building client websites in Next.js.</p>
+							<p>
+								Joined a great team of developers at DX Heroes.
+							</p>
 						</div>
 					</div>
 				</Card>

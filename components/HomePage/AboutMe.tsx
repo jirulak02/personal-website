@@ -20,9 +20,8 @@ export default function AboutMe() {
 							family in the United States.
 						</p>
 						<p>
-							Currently, I am pursuing my education at the Prague
-							University of Economics and Business with a plan to
-							quit once I land a job.
+							Currently, I am getting started in the workforce
+							while pursuing my education at 42 Prague.
 						</p>
 						<div className="text-right">
 							<Link href="/my-life" className="underline">
@@ -41,7 +40,7 @@ export default function AboutMe() {
 					<p>
 						For those who believe that you can learn a lot about
 						someone from what they drink, my favorite beer is Kozel
-						11°, with Plzeň being a bit further in second.
+						11°, but Plzeň is alright too I guess.
 					</p>
 					<div className="text-right">
 						<Link href="/hobbies" className="underline">
@@ -54,8 +53,8 @@ export default function AboutMe() {
 						<h3>My projects</h3>
 						<p>
 							I have worked on a bunch of projects, from personal
-							endeavors to coursework at Harvard's CS50 and group
-							projects as part of the 42 Prague school program.{" "}
+							endeavors to client websites and group projects as
+							part of the 42 Prague school.{" "}
 						</p>
 						<p>
 							One of my most significant accomplishments to date

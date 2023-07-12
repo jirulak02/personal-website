@@ -14,6 +14,50 @@ export default function GroupProjects() {
 					<Card className="max-w-sm mx-auto">
 						<div className="flex items-center space-x-1">
 							<Image
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+								width="25"
+								height="25"
+								alt="JavaScript language logo"
+							/>
+							<h4>Rugby Říčany</h4>
+						</div>
+						<div className="flex justify-center">
+							<Image
+								style={{ width: "280px" }}
+								src="/ProjectsPage/Rugby ricany.png"
+								width="840"
+								height="414"
+								alt="Display of previous matches on the website"
+								placeholder="blur"
+								blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
+							/>
+						</div>
+						<p>
+							A website for our local rugby team. My part was
+							loading matches from Google Sheets with limited code
+							capabilities, because of the CMS resources.
+						</p>
+						<a
+							href="https://github.com/jirulak02/Rugby-ricany"
+							className="underline block"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							View the code{">"}
+						</a>
+						<a
+							href="https://zwa7y.solidpixels.com/zapasy"
+							className="underline"
+							target="_blank"
+						>
+							Visit the website{">"}
+						</a>
+					</Card>
+				</Reveal>
+				<Reveal>
+					<Card className="max-w-sm mx-auto">
+						<div className="flex items-center space-x-1">
+							<Image
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
 								width="25"
 								height="25"
@@ -42,48 +86,11 @@ export default function GroupProjects() {
 							/>
 						</div>
 						<p className="pb-4">
-							A program that finds space for the largest rectangle
+							A program that finds space for the largest square
 							and inserts 'x' characters in it's place.
 						</p>
 						<a
 							href="https://github.com/jirulak02/42-piscine/tree/main/bsq"
-							className="underline"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							View the code{">"}
-						</a>
-					</Card>
-				</Reveal>
-				<Reveal>
-					<Card className="max-w-sm mx-auto">
-						<div className="flex items-center space-x-1">
-							<Image
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
-								width="25"
-								height="25"
-								alt="C language logo"
-							/>
-							<h4>Number converter</h4>
-						</div>
-						<div className="flex justify-center min-w-max">
-							<Image
-								style={{ width: "280px" }}
-								src="/ProjectsPage/Rush-02.png"
-								width="840"
-								height="363"
-								alt="Translating numbers into words in terminal"
-								placeholder="blur"
-								blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
-							/>
-						</div>
-						<p className="pb-4">
-							A program that converts a number into a string of
-							words based on a dictionary and allocates memory for
-							it.
-						</p>
-						<a
-							href="https://github.com/jirulak02/42-piscine/tree/main/rush02/ex00"
 							className="underline"
 							target="_blank"
 							rel="noopener noreferrer"

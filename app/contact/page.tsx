@@ -19,9 +19,8 @@ export default function Contact() {
 					<Card className="col-span-3">
 						<h3>Get in touch</h3>
 						<p>
-							If I have sparked your interest or if you have any
-							additional questions, please don't hesitate to reach
-							out to me.
+							If I have sparked your interest for collaboration,
+							please don't hesitate to reach out to me.
 						</p>
 						<p>
 							Here is my contact information, listed in order of
