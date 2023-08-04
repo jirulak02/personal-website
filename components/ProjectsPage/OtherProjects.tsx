@@ -26,8 +26,7 @@ export default function OtherProjects() {
 				<Reveal>
 					<Card className="max-w-sm mx-auto">
 						<p>
-							Currently I'm solidifying my web knowledge for my
-							job.
+							Currently I'm mostly just focusing on programming at my job.
 						</p>
 					</Card>
 				</Reveal>

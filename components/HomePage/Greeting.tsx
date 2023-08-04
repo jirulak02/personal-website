@@ -9,8 +9,8 @@ export default function Greeting() {
 				<p>
 					Welcome to my personal website! My name is Jiří and I am a
 					young and motivated software engineer with a passion for
-					coding, problem-solving and design. I am currently starting
-					to work as a full-stack developer at DX Heroes.
+					coding, problem-solving and design. I am currently working
+					as a full-stack developer at DX Heroes.
 				</p>
 				<p>Hope you find my website informative and fun.</p>
 			</Card>
