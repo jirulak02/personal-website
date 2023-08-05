@@ -1,5 +1,5 @@
 .drop {
-	animation: dropDown 200ms ease-in-out forwards;
+	animation: dropDown 200ms ease-out forwards;
 	transform-origin: top center;
 }
 
@@ -9,5 +9,11 @@
 	}
 	100% {
 		transform: scaleY(1);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.drop {
+		animation: none;
 	}
 }
