@@ -21,24 +21,27 @@ export default function Circle({ amount, name }: CircleProps) {
 	const count = useMotionValue(0);
 	const rounded = useTransform(count, Math.round);
 	const controls = useAnimation();
-	const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
+	
 	useEffect(() => {
-		if (!prefersReducedMotion) {
-			if (isInView) {
-				controls.start("visible");
-				const animation = animate(count, amount, {
-					duration: 2,
-					delay: 0.25,
-				});
+		if (typeof window !== "undefined") {
+			const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+			
+			if (!prefersReducedMotion) {
+				if (isInView) {
+					controls.start("visible");
+					const animation = animate(count, amount, {
+						duration: 2,
+						delay: 0.25,
+					});
 
-				return () => animation.stop();
+					return () => animation.stop();
+				}
+			} else {
+				count.set(amount);
+				controls.set("visible");
 			}
-    } else {
-			count.set(amount);
-      controls.set("visible");
-    }
-	}, [isInView, controls, count, amount, prefersReducedMotion]);
+		}
+	}, [isInView, controls, count, amount]);
 
 	return (
 		<div className="w-32">

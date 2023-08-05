@@ -12,17 +12,20 @@ export default function Reveal({ children, className }: RevealProps) {
 	const motionRef = useRef(null);
 	const isInView = useInView(motionRef, { once: true });
 	const controls = useAnimation();
-	const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 	useEffect(() => {
-		if (!prefersReducedMotion) {
-			if (isInView) {
-				controls.start("visible");
+		if (typeof window !== "undefined") {
+			const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+			
+			if (!prefersReducedMotion) {
+				if (isInView) {
+					controls.start("visible");
+				}
+			} else {
+				controls.set("visible");
 			}
-		} else {
-			controls.set("visible");
 		}
-	}, [isInView, controls, prefersReducedMotion]);
+	}, [isInView, controls]);
 
 	return (
 		<motion.div
