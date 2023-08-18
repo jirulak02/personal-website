@@ -1,0 +1,14 @@
+{
+  "trailingComma": "es5",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "semi": true,
+  "tabWidth": 2,
+  "tabSize": 2,
+  "editor.insertSpaces": false,
+  "prettier.useTabs": false,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "printWidth": 100,
+  "singleQuote": false,
+  "editor.formatOnSave": true
+}

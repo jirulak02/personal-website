@@ -3,113 +3,113 @@
 @tailwind utilities;
 
 :root {
-	--foreground-rgb: 38, 38, 38;
-	--background-rgb: 245, 245, 245;
+  --foreground-rgb: 38, 38, 38;
+  --background-rgb: 245, 245, 245;
 }
 
 ::selection {
-	color: rgb(245, 245, 245);
-	background: rgb(63 98 18);
+  color: rgb(245, 245, 245);
+  background: rgb(63 98 18);
 }
 
 /* @media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 245, 245, 245;
-		--background-rgb: 38, 38, 38;
-	}
+  :root {
+    --foreground-rgb: 245, 245, 245;
+    --background-rgb: 38, 38, 38;
+  }
 } */
 
 body {
-	color: rgb(var(--foreground-rgb));
-	background: rgb(var(--background-rgb));
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
 }
 
 .font-medium {
-	font-weight: 400; /* fix font-weight to only have 400 and 600 */
+  font-weight: 400; /* fix font-weight to only have 400 and 600 */
 }
 
 h1 {
-	font-weight: 600;
-	font-size: 1.875rem; /* 30px */
-	line-height: 2.25rem; /* 36px */
+  font-weight: 600;
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
 }
 
 h2 {
-	font-weight: 400;
-	font-size: 1.25rem; /* 20px */
-	line-height: 1.75rem; /* 28px */
+  font-weight: 400;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
 }
 
 h3 {
-	font-weight: 600;
-	font-size: 1.125rem; /* 18px */
-	line-height: 1.75rem; /* 28px */
+  font-weight: 600;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
 }
 
 h4 {
-	font-weight: 600;
-	font-size: 1rem; /* 16px */
-	line-height: 1.5rem; /* 24px */
+  font-weight: 600;
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
 }
 
 p,
 a {
-	font-size: 0.875rem; /* 14px */
-	line-height: 1.25rem; /* 20px */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
 }
 
 @media (min-width: 640px) {
-	h1 {
-		font-size: 3rem; /* 48px */
-		line-height: 1;
-	}
+  h1 {
+    font-size: 3rem; /* 48px */
+    line-height: 1;
+  }
 
-	h2 {
-		font-size: 1.5rem; /* 24px */
-		line-height: 2rem; /* 32px */
-	}
+  h2 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+  }
 
-	h3 {
-		font-size: 1.25rem; /* 20px */
-		line-height: 1.75rem; /* 28px */
-	}
+  h3 {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+  }
 
-	h4 {
-		font-size: 1.125rem; /* 18px */
-		line-height: 1.75rem; /* 28px */
-	}
+  h4 {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+  }
 
-	p,
-	a {
-		font-size: 1rem; /* 16px */
-		line-height: 1.5rem; /* 24px */
-	}
+  p,
+  a {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+  }
 }
 
 @media (min-width: 768px) {
-	h1 {
-		font-size: 3.75rem; /* 60px */
-		line-height: 1;
-	}
+  h1 {
+    font-size: 3.75rem; /* 60px */
+    line-height: 1;
+  }
 
-	h2 {
-		font-size: 1.875rem; /* 30px */
-		line-height: 2.25rem; /* 36px */
-	}
+  h2 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+  }
 
-	h3 {
-		font-size: 1.5rem; /* 24px */
-		line-height: 2rem; /* 32px */
-	}
+  h3 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+  }
 
-	h4 {
-		font-size: 1.125rem; /* 18px */
-		line-height: 1.75rem; /* 28px */
-	}
+  h4 {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+  }
 
-	p,
-	a {
-		font-size: 1.125rem; /* 18px */
-		line-height: 1.75rem; /* 28px */
-	}
+  p,
+  a {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+  }
 }

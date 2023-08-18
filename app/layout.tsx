@@ -8,18 +8,18 @@ import Footer from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export type Children = {
-	children: React.ReactNode;
+  children: React.ReactNode;
 };
 
 export default function RootLayout({ children }: Children) {
-	return (
-		<html lang="en" className={`${inter.variable} font-sans`}>
-			<body className="flex flex-col min-h-screen relative">
-				<Header normal />
-				<main className="pt-16">{children}</main>
-				<Footer />
-				<Analytics />
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en" className={`${inter.variable} font-sans`}>
+      <body className="flex flex-col min-h-screen relative">
+        <Header normal />
+        <main className="pt-16">{children}</main>
+        <Footer />
+        <Analytics />
+      </body>
+    </html>
+  );
 }
