@@ -1,6 +1,6 @@
 "use client";
 
-function Error({ error, reset }: { error: Error; reset: () => void }) {
+export default function Error({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="text-center absolute top-1/2 -translate-y-1/2 w-full flex flex-col space-y-3 p-3">
       <h2 className="font-semibold">Something went wrong!</h2>
@@ -14,5 +14,3 @@ function Error({ error, reset }: { error: Error; reset: () => void }) {
     </div>
   );
 }
-
-export default Error;

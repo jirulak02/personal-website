@@ -7,9 +7,14 @@ const links = [
     href: "https://github.com/jirulak02",
   },
   {
+    name: "LinkedIn",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg",
+    href: "https://www.linkedin.com/in/ji%C5%99%C3%AD-%C5%A1ime%C4%8Dek-a95b5027b",
+  },
+  {
     name: "Instagram",
     src: "/Instagram logo.png",
-    href: "https://www.instagram.com/jirulak02/",
+    href: "https://www.instagram.com/jirulak02",
   },
   { name: "Mail", src: "/Mail logo.png", href: "mailto:jirulak02@gmail.com" },
   { name: "Phone", src: "/Phone logo.png", href: "tel:+420777898501" },

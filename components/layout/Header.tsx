@@ -18,7 +18,7 @@ type HeaderProps = {
   normal: boolean;
 };
 
-function Header({ normal }: HeaderProps) {
+export default function Header({ normal }: HeaderProps) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -107,5 +107,3 @@ function Header({ normal }: HeaderProps) {
     </header>
   );
 }
-
-export default Header;

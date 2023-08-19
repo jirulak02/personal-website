@@ -1,57 +1,111 @@
-import { SubmitHandler, useForm } from "react-hook-form";
+"use client";
 
-interface ContactFormInput {
-  firstName: string;
-  lastName: string;
+import { Form, useForm } from "react-hook-form";
+import { toast, Toaster } from "react-hot-toast";
+
+export type ContactFormData = {
+  name: string;
   email: string;
   message: string;
-}
+};
 
 export default function ContactForm() {
   const {
     register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<ContactFormInput>();
-  const onSubmit: SubmitHandler<ContactFormInput> = (data) => console.log(data);
+    control,
+    formState: { errors, isSubmitting },
+  } = useForm<ContactFormData>();
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input
-        type="text"
-        placeholder="First name"
-        {...register("firstName", {
-          required: true,
-          pattern: /^[A-Za-z]+$/i,
-        })}
-        aria-invalid={errors.firstName ? "true" : "false"}
+    <Form
+      action={"/api/form"}
+      encType="application/json"
+      control={control}
+      onSuccess={() => {
+        toast.success("Message sent succesfully.");
+      }}
+      onError={() => {
+        toast.error("Message failed to send.");
+      }}
+      className="flex flex-col"
+    >
+      <div className={`flex flex-col ${!errors.name && "mb-5"}`}>
+        <label htmlFor="name">
+          <span className="text-red-500">*</span>Name:
+        </label>
+        <input
+          type="text"
+          placeholder="Jiří Šimeček"
+          autoComplete="name"
+          className="border-2 rounded-md px-5 py-3"
+          {...register("name", { required: true })}
+          aria-invalid={errors.name ? "true" : "false"}
+        />
+        {errors.name?.type === "required" && (
+          <p className="text-sm text-red-500">This field is required!</p>
+        )}
+      </div>
+      <div className={`flex flex-col ${!errors.email && "mb-5"}`}>
+        <label htmlFor="email">
+          <span className="text-red-500">*</span>Email:
+        </label>
+        <input
+          type="text"
+          placeholder="jirulak02@gmail.com"
+          autoComplete="email"
+          className="border-2 rounded-md px-5 py-3"
+          {...register("email", { required: true, pattern: /^.+@.+\..+$/i })}
+          aria-invalid={errors.email ? "true" : "false"}
+        />
+        {errors.email?.type === "required" && (
+          <p className="text-sm text-red-500">This field is required!</p>
+        )}
+        {errors.email?.type === "pattern" && (
+          <p className="text-sm text-red-500">Provide a valid email format!</p>
+        )}
+      </div>
+      <div className={`flex flex-col ${!errors.message && "mb-5"}`}>
+        <label htmlFor="message">
+          <span className="text-red-500">*</span>Message:
+        </label>
+        <textarea
+          rows={4}
+          placeholder="Your message here"
+          className="border-2 rounded-md px-5 py-3"
+          {...register("message", { required: true })}
+          aria-invalid={errors.message ? "true" : "false"}
+        />
+        {errors.message?.type === "required" && (
+          <p className="text-sm text-red-500">This field is required!</p>
+        )}
+      </div>
+      <div className="flex">
+        <button
+          type="submit"
+          {...(isSubmitting && { disabled: true })}
+          className={`mx-auto px-5 py-3 font-semibold rounded-md text-neutral-100 border-2 ${
+            isSubmitting
+              ? "bg-gray-400 border-gray-300 text-gray-300 cursor-not-allowed"
+              : "bg-lime-800 border-lime-800 hover:bg-neutral-100 hover:text-lime-800"
+          }`}
+        >
+          {isSubmitting ? "Submitting" : "Submit"}
+        </button>
+      </div>
+      <Toaster
+        toastOptions={{
+          success: {
+            duration: 3000,
+            position: "bottom-center",
+            className: "text-lg font-semibold h-16 w-80 border-2 border-lime-800",
+          },
+          error: {
+            duration: 3000,
+            position: "bottom-center",
+            className: "text-lg font-semibold h-16 w-80 border-2 border-red-500",
+          },
+        }}
       />
-      {errors.firstName && <p>This field is required</p>}
-      <input
-        type="text"
-        placeholder="Last name"
-        {...register("lastName", {
-          required: true,
-          pattern: /^[A-Za-z]+$/i,
-        })}
-        aria-invalid={errors.lastName ? "true" : "false"}
-      />
-      {errors.lastName && <p>This field is required</p>}
-      <input
-        type="email"
-        placeholder="Email"
-        {...register("email", {
-          required: true,
-          pattern: /^\S+@\S+$/i,
-        })}
-        aria-invalid={errors.email ? "true" : "false"}
-      />
-      <textarea
-        placeholder="Message"
-        {...register("message", { required: true, pattern: /^.+$/i })}
-        aria-invalid={errors.message ? "true" : "false"}
-      />
-      <input type="submit" />
-    </form>
+    </Form>
   );
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
+
 import Circle from "../animations/Circle";
-// import Circle from "../ui/Circle";
 
 const skills = [
   { name: "TypeScript", amount: 65 },

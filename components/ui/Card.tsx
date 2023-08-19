@@ -15,8 +15,8 @@ export default function Card({ children, className, white, noPadding, special }:
         <Reveal>
           <div
             className={`space-y-4 rounded-3xl shadow-lg shadow-neutral-400 bg-neutral-${
-              white ? "1" : "2"
-            }00 ${noPadding ? "" : "p-6"}`}
+              white ? "100" : "200"
+            } ${!noPadding && "p-6"}`}
           >
             {children}
           </div>
@@ -24,8 +24,8 @@ export default function Card({ children, className, white, noPadding, special }:
       ) : (
         <div
           className={`space-y-4 rounded-3xl shadow-lg shadow-neutral-400 bg-neutral-${
-            white ? "1" : "2"
-          }00 ${noPadding ? "" : "p-6"}`}
+            white ? "100" : "200"
+          } ${!noPadding && "p-6"}`}
         >
           {children}
         </div>
