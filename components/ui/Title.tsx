@@ -12,8 +12,9 @@ export default function Title({ title }: TitleProps) {
       </div>
       <Image
         src="/Brick wall.png"
+        className="select-none"
         fill
-        alt="brick wall picture"
+        alt=""
         priority
         placeholder="blur"
         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="

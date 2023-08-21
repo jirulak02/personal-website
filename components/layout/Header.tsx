@@ -22,9 +22,9 @@ export default function Header({ normal }: HeaderProps) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  function toggleHandler() {
+  const toggleHandler = () => {
     setOpen((prevState) => !prevState);
-  }
+  };
 
   return (
     <header
