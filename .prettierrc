@@ -1,6 +1,7 @@
 {
   "trailingComma": "es5",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "plugins": ["prettier-plugin-tailwindcss"],
   "semi": true,
   "tabWidth": 2,
   "tabSize": 2,
