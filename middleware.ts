@@ -1,22 +1,23 @@
-import { NextRequest, NextResponse } from "next/server";
+// import { NextRequest, NextResponse } from "next/server";
+import { next, rewrite } from "@vercel/edge";
 
 export const config = {
   matcher: ["/", "/hobbies"],
 };
 
-export function middleware(req: NextRequest) {
+export function middleware(req: Request) {
   const basicAuth = req.headers.get("authorization");
-  const url = req.nextUrl;
+  const url = new URL(req.url);
 
   if (basicAuth) {
     const authValue = basicAuth.split(" ")[1];
     const [user, pwd] = atob(authValue).split(":");
 
     if (user === "4dmin" && pwd === "testpwd123") {
-      return NextResponse.next();
+      return next();
     }
   }
   url.pathname = "/api/auth";
 
-  return NextResponse.rewrite(url);
+  return rewrite(url);
 }
