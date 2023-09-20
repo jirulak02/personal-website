@@ -16,7 +16,7 @@ export function middleware(req: NextRequest) {
       return NextResponse.next();
     }
   }
-  url.pathname = "/contact";
+  url.pathname = "/api/auth";
 
   return NextResponse.rewrite(url);
 }
