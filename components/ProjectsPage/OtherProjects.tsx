@@ -4,10 +4,10 @@ import Card from "../ui/Card";
 export default function OtherProjects() {
   return (
     <section className="mt-12">
-      <h2 className="font-semibold ml-4 text-center md:text-left">Other projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-2">
+      <h2 className="ml-4 text-center font-semibold md:text-left">Other projects</h2>
+      <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <Reveal>
-          <Card className="max-w-sm mx-auto">
+          <Card className="mx-auto max-w-sm">
             <p className="pb-4">You can view all my projects on GitHub.</p>
             <a
               href="https://github.com/jirulak02/"
@@ -20,8 +20,11 @@ export default function OtherProjects() {
           </Card>
         </Reveal>
         <Reveal>
-          <Card className="max-w-sm mx-auto">
-            <p>Currently I'm mostly just focusing on programming at my job.</p>
+          <Card className="mx-auto max-w-sm">
+            <p>
+              Currently I'm building client projects, planning a useful website with co-students at
+              school and so much more to come, tackling one after another.
+            </p>
           </Card>
         </Reveal>
       </div>
