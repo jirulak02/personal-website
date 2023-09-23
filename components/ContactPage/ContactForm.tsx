@@ -37,7 +37,7 @@ export default function ContactForm() {
           type="text"
           placeholder="Jiří Šimeček"
           autoComplete="name"
-          className="border-2 rounded-md px-5 py-3"
+          className="rounded-md border-2 px-5 py-3"
           {...register("name", { required: true })}
           aria-invalid={errors.name ? "true" : "false"}
         />
@@ -53,7 +53,7 @@ export default function ContactForm() {
           type="text"
           placeholder="jirulak02@gmail.com"
           autoComplete="email"
-          className="border-2 rounded-md px-5 py-3"
+          className="rounded-md border-2 px-5 py-3"
           {...register("email", { required: true, pattern: /^.+@.+\..+$/i })}
           aria-invalid={errors.email ? "true" : "false"}
         />
@@ -71,7 +71,7 @@ export default function ContactForm() {
         <textarea
           rows={4}
           placeholder="Your message here"
-          className="border-2 rounded-md px-5 py-3"
+          className="rounded-md border-2 px-5 py-3"
           {...register("message", { required: true })}
           aria-invalid={errors.message ? "true" : "false"}
         />
@@ -83,10 +83,10 @@ export default function ContactForm() {
         <button
           type="submit"
           {...(isSubmitting && { disabled: true })}
-          className={`mx-auto px-5 py-3 font-semibold rounded-md text-neutral-100 border-2 ${
+          className={`mx-auto rounded-md border-2 px-5 py-3 font-semibold text-neutral-200 ${
             isSubmitting
-              ? "bg-gray-400 border-gray-300 text-gray-300 cursor-not-allowed"
-              : "bg-lime-800 border-lime-800 hover:bg-neutral-100 hover:text-lime-800"
+              ? "cursor-not-allowed border-gray-300 bg-gray-400 text-gray-300"
+              : "border-lime-800 bg-lime-800 hover:bg-neutral-200 hover:text-lime-800"
           }`}
         >
           {isSubmitting ? "Submitting" : "Submit"}

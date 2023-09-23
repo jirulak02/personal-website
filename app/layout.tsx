@@ -14,7 +14,7 @@ export type Children = {
 export default function RootLayout({ children }: Children) {
   return (
     <html lang="en" className={`${inter.variable} font-sans`}>
-      <body className="flex flex-col min-h-screen relative">
+      <body className="relative flex min-h-screen flex-col">
         <Header normal />
         <main className="pt-16">{children}</main>
         <Footer />

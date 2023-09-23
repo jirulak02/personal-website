@@ -21,9 +21,10 @@ export default function GroupProjects() {
             </div>
             <div className="flex justify-center">
               <Image
+                style={{ width: "280px" }}
                 src="/ProjectsPage/rugby-ricany.png"
-                width="280"
-                height="158"
+                width="840"
+                height="474"
                 quality={100}
                 alt="Display of previous matches on the website"
                 placeholder="blur"
@@ -66,9 +67,10 @@ export default function GroupProjects() {
             </div>
             <div className="flex justify-center">
               <Image
+                style={{ width: "280px" }}
                 src="/ProjectsPage/dxheroes.png"
-                width="280"
-                height="158"
+                width="840"
+                height="474"
                 quality={100}
                 alt="Homepage with spline animation"
                 placeholder="blur"
@@ -98,31 +100,33 @@ export default function GroupProjects() {
             </div>
             <div className="flex min-w-max justify-between">
               <Image
+                style={{ width: "128px" }}
                 src="/ProjectsPage/bsq-1.png"
-                width="128"
-                height="181"
+                width="384"
+                height="543"
                 quality={100}
                 alt="Display of a map in terminal made of dots and zeros"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
               />
               <Image
+                style={{ width: "140px" }}
                 src="/ProjectsPage/bsq-2.png"
-                width="140"
-                height="181"
+                width="420"
+                height="543"
                 quality={100}
                 alt="The same map filled with x's in place of the biggest gap"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
               />
             </div>
-            <p className="pb-4">
+            <p>
               A program that finds space for the largest square and inserts 'x' characters in it's
               place.
             </p>
             <a
               href="https://github.com/jirulak02/42-piscine/tree/main/bsq"
-              className="underline"
+              className="block underline"
               target="_blank"
               rel="noopener noreferrer"
             >

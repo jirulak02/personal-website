@@ -4,8 +4,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 
-import classes from "./Header.module.css";
-
 const links = [
   { path: "/", name: "Home" },
   { path: "/my-life", name: "My life" },
@@ -30,19 +28,19 @@ export default function Header({ normal }: HeaderProps) {
     <header
       className={`${
         normal ? "fixed z-30" : "absolute top-0 z-50"
-      } w-full sm:justify-right bg-neutral-100 sm:border-b-2 sm:border-slate-800`}
+      } sm:justify-right w-full bg-neutral-100 sm:border-b-2 sm:border-slate-800`}
     >
-      <div className="max-w-6xl m-auto flex justify-between h-16 items-center border-b-2 border-slate-800 sm:border-none">
+      <div className="m-auto flex h-16 max-w-6xl items-center justify-between border-b-2 border-slate-800 sm:border-none">
         {normal ? (
-          <Link className="font-semibold text-base sm:text-xl md:text-2xl px-3 py-2" href="/">
+          <Link className="px-3 py-2 text-base font-semibold sm:text-xl md:text-2xl" href="/">
             Jiří Šimeček
           </Link>
         ) : (
-          <a className="font-semibold text-base sm:text-xl md:text-2xl px-3 py-2" href="/">
+          <a className="px-3 py-2 text-base font-semibold sm:text-xl md:text-2xl" href="/">
             Jiří Šimeček
           </a>
         )}
-        <div className="p-5 sm:hidden cursor-pointer" onClick={toggleHandler}>
+        <div className="cursor-pointer p-5 sm:hidden" onClick={toggleHandler}>
           <svg
             width="28"
             height="20"
@@ -55,14 +53,14 @@ export default function Header({ normal }: HeaderProps) {
             <rect y="16" width="28" height="4" rx="2" fill="#262626" />
           </svg>
         </div>
-        <nav className={`space-x-1 hidden sm:flex ${classes.nav}`}>
+        <nav className="hidden space-x-1 sm:flex">
           {links.map((link) =>
             normal ? (
               <Link
                 key={link.path}
-                className={`px-3 py-2 font-medium border-b-2 border-neutral-100 hover:border-neutral-800 ${
-                  classes.borderAnimation
-                } ${pathname === link.path && "border-neutral-800"}`}
+                className={`border-b-2 border-neutral-100 px-3 py-2 font-medium hover:border-neutral-800 ${
+                  pathname === link.path && "border-neutral-800"
+                }`}
                 href={link.path}
               >
                 {link.name}
@@ -70,7 +68,7 @@ export default function Header({ normal }: HeaderProps) {
             ) : (
               <a
                 key={link.path}
-                className="px-3 py-2 font-medium border-b-2 border-neutral-100 hover:border-neutral-800"
+                className="border-b-2 border-neutral-100 px-3 py-2 font-medium hover:border-neutral-800"
                 href={link.path}
               >
                 {link.name}
@@ -80,12 +78,12 @@ export default function Header({ normal }: HeaderProps) {
         </nav>
       </div>
       {open && (
-        <nav className={classes.drop}>
+        <nav className="origin-top animate-[dropdown_200ms_ease-out_forwards] motion-reduce:animate-none">
           {links.map((link) =>
             normal ? (
               <Link
                 key={link.path}
-                className="py-4 block sm:hidden text-center font-medium border-b border-neutral-800 hover:bg-neutral-200"
+                className="block border-b border-neutral-800 py-4 text-center font-medium hover:bg-neutral-200 sm:hidden"
                 href={link.path}
                 onClick={toggleHandler}
               >
@@ -94,7 +92,7 @@ export default function Header({ normal }: HeaderProps) {
             ) : (
               <a
                 key={link.path}
-                className="py-4 block sm:hidden text-center font-medium border-b border-neutral-800 hover:bg-neutral-200"
+                className="block border-b border-neutral-800 py-4 text-center font-medium hover:bg-neutral-200 sm:hidden"
                 href={link.path}
                 onClick={toggleHandler}
               >

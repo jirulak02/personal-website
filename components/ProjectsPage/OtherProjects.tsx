@@ -8,10 +8,10 @@ export default function OtherProjects() {
       <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <Reveal>
           <Card className="mx-auto max-w-sm">
-            <p className="pb-4">You can view all my projects on GitHub.</p>
+            <p>You can view all my projects on GitHub.</p>
             <a
               href="https://github.com/jirulak02/"
-              className="underline"
+              className="block underline"
               target="_blank"
               rel="noopener noreferrer"
             >

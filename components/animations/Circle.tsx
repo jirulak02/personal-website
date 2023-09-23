@@ -49,13 +49,13 @@ export default function Circle({ amount, name }: CircleProps) {
       <div className="relative flex justify-center">
         <motion.div
           ref={circleRef}
-          className="absolute flex justify-center items-center text-2xl w-24 h-24 m-0.5"
+          className="absolute m-0.5 flex h-24 w-24 items-center justify-center text-2xl"
         >
           {rounded}
         </motion.div>
         <motion.svg width="100" height="100" initial="hidden" animate={controls}>
           <motion.circle
-            className="-rotate-90 origin-center"
+            className="origin-center -rotate-90"
             stroke="rgb(63 98 18)"
             strokeWidth="20"
             fill="transparent"

@@ -21,28 +21,30 @@ export default function SoloProjects() {
             </div>
             <div className="flex min-w-max justify-between">
               <Image
+                style={{ width: "140px" }}
                 src="/ProjectsPage/sudoku-1.png"
-                width="140"
-                height="184"
+                width="420"
+                height="552"
                 quality={100}
                 alt="Playing sudoku"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
               />
               <Image
+                style={{ width: "140px" }}
                 src="/ProjectsPage/sudoku-2.png"
-                width="139"
-                height="184"
+                width="417"
+                height="552"
                 quality={100}
                 alt="Victory screen of sudoku app"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
               />
             </div>
-            <p className="pb-4">A fully functional Sudoku game application for Windows.</p>
+            <p>A fully functional Sudoku game application for Windows.</p>
             <a
               href="https://github.com/jirulak02/Sudoku"
-              className="underline"
+              className="block underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -77,21 +79,12 @@ export default function SoloProjects() {
               />
               <h4>Matěj Šimeček</h4>
             </div>
-            <div className="flex min-w-max flex-col justify-center">
+            <div className="flex min-w-max justify-center">
               <Image
                 style={{ width: "280px" }}
-                src="/ProjectsPage/ms2.png"
+                src="/ProjectsPage/matej-simecek.png"
                 width="840"
                 height="474"
-                quality={100}
-                alt="Business website for a client"
-                placeholder="blur"
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
-              />
-              <Image
-                src="/ProjectsPage/matej-simecek.png"
-                width="280"
-                height="158"
                 quality={100}
                 alt="Business website for a client"
                 placeholder="blur"
@@ -132,9 +125,9 @@ export default function SoloProjects() {
             <div className="flex justify-center">
               <Image
                 style={{ width: "280px" }}
-                src="/ProjectsPage/ms.png"
-                width="560"
-                height="316"
+                src="/ProjectsPage/zelene-staveni.png"
+                width="840"
+                height="474"
                 quality={100}
                 alt="Business website for a client"
                 placeholder="blur"
