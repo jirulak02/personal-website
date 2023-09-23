@@ -2,10 +2,10 @@
 
 export default function Error({ error, reset }: { error: Error; reset: () => void }) {
   return (
-    <div className="text-center absolute top-1/2 -translate-y-1/2 w-full flex flex-col space-y-3 p-3">
+    <div className="absolute top-1/2 flex w-full -translate-y-1/2 flex-col space-y-3 p-3 text-center">
       <h2 className="font-semibold">Something went wrong!</h2>
       <button
-        className="m-auto p-4 text-lg sm:text-xl md:text-2xl py-2 rounded-3xl bg-lime-800 text-neutral-100 border-2 border-lime-800 hover:bg-neutral-100 hover:text-lime-800 focus:bg-neutral-300"
+        className="m-auto rounded-3xl border-2 border-lime-800 bg-lime-800 p-4 py-2 text-lg text-neutral-100 hover:bg-neutral-100 hover:text-lime-800 focus:bg-neutral-300 sm:text-xl md:text-2xl"
         onClick={() => reset()}
       >
         Try again

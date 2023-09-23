@@ -6,10 +6,10 @@ import Reveal from "../animations/Reveal";
 export default function SoloProjects() {
   return (
     <section className="mt-8 lg:mt-12">
-      <h2 className="font-semibold ml-4 text-center md:text-left">Top 3 solo projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-2">
+      <h2 className="ml-4 text-center font-semibold md:text-left">Top 3 solo projects</h2>
+      <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <Reveal>
-          <Card className="max-w-sm mx-auto">
+          <Card className="mx-auto max-w-sm">
             <div className="flex items-center space-x-1">
               <Image
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
@@ -19,30 +19,32 @@ export default function SoloProjects() {
               />
               <h4>Sudoku app</h4>
             </div>
-            <div className="flex justify-between min-w-max">
+            <div className="flex min-w-max justify-between">
               <Image
                 style={{ width: "140px" }}
-                src="/ProjectsPage/Sudoku 1.png"
+                src="/ProjectsPage/sudoku-1.png"
                 width="420"
                 height="552"
+                quality={100}
                 alt="Playing sudoku"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
               />
               <Image
-                style={{ width: "139px" }}
-                src="/ProjectsPage/Sudoku 2.png"
+                style={{ width: "140px" }}
+                src="/ProjectsPage/sudoku-2.png"
                 width="417"
                 height="552"
+                quality={100}
                 alt="Victory screen of sudoku app"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
               />
             </div>
-            <p className="pb-4">A fully functional Sudoku game application for Windows.</p>
+            <p>A fully functional Sudoku game application for Windows.</p>
             <a
               href="https://github.com/jirulak02/Sudoku"
-              className="underline"
+              className="block underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -51,9 +53,9 @@ export default function SoloProjects() {
             <div className="text-center">
               <a
                 href="https://github.com/jirulak02/Sudoku/raw/main/Sudoku.exe"
-                className="w-48 md:w-56 rounded-3xl inline-block"
+                className="inline-block w-48 rounded-3xl md:w-56"
               >
-                <div className="text-lg sm:text-xl md:text-2xl py-2 rounded-3xl bg-lime-800 text-neutral-200 border-2 border-lime-800 hover:bg-neutral-200 hover:text-lime-800">
+                <div className="rounded-3xl border-2 border-lime-800 bg-lime-800 py-2 text-lg text-neutral-200 hover:bg-neutral-200 hover:text-lime-800 sm:text-xl md:text-2xl">
                   Download game
                 </div>
               </a>
@@ -61,7 +63,7 @@ export default function SoloProjects() {
           </Card>
         </Reveal>
         <Reveal>
-          <Card className="max-w-sm mx-auto">
+          <Card className="mx-auto max-w-sm">
             <div className="flex items-center space-x-1">
               <Image
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
@@ -75,32 +77,36 @@ export default function SoloProjects() {
                 height="25"
                 alt="TypeScript language logo"
               />
-              <h4>Personal website</h4>
+              <h4>Matěj Šimeček</h4>
             </div>
-            <div className="flex justify-center min-w-max">
+            <div className="flex min-w-max justify-center">
               <Image
                 style={{ width: "280px" }}
-                src="/ProjectsPage/Personal website.png"
+                src="/ProjectsPage/matej-simecek.png"
                 width="840"
-                height="399"
-                alt="Home page of this website"
+                height="474"
+                quality={100}
+                alt="Business website for a client"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
               />
             </div>
-            <p className="pb-4">The very same personal website you are on right now.</p>
+            <p>A business website for a financial advisor.</p>
             <a
-              href="https://github.com/jirulak02/Personal-website"
-              className="underline"
+              href="https://github.com/jirulak02/Matej-simecek"
+              className="block underline"
               target="_blank"
               rel="noopener noreferrer"
             >
               View the code{">"}
             </a>
+            <a href="https://www.matejsimecek.cz/" className="underline" target="_blank">
+              Visit the website{">"}
+            </a>
           </Card>
         </Reveal>
         <Reveal>
-          <Card className="max-w-sm mx-auto">
+          <Card className="mx-auto max-w-sm">
             <div className="flex items-center space-x-1">
               <Image
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
@@ -119,9 +125,10 @@ export default function SoloProjects() {
             <div className="flex justify-center">
               <Image
                 style={{ width: "280px" }}
-                src="/ProjectsPage/Zelene staveni.png"
+                src="/ProjectsPage/zelene-staveni.png"
                 width="840"
-                height="412"
+                height="474"
+                quality={100}
                 alt="Business website for a client"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
@@ -130,7 +137,7 @@ export default function SoloProjects() {
             <p>A business website for a client, who specialises in building green roofs.</p>
             <a
               href="https://github.com/jirulak02/Zelene-staveni"
-              className="underline block"
+              className="block underline"
               target="_blank"
               rel="noopener noreferrer"
             >

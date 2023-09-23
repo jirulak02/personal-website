@@ -6,10 +6,10 @@ import Reveal from "../animations/Reveal";
 export default function GroupProjects() {
   return (
     <section className="mt-20">
-      <h2 className="font-semibold ml-4 text-center md:text-left">Top 3 group projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-2">
+      <h2 className="ml-4 text-center font-semibold md:text-left">Top 3 group projects</h2>
+      <div className="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <Reveal>
-          <Card className="max-w-sm mx-auto">
+          <Card className="mx-auto max-w-sm">
             <div className="flex items-center space-x-1">
               <Image
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -22,9 +22,10 @@ export default function GroupProjects() {
             <div className="flex justify-center">
               <Image
                 style={{ width: "280px" }}
-                src="/ProjectsPage/Rugby ricany.png"
+                src="/ProjectsPage/rugby-ricany.png"
                 width="840"
-                height="414"
+                height="474"
+                quality={100}
                 alt="Display of previous matches on the website"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
@@ -36,7 +37,7 @@ export default function GroupProjects() {
             </p>
             <a
               href="https://github.com/jirulak02/Rugby-ricany"
-              className="underline block"
+              className="block underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -48,7 +49,46 @@ export default function GroupProjects() {
           </Card>
         </Reveal>
         <Reveal>
-          <Card className="max-w-sm mx-auto">
+          <Card className="mx-auto max-w-sm">
+            <div className="flex items-center space-x-1">
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                width="25"
+                height="25"
+                alt="Nextjs logo"
+              />
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                width="25"
+                height="25"
+                alt="TypeScript language logo"
+              />
+              <h4>DX Heroes</h4>
+            </div>
+            <div className="flex justify-center">
+              <Image
+                style={{ width: "280px" }}
+                src="/ProjectsPage/dxheroes.png"
+                width="840"
+                height="474"
+                quality={100}
+                alt="Homepage with spline animation"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
+              />
+            </div>
+            <p>
+              Contributing to a website of a company that helps other companies with the adoption of
+              digital products. My part was for example implementing code highlighting and download
+              forms.
+            </p>
+            <a href="https://www.dxheroes.io/" className="block underline" target="_blank">
+              Visit the website{">"}
+            </a>
+          </Card>
+        </Reveal>
+        <Reveal>
+          <Card className="mx-auto max-w-sm">
             <div className="flex items-center space-x-1">
               <Image
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
@@ -58,78 +98,35 @@ export default function GroupProjects() {
               />
               <h4>Bsq</h4>
             </div>
-            <div className="flex justify-between min-w-max">
+            <div className="flex min-w-max justify-between">
               <Image
                 style={{ width: "128px" }}
-                src="/ProjectsPage/Bsq 1.png"
+                src="/ProjectsPage/bsq-1.png"
                 width="384"
                 height="543"
+                quality={100}
                 alt="Display of a map in terminal made of dots and zeros"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
               />
               <Image
                 style={{ width: "140px" }}
-                src="/ProjectsPage/Bsq 2.png"
+                src="/ProjectsPage/bsq-2.png"
                 width="420"
                 height="543"
+                quality={100}
                 alt="The same map filled with x's in place of the biggest gap"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
               />
             </div>
-            <p className="pb-4">
+            <p>
               A program that finds space for the largest square and inserts 'x' characters in it's
               place.
             </p>
             <a
               href="https://github.com/jirulak02/42-piscine/tree/main/bsq"
-              className="underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View the code{">"}
-            </a>
-          </Card>
-        </Reveal>
-        <Reveal>
-          <Card className="max-w-sm mx-auto">
-            <div className="flex items-center space-x-1">
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
-                width="25"
-                height="25"
-                alt="C language logo"
-              />
-              <h4>Skyscrapers solver</h4>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image
-                style={{ width: "280px" }}
-                src="/ProjectsPage/Rush-01 1.png"
-                width="840"
-                height="60"
-                alt="Display of the input for skyscrapers game"
-                placeholder="blur"
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
-              />
-              <Image
-                style={{ width: "113px" }}
-                src="/ProjectsPage/Rush-01 2.png"
-                width="339"
-                height="372"
-                alt="Solved 4x4 skyscrapers grid"
-                placeholder="blur"
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
-              />
-            </div>
-            <p className="pb-4">
-              A program that solves a 4x4 map of skyscrapers inputted as an argument in the format
-              of "4x up 4x down 4x left 4x right", reading from up to down and left to right.
-            </p>
-            <a
-              href="https://github.com/jirulak02/42-piscine/tree/main/rush01/ex00"
-              className="underline"
+              className="block underline"
               target="_blank"
               rel="noopener noreferrer"
             >

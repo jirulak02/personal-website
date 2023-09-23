@@ -3,7 +3,7 @@ import Card from "../ui/Card";
 
 export default function Greeting() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12">
+    <section className="grid grid-cols-1 gap-8 py-12 md:grid-cols-2">
       <Card>
         <h3>Greetings</h3>
         <p>

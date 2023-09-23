@@ -5,7 +5,7 @@ import Card from "@/components/ui/Card";
 import Title from "@/components/ui/Title";
 
 export const metadata = {
-  title: "Contact",
+  title: "Contact | Jiří Šimeček",
   description:
     "All the important contact information, including my socials, e-mail and phone number.",
 };
@@ -16,7 +16,7 @@ export default function Contact() {
       <ScrollUp />
       <Title title="<Contact>" />
       <Container>
-        <section className="grid sm:grid-cols-2 gap-8 sm:gap-12 mt-12 mb-12">
+        <section className="mb-12 mt-12 grid gap-8 sm:grid-cols-2 sm:gap-12">
           <Card>
             <ContactForm />
           </Card>
@@ -29,7 +29,7 @@ export default function Contact() {
           </Card>
         </section>
         <h3>Or contact me elsewhere</h3>
-        <div className="flex flex-col gap-2 mt-3 mb-20">
+        <div className="mb-20 mt-3 flex flex-col gap-2">
           <p>
             Email:{" "}
             <a href="mailto:jirulak02@gmail.com" className="underline">
@@ -66,7 +66,7 @@ export default function Contact() {
           </p>
         </div>
       </Container>
-      <div className="mb-4 text-center absolute w-full bottom-16">
+      <div className="absolute bottom-16 mb-4 w-full text-center">
         <h1 className="font-normal">{"</Contact>"}</h1>
       </div>
     </>

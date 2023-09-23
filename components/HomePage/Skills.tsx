@@ -30,7 +30,7 @@ const tools = [
   },
   {
     name: "Framer motion",
-    src: "/HomePage/Framer motion.png",
+    src: "/HomePage/framer-motion.png",
   },
   {
     name: "MongoDB",
@@ -57,12 +57,12 @@ const tools = [
 export default function Skills() {
   return (
     <>
-      <div className="flex flex-wrap justify-center text-center space-x-3 mb-12">
+      <div className="mb-12 flex flex-wrap justify-center space-x-3 text-center">
         {skills.map((skill) => (
           <Circle key={skill.name} name={skill.name} amount={skill.amount} />
         ))}
       </div>
-      <div className="flex flex-wrap justify-center text-center space-x-3 mb-12 lg:mb-20">
+      <div className="mb-12 flex flex-wrap justify-center space-x-3 text-center lg:mb-20">
         {tools.map((tool) => (
           <Image
             key={tool.name}

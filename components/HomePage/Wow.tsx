@@ -5,7 +5,7 @@ import Card from "../ui/Card";
 export default function Wow() {
   return (
     <Reveal>
-      <Card className="max-w-2xl m-auto my-12 lg:my-20 px-3">
+      <Card className="m-auto my-12 max-w-2xl px-3 lg:my-20">
         <div className="text-center">
           <h3>Wow!</h3>
         </div>

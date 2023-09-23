@@ -1,5 +1,5 @@
 import { Children } from "@/app/layout";
 
 export default function Container({ children }: Children) {
-  return <div className="max-w-6xl m-auto px-3">{children}</div>;
+  return <div className="m-auto max-w-6xl px-3">{children}</div>;
 }

@@ -2,20 +2,20 @@ import Card from "../ui/Card";
 
 export default function Story() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 lg:mt-12">
+    <section className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:mt-12">
       <Card noPadding>
-        <div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
-          <div className="col-span-3 lg:col-span-4 space-y-3 p-6 md:pr-0">
+        <div className="grid gap-6 md:grid-cols-4 lg:grid-cols-5">
+          <div className="col-span-3 space-y-3 p-6 md:pr-0 lg:col-span-4">
             <h3>2002 - 2014</h3>
             <p>Born and raised in the Czech Republic.</p>
           </div>
-          <div className="col-span-1 min-w-max items-center justify-center border-l-2 border-neutral-800 hidden md:flex">
+          <div className="col-span-1 hidden min-w-max items-center justify-center border-l-2 border-neutral-800 md:flex">
             <h2>0x1</h2>
           </div>
         </div>
       </Card>
       <div className="md:mt-14">
-        <div className="relative -start-4 top-2 hidden md:block z-20">
+        <div className="relative -start-4 top-2 z-20 hidden md:block">
           <svg
             width="183"
             height="77"
@@ -30,11 +30,11 @@ export default function Story() {
           </svg>
         </div>
         <Card noPadding className="relative z-10">
-          <div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
-            <div className="col-span-1 min-w-max hidden md:flex items-center justify-center border-r-2 border-neutral-800">
+          <div className="grid gap-6 md:grid-cols-4 lg:grid-cols-5">
+            <div className="col-span-1 hidden min-w-max items-center justify-center border-r-2 border-neutral-800 md:flex">
               <h2>0x2</h2>
             </div>
-            <div className="col-span-3 lg:col-span-4 space-y-3 p-6 md:pl-0">
+            <div className="col-span-3 space-y-3 p-6 md:pl-0 lg:col-span-4">
               <h3>2014 - 2019</h3>
               <p>Studied at Masarykovo klasické gymnázium in Říčany.</p>
             </div>
@@ -57,22 +57,22 @@ export default function Story() {
           </svg>
         </div>
         <Card noPadding>
-          <div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
-            <div className="col-span-3 lg:col-span-4 space-y-3 p-6 md:pr-0">
+          <div className="grid gap-6 md:grid-cols-4 lg:grid-cols-5">
+            <div className="col-span-3 space-y-3 p-6 md:pr-0 lg:col-span-4">
               <h3>2019 - 2020</h3>
               <p>
                 Spent a year as an exchange student in California, USA, an experience that greatly
                 improved my English language skills and broadened my perspective on life.
               </p>
             </div>
-            <div className="col-span-1 min-w-max hidden md:flex items-center justify-center border-l-2 border-neutral-800">
+            <div className="col-span-1 hidden min-w-max items-center justify-center border-l-2 border-neutral-800 md:flex">
               <h2>0x3</h2>
             </div>
           </div>
         </Card>
       </div>
       <div className="md:mt-24">
-        <div className="relative -start-4 top-1.5 hidden md:block z-20">
+        <div className="relative -start-4 top-1.5 z-20 hidden md:block">
           <svg
             width="183"
             height="107"
@@ -87,11 +87,11 @@ export default function Story() {
           </svg>
         </div>
         <Card noPadding className="relative z-10">
-          <div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
-            <div className="col-span-1 min-w-max hidden md:flex items-center justify-center border-r-2 border-neutral-800">
+          <div className="grid gap-6 md:grid-cols-4 lg:grid-cols-5">
+            <div className="col-span-1 hidden min-w-max items-center justify-center border-r-2 border-neutral-800 md:flex">
               <h2>0x4</h2>
             </div>
-            <div className="col-span-3 lg:col-span-4 space-y-3 p-6 md:pl-0">
+            <div className="col-span-3 space-y-3 p-6 md:pl-0 lg:col-span-4">
               <h3>2020 - 2022</h3>
               <p>
                 Returned to the Czech Republic and graduated from Masarykovo klasické gymnázium in
@@ -121,8 +121,8 @@ export default function Story() {
           </svg>
         </div>
         <Card noPadding>
-          <div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
-            <div className="col-span-3 lg:col-span-4 space-y-3 p-6 md:pr-0">
+          <div className="grid gap-6 md:grid-cols-4 lg:grid-cols-5">
+            <div className="col-span-3 space-y-3 p-6 md:pr-0 lg:col-span-4">
               <h3>2022 - 2023</h3>
               <p>
                 Began studying at Prague University of Economics and Business, where I learned
@@ -137,14 +137,14 @@ export default function Story() {
                 and TypeScript.
               </p>
             </div>
-            <div className="col-span-1 min-w-max hidden md:flex items-center justify-center border-l-2 border-neutral-800">
+            <div className="col-span-1 hidden min-w-max items-center justify-center border-l-2 border-neutral-800 md:flex">
               <h2>0x5</h2>
             </div>
           </div>
         </Card>
       </div>
       <div className="md:mt-32 lg:mt-44">
-        <div className="relative -start-4 top-1 hidden md:block z-20">
+        <div className="relative -start-4 top-1 z-20 hidden md:block">
           <svg
             width="184"
             height="174"
@@ -159,11 +159,11 @@ export default function Story() {
           </svg>
         </div>
         <Card noPadding className="relative z-10">
-          <div className="grid md:grid-cols-4 lg:grid-cols-5 gap-6">
-            <div className="col-span-1 min-w-max hidden md:flex items-center justify-center border-r-2 border-neutral-800">
+          <div className="grid gap-6 md:grid-cols-4 lg:grid-cols-5">
+            <div className="col-span-1 hidden min-w-max items-center justify-center border-r-2 border-neutral-800 md:flex">
               <h2>'\0'</h2>
             </div>
-            <div className="col-span-3 lg:col-span-4 space-y-3 p-6 md:pl-0">
+            <div className="col-span-3 space-y-3 p-6 md:pl-0 lg:col-span-4">
               <h3>2023 - Now</h3>
               <p>Started building client websites in Next.js.</p>
               <p>Joined a great team of developers at DX Heroes.</p>
