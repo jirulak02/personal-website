@@ -2,49 +2,49 @@ import Image from "next/image";
 
 export const hobbies = [
   {
-    img: "/HobbiesPage/snowboarding.png",
+    img: "/HobbiesPage/hobby-snowboarding.png",
     name: "Snowboarding",
     achievement: "Backflip",
     alt: "The author doing a backflip on a snowboard",
   },
   {
-    img: "/HobbiesPage/rugby.png",
+    img: "/HobbiesPage/hobby-rugby.png",
     name: "Rugby",
     achievement: "7x Czech champion",
     alt: "The author running with a rugby ball",
   },
   {
-    img: "/HobbiesPage/hiking.png",
+    img: "/HobbiesPage/hobby-hiking.png",
     name: "Hiking",
     achievement: "1km climb in 86min",
     alt: "The author standing on top of a mountain in Austria",
   },
   {
-    img: "/HobbiesPage/scuba-diving.png",
+    img: "/HobbiesPage/hobby-scuba-diving.png",
     name: "Scuba diving",
     achievement: "AOWD certification",
     alt: "The author scuba diving in a beautifully lit cave",
   },
   {
-    img: "/HobbiesPage/dancing.png",
+    img: "/HobbiesPage/hobby-dancing.png",
     name: "Dancing",
     achievement: "Advanced course",
     alt: "The author dancing with a girl at his graduation ball",
   },
   {
-    img: "/HobbiesPage/traveling.png",
+    img: "/HobbiesPage/hobby-traveling.png",
     name: "Traveling",
     achievement: "EU, NA, SA, AS, AF",
     alt: "New York from the Hudson river",
   },
   {
-    img: "/HobbiesPage/running.png",
+    img: "/HobbiesPage/hobby-running.png",
     name: "Running",
     achievement: "160km in one month",
     alt: "The author running on a sidewalk",
   },
   {
-    img: "/HobbiesPage/games.png",
+    img: "/HobbiesPage/hobby-games.png",
     name: "Games",
     achievement: "Platinum / 1600",
     alt: "Split image of League of Legends and Chess",
@@ -70,7 +70,7 @@ export default function HobbiesList() {
           <div className="flex items-center justify-center space-x-1">
             <Image
               style={{ width: "25px" }}
-              src="/HobbiesPage/medal.png"
+              src="/HobbiesPage/medal-icon.png"
               width="75"
               height="75"
               quality={100}
