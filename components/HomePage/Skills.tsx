@@ -29,8 +29,8 @@ const tools = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
   },
   {
-    name: "framer-motion",
-    src: "/HomePage/Framer motion.png",
+    name: "Framer motion",
+    src: "/HomePage/framer-motion.png",
   },
   {
     name: "MongoDB",
