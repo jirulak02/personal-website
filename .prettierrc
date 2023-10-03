@@ -1,15 +1,9 @@
 {
   "trailingComma": "es5",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "plugins": ["prettier-plugin-tailwindcss"],
   "semi": true,
   "tabWidth": 2,
-  "tabSize": 2,
-  "editor.insertSpaces": true,
-  "prettier.useTabs": false,
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
+  "useTabs": false,
   "printWidth": 100,
-  "singleQuote": false,
-  "editor.formatOnSave": true
+  "singleQuote": false
 }
