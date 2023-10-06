@@ -83,10 +83,10 @@ export default function ContactForm() {
         <button
           type="submit"
           {...(isSubmitting && { disabled: true })}
-          className={`mx-auto rounded-md border-2 px-5 py-3 font-semibold text-neutral-200 ${
+          className={`mx-auto rounded-md border-2 px-5 py-3 font-semibold ${
             isSubmitting
               ? "cursor-not-allowed border-gray-300 bg-gray-400 text-gray-300"
-              : "border-lime-800 bg-lime-800 hover:bg-neutral-200 hover:text-lime-800"
+              : "border-lime-800 bg-lime-800 text-neutral-200 hover:bg-neutral-200 hover:text-lime-800"
           }`}
         >
           {isSubmitting ? "Submitting" : "Submit"}
