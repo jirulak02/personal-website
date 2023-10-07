@@ -14,8 +14,8 @@ export default function Card({ children, className, white, noPadding, special }:
       {special ? (
         <Reveal>
           <div
-            className={`space-y-4 rounded-3xl shadow-lg shadow-neutral-400 bg-neutral-${
-              white ? "100" : "200"
+            className={`shadow-shadowColor space-y-4 rounded-3xl shadow-lg bg-${
+              white ? "bgColor" : "secColor"
             } ${!noPadding && "p-6"}`}
           >
             {children}
@@ -23,8 +23,8 @@ export default function Card({ children, className, white, noPadding, special }:
         </Reveal>
       ) : (
         <div
-          className={`space-y-4 rounded-3xl shadow-lg shadow-neutral-400 bg-neutral-${
-            white ? "100" : "200"
+          className={`shadow-shadowColor space-y-4 rounded-3xl shadow-lg bg-${
+            white ? "bgColor" : "secColor"
           } ${!noPadding && "p-6"}`}
         >
           {children}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Circle from "../animations/Circle";
+import ThemedIcon from "../ui/ThemedIcon";
 
 const skills = [
   { name: "TypeScript", amount: 65 },
@@ -19,6 +20,7 @@ const tools = [
   {
     name: "Next.js",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    darkSrc: "/HomePage/next.png",
   },
   {
     name: "Node.js",
@@ -33,20 +35,13 @@ const tools = [
     src: "/HomePage/framer-motion.png",
   },
   {
-    name: "MongoDB",
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-  },
-  {
     name: "Express.js",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    darkSrc: "/HomePage/express.png",
   },
   {
     name: "Git",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-  },
-  {
-    name: "Redux",
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
   },
   {
     name: "Jest",
@@ -63,17 +58,26 @@ export default function Skills() {
         ))}
       </div>
       <div className="mb-12 flex flex-wrap justify-center space-x-3 text-center lg:mb-20">
-        {tools.map((tool) => (
-          <Image
-            key={tool.name}
-            alt={`${tool.name} logo`}
-            width="40"
-            height="40"
-            src={tool.src}
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
-          />
-        ))}
+        {tools.map((tool) =>
+          tool.darkSrc ? (
+            <ThemedIcon
+              key={tool.name}
+              alt={`${tool.name} logo`}
+              width={40}
+              height={40}
+              src={tool.src}
+              darkSrc={tool.darkSrc}
+            />
+          ) : (
+            <Image
+              key={tool.name}
+              src={tool.src}
+              width="40"
+              height="40"
+              alt={`${tool.name} logo`}
+            />
+          )
+        )}
       </div>
     </>
   );

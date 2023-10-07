@@ -35,9 +35,10 @@ export default function ContactForm() {
         </label>
         <input
           type="text"
+          id="name"
           placeholder="Jiří Šimeček"
           autoComplete="name"
-          className="rounded-md border-2 px-5 py-3"
+          className="bg-bgColor border-bgColor rounded-md border-2 px-5 py-3"
           {...register("name", { required: true })}
           aria-invalid={errors.name ? "true" : "false"}
         />
@@ -51,9 +52,10 @@ export default function ContactForm() {
         </label>
         <input
           type="text"
+          id="email"
           placeholder="jirulak02@gmail.com"
           autoComplete="email"
-          className="rounded-md border-2 px-5 py-3"
+          className="bg-bgColor border-bgColor rounded-md border-2 px-5 py-3"
           {...register("email", { required: true, pattern: /^.+@.+\..+$/i })}
           aria-invalid={errors.email ? "true" : "false"}
         />
@@ -69,9 +71,10 @@ export default function ContactForm() {
           <span className="text-red-500">*</span>Message:
         </label>
         <textarea
+          id="message"
           rows={4}
           placeholder="Your message here"
-          className="rounded-md border-2 px-5 py-3"
+          className="bg-bgColor border-bgColor rounded-md border-2 px-5 py-3"
           {...register("message", { required: true })}
           aria-invalid={errors.message ? "true" : "false"}
         />
@@ -86,7 +89,7 @@ export default function ContactForm() {
           className={`mx-auto rounded-md border-2 px-5 py-3 font-semibold ${
             isSubmitting
               ? "cursor-not-allowed border-gray-300 bg-gray-400 text-gray-300"
-              : "border-lime-800 bg-lime-800 text-neutral-200 hover:bg-neutral-200 hover:text-lime-800"
+              : "border-priColor bg-priColor hover:text-priColor text-neutral-200 hover:bg-transparent"
           }`}
         >
           {isSubmitting ? "Submitting" : "Submit"}
@@ -97,7 +100,7 @@ export default function ContactForm() {
           success: {
             duration: 3000,
             position: "bottom-center",
-            className: "text-lg font-semibold h-16 w-80 border-2 border-lime-800",
+            className: "text-lg font-semibold h-16 w-80 border-2 border-priColor",
           },
           error: {
             duration: 3000,

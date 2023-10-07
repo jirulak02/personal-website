@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import Card from "../ui/Card";
 import Reveal from "../animations/Reveal";
+import ThemedIcon from "../ui/ThemedIcon";
 
 export default function GroupProjects() {
   return (
@@ -51,10 +52,11 @@ export default function GroupProjects() {
         <Reveal>
           <Card className="mx-auto max-w-sm">
             <div className="flex items-center space-x-1">
-              <Image
+              <ThemedIcon
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-                width="25"
-                height="25"
+                darkSrc="/HomePage/next.png"
+                width={25}
+                height={25}
                 alt="Nextjs logo"
               />
               <Image

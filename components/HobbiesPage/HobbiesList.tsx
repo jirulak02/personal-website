@@ -75,8 +75,6 @@ export default function HobbiesList() {
               height="75"
               quality={100}
               alt="Achievement medal"
-              placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
             />
             <p>{hobby.achievement}</p>
           </div>

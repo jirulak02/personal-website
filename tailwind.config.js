@@ -16,6 +16,13 @@ module.exports = {
           "100%": { transform: "scaleY(1)" },
         },
       },
+      colors: {
+        fgColor: "rgb(var(--foreground-rgb))",
+        bgColor: "rgb(var(--background-rgb))",
+        priColor: "rgb(var(--primary-rgb))",
+        secColor: "rgb(var(--secondary-rgb))",
+        shadowColor: "rgb(var(--shadow-rgb))",
+      },
     },
   },
   plugins: [],
