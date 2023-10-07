@@ -49,12 +49,12 @@ export default function Header({ normal }: HeaderProps) {
             width="28"
             height="20"
             viewBox="0 0 28 20"
-            fill="none"
+            fill="rgb(var(--foreground-rgb))"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect width="28" height="4" rx="2" fill="#262626" />
-            <rect y="8" width="28" height="4" rx="2" fill="#262626" />
-            <rect y="16" width="28" height="4" rx="2" fill="#262626" />
+            <rect width="28" height="4" rx="2" />
+            <rect y="8" width="28" height="4" rx="2" />
+            <rect y="16" width="28" height="4" rx="2" />
           </svg>
         </div>
         <nav className="hidden space-x-1 sm:flex">
