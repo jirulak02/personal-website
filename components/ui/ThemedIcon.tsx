@@ -10,7 +10,7 @@ type ThemedIconProps = {
   height?: number;
   src: string;
   darkSrc?: string;
-  logo?: boolean;
+  isLogo?: boolean;
   sizes?: string;
 };
 
@@ -20,11 +20,11 @@ export default function ThemedIcon({
   height,
   src,
   darkSrc,
-  logo,
+  isLogo,
   sizes,
 }: ThemedIconProps) {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -34,9 +34,9 @@ export default function ThemedIcon({
     return null;
   }
 
-  return logo ? (
+  return isLogo ? (
     <Image
-      src={theme === "light" ? src : darkSrc || src}
+      src={resolvedTheme === "light" ? src : darkSrc || src}
       fill
       sizes={sizes}
       className="object-contain"
@@ -45,6 +45,11 @@ export default function ThemedIcon({
       priority
     />
   ) : (
-    <Image src={theme === "light" ? src : darkSrc || src} width={width} height={height} alt={alt} />
+    <Image
+      src={resolvedTheme === "light" ? src : darkSrc || src}
+      width={width}
+      height={height}
+      alt={alt}
+    />
   );
 }

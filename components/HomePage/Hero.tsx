@@ -30,7 +30,7 @@ export default function Hero() {
       <div className="m-auto mt-5 flex h-10 w-full items-center justify-center lg:justify-end lg:pr-8">
         <div className="relative h-6 w-32 md:h-8 md:w-40 lg:h-9 lg:w-48">
           <ThemedIcon
-            logo
+            isLogo
             src="/HomePage/vse-logo.png"
             darkSrc="/HomePage/vse-logo-white.png"
             sizes="360px"
@@ -39,7 +39,7 @@ export default function Hero() {
         </div>
         <div className="relative ml-4 h-6 w-20 md:h-8 lg:h-9 lg:w-28">
           <ThemedIcon
-            logo
+            isLogo
             src="/HomePage/42prague-logo.png"
             darkSrc="/HomePage/42prague-logo-white.png"
             sizes="186px"

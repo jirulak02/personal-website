@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 
 export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -17,10 +17,10 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       className="hover:bg-secColor rounded-full p-2"
     >
-      {theme === "light" ? (
+      {resolvedTheme === "light" ? (
         <svg viewBox="0 0 24 24" width="24" height="24">
           <path
             fill="rgb(var(--foreground-rgb))"
