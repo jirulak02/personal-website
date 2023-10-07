@@ -1,9 +1,11 @@
 import Image from "next/image";
+import ThemedIcon from "../ui/ThemedIcon";
 
 const links = [
   {
     name: "GitHub",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    darkSrc: "/github-logo.png",
     href: "https://github.com/jirulak02",
   },
   {
@@ -22,7 +24,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="sm:justify-right z-10 mt-auto w-full border-t-2 border-slate-800 bg-neutral-100">
+    <footer className="sm:justify-right border-fgColor bg-bgColor z-10 mt-auto w-full border-t-2">
       <div className="m-auto flex h-16 max-w-6xl items-center justify-between px-3">
         <div>
           <p>Copyright © {new Date().getFullYear()}</p>
@@ -30,7 +32,17 @@ export default function Footer() {
         <div className="flex gap-4">
           {links.map((link) => (
             <a href={link.href} key={link.name} target="_blank" rel="noopener noreferrer">
-              <Image alt={link.name} width="25" height="25" quality={100} src={link.src} />
+              {link.darkSrc ? (
+                <ThemedIcon
+                  alt={link.name}
+                  width={25}
+                  height={25}
+                  src={link.src}
+                  darkSrc={link.darkSrc}
+                />
+              ) : (
+                <Image alt={link.name} width="25" height="25" src={link.src} />
+              )}
             </a>
           ))}
         </div>

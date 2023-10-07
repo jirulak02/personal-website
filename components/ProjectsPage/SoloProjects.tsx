@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import Card from "../ui/Card";
 import Reveal from "../animations/Reveal";
+import ThemedIcon from "../ui/ThemedIcon";
 
 export default function SoloProjects() {
   return (
@@ -55,7 +56,7 @@ export default function SoloProjects() {
                 href="https://github.com/jirulak02/Sudoku/raw/main/Sudoku.exe"
                 className="inline-block w-48 rounded-3xl md:w-56"
               >
-                <div className="rounded-3xl border-2 border-lime-800 bg-lime-800 py-2 text-lg text-neutral-200 hover:bg-neutral-200 hover:text-lime-800 sm:text-xl md:text-2xl">
+                <div className="border-priColor bg-priColor hover:text-priColor rounded-3xl border-2 py-2 text-lg text-neutral-100 hover:bg-transparent sm:text-xl md:text-2xl">
                   Download game
                 </div>
               </a>
@@ -65,10 +66,11 @@ export default function SoloProjects() {
         <Reveal>
           <Card className="mx-auto max-w-sm">
             <div className="flex items-center space-x-1">
-              <Image
+              <ThemedIcon
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-                width="25"
-                height="25"
+                darkSrc="/HomePage/next.png"
+                width={25}
+                height={25}
                 alt="Nextjs logo"
               />
               <Image
@@ -108,10 +110,11 @@ export default function SoloProjects() {
         <Reveal>
           <Card className="mx-auto max-w-sm">
             <div className="flex items-center space-x-1">
-              <Image
+              <ThemedIcon
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-                width="25"
-                height="25"
+                darkSrc="/HomePage/next.png"
+                width={25}
+                height={25}
                 alt="Nextjs logo"
               />
               <Image

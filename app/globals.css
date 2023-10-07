@@ -5,23 +5,26 @@
 :root {
   --foreground-rgb: 38, 38, 38;
   --background-rgb: 245, 245, 245;
+  --primary-rgb: 63, 98, 18;
+  --secondary-rgb: 229, 229, 229;
+  --shadow-rgb: 163, 163, 163;
 }
 
 ::selection {
   color: rgb(245, 245, 245);
-  background: rgb(63 98 18);
+  background: rgb(var(--primary-rgb));
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 245, 245, 245;
-    --background-rgb: 38, 38, 38;
-  }
-} */
+[data-theme="dark"] {
+  --foreground-rgb: 245, 245, 245;
+  --background-rgb: 38, 38, 38;
+  --primary-rgb: 77, 124, 15;
+  --secondary-rgb: 64, 64, 64;
+  --shadow-rgb: 10, 10, 10;
+}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  @apply bg-bgColor text-fgColor;
 }
 
 .font-medium {

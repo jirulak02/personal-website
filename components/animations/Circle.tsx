@@ -56,7 +56,7 @@ export default function Circle({ amount, name }: CircleProps) {
         <motion.svg width="100" height="100" initial="hidden" animate={controls}>
           <motion.circle
             className="origin-center -rotate-90"
-            stroke="rgb(63 98 18)"
+            stroke="rgb(var(--primary-rgb))"
             strokeWidth="20"
             fill="transparent"
             r="40"
@@ -77,7 +77,7 @@ export default function Circle({ amount, name }: CircleProps) {
             }}
           />
           <motion.circle
-            stroke="rgb(63 98 18)"
+            stroke="rgb(var(--primary-rgb))"
             strokeWidth="2"
             fill="transparent"
             r="49"
@@ -85,7 +85,7 @@ export default function Circle({ amount, name }: CircleProps) {
             cy="50"
           />
           <motion.circle
-            stroke="rgb(63 98 18)"
+            stroke="rgb(var(--primary-rgb))"
             strokeWidth="2"
             fill="transparent"
             r="30"

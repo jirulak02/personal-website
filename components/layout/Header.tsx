@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
+import ThemeSwitcher from "../utils/ThemeSwitcher";
 
 const links = [
   { path: "/", name: "Home" },
@@ -28,18 +29,21 @@ export default function Header({ normal }: HeaderProps) {
     <header
       className={`${
         normal ? "fixed z-30" : "absolute top-0 z-50"
-      } sm:justify-right w-full bg-neutral-100 sm:border-b-2 sm:border-slate-800`}
+      } sm:justify-right bg-bgColor sm:border-fgColor w-full sm:border-b-2`}
     >
-      <div className="m-auto flex h-16 max-w-6xl items-center justify-between border-b-2 border-slate-800 sm:border-none">
-        {normal ? (
-          <Link className="px-3 py-2 text-base font-semibold sm:text-xl md:text-2xl" href="/">
-            Jiří Šimeček
-          </Link>
-        ) : (
-          <a className="px-3 py-2 text-base font-semibold sm:text-xl md:text-2xl" href="/">
-            Jiří Šimeček
-          </a>
-        )}
+      <div className="border-fgColor m-auto flex h-16 max-w-6xl items-center justify-between border-b-2 sm:border-none">
+        <div className="flex items-center space-x-1">
+          {normal ? (
+            <Link className="px-3 py-2 text-base font-semibold sm:text-xl md:text-2xl" href="/">
+              Jiří Šimeček
+            </Link>
+          ) : (
+            <a className="px-3 py-2 text-base font-semibold sm:text-xl md:text-2xl" href="/">
+              Jiří Šimeček
+            </a>
+          )}
+          <ThemeSwitcher />
+        </div>
         <div className="cursor-pointer p-5 sm:hidden" onClick={toggleHandler}>
           <svg
             width="28"
@@ -58,8 +62,8 @@ export default function Header({ normal }: HeaderProps) {
             normal ? (
               <Link
                 key={link.path}
-                className={`border-b-2 border-neutral-100 px-3 py-2 font-medium hover:border-neutral-800 ${
-                  pathname === link.path && "border-neutral-800"
+                className={`border-bgColor hover:border-fgColor border-b-2 px-3 py-2 font-medium ${
+                  pathname === link.path && "border-fgColor"
                 }`}
                 href={link.path}
               >
@@ -68,7 +72,7 @@ export default function Header({ normal }: HeaderProps) {
             ) : (
               <a
                 key={link.path}
-                className="border-b-2 border-neutral-100 px-3 py-2 font-medium hover:border-neutral-800"
+                className="border-bgColor hover:border-fgColor border-b-2 px-3 py-2 font-medium"
                 href={link.path}
               >
                 {link.name}
@@ -83,7 +87,7 @@ export default function Header({ normal }: HeaderProps) {
             normal ? (
               <Link
                 key={link.path}
-                className="block border-b border-neutral-800 py-4 text-center font-medium hover:bg-neutral-200 sm:hidden"
+                className="border-fgColor hover:bg-secColor block border-b py-4 text-center font-medium sm:hidden"
                 href={link.path}
                 onClick={toggleHandler}
               >
@@ -92,7 +96,7 @@ export default function Header({ normal }: HeaderProps) {
             ) : (
               <a
                 key={link.path}
-                className="block border-b border-neutral-800 py-4 text-center font-medium hover:bg-neutral-200 sm:hidden"
+                className="border-fgColor hover:bg-secColor block border-b py-4 text-center font-medium sm:hidden"
                 href={link.path}
                 onClick={toggleHandler}
               >

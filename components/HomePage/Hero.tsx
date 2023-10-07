@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Button from "../ui/Button";
+import ThemedIcon from "../ui/ThemedIcon";
 
 export default function Hero() {
   return (
@@ -28,27 +29,21 @@ export default function Hero() {
       </div>
       <div className="m-auto mt-5 flex h-10 w-full items-center justify-center lg:justify-end lg:pr-8">
         <div className="relative h-6 w-32 md:h-8 md:w-40 lg:h-9 lg:w-48">
-          <Image
+          <ThemedIcon
+            logo
             src="/HomePage/vse-logo.png"
-            fill
+            darkSrc="/HomePage/vse-logo-white.png"
             sizes="360px"
-            className="object-contain"
             alt="Logo of Prague University of Economics and Business."
-            priority
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
           />
         </div>
         <div className="relative ml-4 h-6 w-20 md:h-8 lg:h-9 lg:w-28">
-          <Image
+          <ThemedIcon
+            logo
             src="/HomePage/42prague-logo.png"
-            fill
+            darkSrc="/HomePage/42prague-logo-white.png"
             sizes="186px"
-            className="object-contain"
             alt="Logo of 42 Prague school."
-            priority
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
           />
         </div>
       </div>
