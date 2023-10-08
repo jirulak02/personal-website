@@ -22,8 +22,8 @@ export default function OtherProjects() {
         <Reveal>
           <Card className="mx-auto max-w-sm">
             <p>
-              Currently I'm building client projects, planning a useful website with co-students at
-              school and so much more to come, tackling one after another.
+              Currently I'm building client projects, upgrading websites and getting into mobile
+              development.
             </p>
           </Card>
         </Reveal>

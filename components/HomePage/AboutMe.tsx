@@ -14,8 +14,8 @@ export default function AboutMe() {
             <p>I am always up for learning, trying out new challenges and growing as a person.</p>
             <p>One such challenge was spending a year with a host family in the United States.</p>
             <p>
-              Currently, I am getting started in the workforce while pursuing my education at 42
-              Prague.
+              Currently, I am focusing on my job as well as building personal projects on a daily
+              basis.
             </p>
             <div className="text-right">
               <Link href="/my-life" className="underline">
@@ -31,8 +31,8 @@ export default function AboutMe() {
             bonding activities such as bowling, gaming, or just going out for a beer.
           </p>
           <p>
-            For those who believe that you can learn a lot about someone from what they drink, my
-            favorite beer is Kozel 11°, but Plzeň is alright too I guess.
+            Recently, I found myself enjoying the taste of nonalcoholic beer, so I seized the
+            opportunity and started a 6-month challenge of not drinking alcohol.
           </p>
           <div className="text-right">
             <Link href="/hobbies" className="underline">
@@ -45,11 +45,11 @@ export default function AboutMe() {
             <h3>My projects</h3>
             <p>
               I have worked on a bunch of projects, from personal endeavors to client websites and
-              group projects as part of the 42 Prague school.{" "}
+              group projects as part of the 42 Prague school.
             </p>
             <p>
-              One of my most significant accomplishments to date was the launch of a fully
-              functional Sudoku app, which I coded in Python.
+              Currently, some of my biggest projects were production grade business websites, which
+              I made in Next.js.
             </p>
             <div className="text-right">
               <Link href="/projects" className="underline">
