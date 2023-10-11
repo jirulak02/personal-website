@@ -2,6 +2,7 @@
 
 import { Form, useForm } from "react-hook-form";
 import { toast, Toaster } from "react-hot-toast";
+import Button from "../ui/Button";
 
 export type ContactFormData = {
   name: string;
@@ -38,7 +39,7 @@ export default function ContactForm() {
           id="name"
           placeholder="Jiří Šimeček"
           autoComplete="name"
-          className="bg-bgColor border-bgColor rounded-md border-2 px-5 py-3"
+          className="rounded-md border-2 border-bgColor bg-bgColor px-5 py-3"
           {...register("name", { required: true })}
           aria-invalid={errors.name ? "true" : "false"}
         />
@@ -55,7 +56,7 @@ export default function ContactForm() {
           id="email"
           placeholder="jirulak02@gmail.com"
           autoComplete="email"
-          className="bg-bgColor border-bgColor rounded-md border-2 px-5 py-3"
+          className="rounded-md border-2 border-bgColor bg-bgColor px-5 py-3"
           {...register("email", { required: true, pattern: /^.+@.+\..+$/i })}
           aria-invalid={errors.email ? "true" : "false"}
         />
@@ -74,7 +75,7 @@ export default function ContactForm() {
           id="message"
           rows={4}
           placeholder="Your message here"
-          className="bg-bgColor border-bgColor rounded-md border-2 px-5 py-3"
+          className="rounded-md border-2 border-bgColor bg-bgColor px-5 py-3"
           {...register("message", { required: true })}
           aria-invalid={errors.message ? "true" : "false"}
         />
@@ -82,19 +83,9 @@ export default function ContactForm() {
           <p className="text-sm text-red-500">This field is required!</p>
         )}
       </div>
-      <div className="flex">
-        <button
-          type="submit"
-          {...(isSubmitting && { disabled: true })}
-          className={`mx-auto rounded-md border-2 px-5 py-3 font-semibold ${
-            isSubmitting
-              ? "cursor-not-allowed border-gray-300 bg-gray-400 text-gray-300"
-              : "border-priColor bg-priColor hover:text-priColor text-neutral-200 hover:bg-transparent"
-          }`}
-        >
-          {isSubmitting ? "Submitting" : "Submit"}
-        </button>
-      </div>
+      <Button submitButton isSubmitting={isSubmitting}>
+        {isSubmitting ? "Submitting" : "Submit"}
+      </Button>
       <Toaster
         toastOptions={{
           success: {

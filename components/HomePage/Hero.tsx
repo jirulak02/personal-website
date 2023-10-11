@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="col-span-4 space-y-3 text-center sm:mt-32">
           <h1>/the_next generati*n of tech t^lent.</h1>
           <h2>Jiří Šimeček</h2>
-          <Button />
+          <Button href="/contact">Contact me</Button>
         </div>
         <div className="relative order-first col-span-3 m-auto h-52 w-52 sm:order-last sm:h-full sm:w-full lg:h-96">
           <div className="absolute right-0 m-auto h-full w-full sm:float-right lg:h-96 lg:w-96">

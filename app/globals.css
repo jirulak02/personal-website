@@ -48,6 +48,7 @@ h4 {
 }
 
 p,
-a {
+a,
+label {
   @apply text-sm sm:text-base md:text-lg;
 }

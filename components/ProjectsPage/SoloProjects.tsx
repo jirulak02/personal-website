@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import Card from "../ui/Card";
 import ThemedIcon from "../ui/ThemedIcon";
+import Button from "../ui/Button";
 
 export default function SoloProjects() {
   return (
@@ -49,16 +50,9 @@ export default function SoloProjects() {
           >
             View the code{">"}
           </a>
-          <div className="text-center">
-            <a
-              href="https://github.com/jirulak02/Sudoku/raw/main/Sudoku.exe"
-              className="inline-block w-48 rounded-3xl md:w-56"
-            >
-              <div className="border-priColor bg-priColor hover:text-priColor rounded-3xl border-2 py-2 text-lg text-neutral-100 hover:bg-transparent sm:text-xl md:text-2xl">
-                Download game
-              </div>
-            </a>
-          </div>
+          <Button href="https://github.com/jirulak02/Sudoku/raw/main/Sudoku.exe">
+            Download game
+          </Button>
         </Card>
         <Card className="mx-auto max-w-sm">
           <div className="flex items-center space-x-1">

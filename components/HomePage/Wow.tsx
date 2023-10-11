@@ -14,7 +14,7 @@ export default function Wow() {
           this far, it is clear that you are genuinely interested in getting to know me better. I
           encourage you to seize this opportunity and reach out to me.
         </p>
-        <Button />
+        <Button href="/contact">Contact me</Button>
       </Card>
     </Reveal>
   );

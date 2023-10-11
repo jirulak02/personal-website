@@ -13,11 +13,14 @@ const links = [
   { path: "/contact", name: "Contact" },
 ];
 
-type HeaderProps = {
-  normal: boolean;
+type HeaderLinkProps = {
+  className: string;
+  href: string;
+  children: string;
+  onClick?: () => void;
 };
 
-export default function Header({ normal }: HeaderProps) {
+export default function Header({ normal }: { normal: boolean }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -25,23 +28,29 @@ export default function Header({ normal }: HeaderProps) {
     setOpen((prevState) => !prevState);
   };
 
+  const HeaderLink = ({ className, href, children, onClick }: HeaderLinkProps) => {
+    return normal ? (
+      <Link href={href} className={className} onClick={onClick}>
+        {children}
+      </Link>
+    ) : (
+      <a href={href} className={className} onClick={onClick}>
+        {children}
+      </a>
+    );
+  };
+
   return (
     <header
       className={`${
-        normal ? "fixed z-30" : "absolute top-0 z-50"
-      } sm:justify-right bg-bgColor sm:border-fgColor w-full sm:border-b-2`}
+        normal ? "z-30" : "z-50"
+      } sm:justify-right fixed top-0 w-full bg-bgColor sm:border-b-2 sm:border-fgColor`}
     >
-      <div className="border-fgColor m-auto flex h-16 max-w-6xl items-center justify-between border-b-2 sm:border-none">
+      <div className="m-auto flex h-16 max-w-6xl items-center justify-between border-b-2 border-fgColor sm:border-none">
         <div className="flex items-center space-x-1">
-          {normal ? (
-            <Link className="px-3 py-2 text-base font-semibold sm:text-xl md:text-2xl" href="/">
-              Jiří Šimeček
-            </Link>
-          ) : (
-            <a className="px-3 py-2 text-base font-semibold sm:text-xl md:text-2xl" href="/">
-              Jiří Šimeček
-            </a>
-          )}
+          <HeaderLink className="px-3 py-2 text-base font-semibold sm:text-xl md:text-2xl" href="/">
+            Jiří Šimeček
+          </HeaderLink>
           <ThemeSwitcher />
         </div>
         <div className="cursor-pointer p-5 sm:hidden" onClick={toggleHandler}>
@@ -58,52 +67,31 @@ export default function Header({ normal }: HeaderProps) {
           </svg>
         </div>
         <nav className="hidden space-x-1 sm:flex">
-          {links.map((link) =>
-            normal ? (
-              <Link
-                key={link.path}
-                className={`border-bgColor hover:border-fgColor border-b-2 px-3 py-2 font-medium ${
-                  pathname === link.path && "border-fgColor"
-                }`}
-                href={link.path}
-              >
-                {link.name}
-              </Link>
-            ) : (
-              <a
-                key={link.path}
-                className="border-bgColor hover:border-fgColor border-b-2 px-3 py-2 font-medium"
-                href={link.path}
-              >
-                {link.name}
-              </a>
-            )
-          )}
+          {links.map((link) => (
+            <HeaderLink
+              key={link.path}
+              className={`border-b-2 border-bgColor px-3 py-2 font-medium hover:border-fgColor ${
+                pathname === link.path && "border-fgColor"
+              }`}
+              href={link.path}
+            >
+              {link.name}
+            </HeaderLink>
+          ))}
         </nav>
       </div>
       {open && (
         <nav className="origin-top animate-[dropdown_200ms_ease-out_forwards] motion-reduce:animate-none">
-          {links.map((link) =>
-            normal ? (
-              <Link
-                key={link.path}
-                className="border-fgColor hover:bg-secColor block border-b py-4 text-center font-medium sm:hidden"
-                href={link.path}
-                onClick={toggleHandler}
-              >
-                {link.name}
-              </Link>
-            ) : (
-              <a
-                key={link.path}
-                className="border-fgColor hover:bg-secColor block border-b py-4 text-center font-medium sm:hidden"
-                href={link.path}
-                onClick={toggleHandler}
-              >
-                {link.name}
-              </a>
-            )
-          )}
+          {links.map((link) => (
+            <HeaderLink
+              key={link.path}
+              className="block border-b border-fgColor py-4 text-center font-medium hover:bg-secColor sm:hidden"
+              href={link.path}
+              onClick={toggleHandler}
+            >
+              {link.name}
+            </HeaderLink>
+          ))}
         </nav>
       )}
     </header>
