@@ -12,6 +12,7 @@ export default function Reveal({ children, className }: RevealProps) {
   const motionRef = useRef(null);
   const isInView = useInView(motionRef, { once: true });
   const controls = useAnimation();
+  const javaScriptEnabled = typeof window !== "undefined";
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -35,7 +36,7 @@ export default function Reveal({ children, className }: RevealProps) {
         hidden: { opacity: 0.5, y: 50 },
         visible: { opacity: 1, y: 0 },
       }}
-      initial="hidden"
+      initial={javaScriptEnabled ? "hidden" : "visible"}
       animate={controls}
       transition={{ duration: 0.5, delay: 0.2 }}
     >

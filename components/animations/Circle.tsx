@@ -21,6 +21,7 @@ export default function Circle({ amount, name }: CircleProps) {
   const count = useMotionValue(0);
   const rounded = useTransform(count, Math.round);
   const controls = useAnimation();
+  const javaScriptEnabled = typeof window !== "undefined";
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -51,9 +52,14 @@ export default function Circle({ amount, name }: CircleProps) {
           ref={circleRef}
           className="absolute m-0.5 flex h-24 w-24 items-center justify-center text-2xl"
         >
-          {rounded}
+          {javaScriptEnabled ? rounded : amount}
         </motion.div>
-        <motion.svg width="100" height="100" initial="hidden" animate={controls}>
+        <motion.svg
+          width="100"
+          height="100"
+          initial={javaScriptEnabled ? "hidden" : "visible"}
+          animate={controls}
+        >
           <motion.circle
             className="origin-center -rotate-90"
             stroke="rgb(var(--primary-rgb))"
