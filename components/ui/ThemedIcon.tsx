@@ -23,15 +23,27 @@ export default function ThemedIcon({
   isLogo,
   sizes,
 }: ThemedIconProps) {
-  const [mounted, setMounted] = useState(false);
+  const [isClient, setIsClient] = useState(false);
   const { resolvedTheme } = useTheme();
 
   useEffect(() => {
-    setMounted(true);
+    setIsClient(true);
   }, []);
 
-  if (!mounted) {
-    return null;
+  if (!isClient) {
+    return isLogo ? (
+      <Image
+        src={src}
+        fill
+        sizes={sizes}
+        className="object-contain"
+        alt={alt}
+        quality={100}
+        priority
+      />
+    ) : (
+      <Image src={src} width={width} height={height} alt={alt} />
+    );
   }
 
   return isLogo ? (

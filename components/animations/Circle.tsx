@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import {
   motion,
   useMotionValue,
@@ -16,33 +16,33 @@ type CircleProps = {
 };
 
 export default function Circle({ amount, name }: CircleProps) {
+  const [isClient, setIsClient] = useState(false);
   const circleRef = useRef(null);
   const isInView = useInView(circleRef, { once: true });
   const count = useMotionValue(0);
   const rounded = useTransform(count, Math.round);
   const controls = useAnimation();
-  const javaScriptEnabled = typeof window !== "undefined";
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    controls.set("hidden");
+    setIsClient(true);
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-      if (!prefersReducedMotion) {
-        if (isInView) {
-          controls.start("visible");
-          const animation = animate(count, amount, {
-            duration: 2,
-            delay: 0.25,
-          });
+    if (!prefersReducedMotion) {
+      if (isInView) {
+        controls.start("visible");
+        const animation = animate(count, amount, {
+          duration: 2,
+          delay: 0.25,
+        });
 
-          return () => animation.stop();
-        }
-      } else {
-        count.set(amount);
-        controls.set("visible");
+        return () => animation.stop();
       }
+    } else {
+      count.set(amount);
+      controls.set("visible");
     }
-  }, [isInView, controls, count, amount]);
+  }, [isInView, controls, count, amount, setIsClient]);
 
   return (
     <div className="w-32">
@@ -52,14 +52,9 @@ export default function Circle({ amount, name }: CircleProps) {
           ref={circleRef}
           className="absolute m-0.5 flex h-24 w-24 items-center justify-center text-2xl"
         >
-          {javaScriptEnabled ? rounded : amount}
+          {isClient ? rounded : amount}
         </motion.div>
-        <motion.svg
-          width="100"
-          height="100"
-          initial={javaScriptEnabled ? "hidden" : "visible"}
-          animate={controls}
-        >
+        <motion.svg width="100" height="100" initial="visible" animate={controls}>
           <motion.circle
             className="origin-center -rotate-90"
             stroke="rgb(var(--primary-rgb))"

@@ -3,6 +3,7 @@
 import { Form, useForm } from "react-hook-form";
 import { toast, Toaster } from "react-hot-toast";
 import Button from "../ui/Button";
+import { useEffect, useState } from "react";
 
 export type ContactFormData = {
   name: string;
@@ -11,11 +12,16 @@ export type ContactFormData = {
 };
 
 export default function ContactForm() {
+  const [isClient, setIsClient] = useState(false);
   const {
     register,
     control,
     formState: { errors, isSubmitting },
   } = useForm<ContactFormData>();
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <Form
@@ -83,8 +89,8 @@ export default function ContactForm() {
           <p className="text-sm text-red-500">This field is required!</p>
         )}
       </div>
-      <Button submitButton isSubmitting={isSubmitting}>
-        {isSubmitting ? "Submitting" : "Submit"}
+      <Button submitButton isSubmitting={isClient ? isSubmitting : true}>
+        {isClient ? (isSubmitting ? "Submitting" : "Submit") : "Waiting for JavaScript"}
       </Button>
       <Toaster
         toastOptions={{
