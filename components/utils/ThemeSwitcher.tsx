@@ -18,7 +18,7 @@ export default function ThemeSwitcher() {
   return (
     <button
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-      className="hover:bg-secColor rounded-full p-2"
+      className="rounded-full p-2 hover:bg-secColor"
     >
       {resolvedTheme === "light" ? (
         <svg viewBox="0 0 24 24" width="24" height="24">

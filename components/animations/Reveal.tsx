@@ -3,12 +3,13 @@
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-type RevealProps = {
+export default function Reveal({
+  children,
+  className,
+}: {
   children: React.ReactNode;
   className?: string;
-};
-
-export default function Reveal({ children, className }: RevealProps) {
+}) {
   const motionRef = useRef(null);
   const isInView = useInView(motionRef, { once: true });
   const controls = useAnimation();
