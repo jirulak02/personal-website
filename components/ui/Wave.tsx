@@ -1,8 +1,4 @@
-type WaveProps = {
-  rotated?: boolean;
-};
-
-export default function Wave({ rotated }: WaveProps) {
+export default function Wave({ rotated }: { rotated?: boolean }) {
   return (
     <div
       className={`relative ${rotated ? "bottom-px" : "top-px"}`}

@@ -4,16 +4,6 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 
-type ThemedIconProps = {
-  alt: string;
-  width?: number;
-  height?: number;
-  src: string;
-  darkSrc?: string;
-  isLogo?: boolean;
-  sizes?: string;
-};
-
 export default function ThemedIcon({
   alt,
   width,
@@ -22,7 +12,15 @@ export default function ThemedIcon({
   darkSrc,
   isLogo,
   sizes,
-}: ThemedIconProps) {
+}: {
+  alt: string;
+  width?: number;
+  height?: number;
+  src: string;
+  darkSrc?: string;
+  isLogo?: boolean;
+  sizes?: string;
+}) {
   const [isClient, setIsClient] = useState(false);
   const { resolvedTheme } = useTheme();
 

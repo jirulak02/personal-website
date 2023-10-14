@@ -1,20 +1,24 @@
 import Reveal from "../animations/Reveal";
 
-export type CardProps = {
+export default function Card({
+  children,
+  className,
+  white,
+  noPadding,
+  reveal,
+}: {
   children: React.ReactNode;
   className?: string;
   white?: boolean;
   noPadding?: boolean;
-  special?: boolean;
-};
-
-export default function Card({ children, className, white, noPadding, special }: CardProps) {
+  reveal?: boolean;
+}) {
   return (
     <div className={className}>
-      {special ? (
+      {reveal ? (
         <Reveal>
           <div
-            className={`shadow-shadowColor space-y-4 rounded-3xl shadow-lg bg-${
+            className={`space-y-4 rounded-3xl shadow-lg shadow-shadowColor bg-${
               white ? "bgColor" : "secColor"
             } ${!noPadding && "p-6"}`}
           >
@@ -23,7 +27,7 @@ export default function Card({ children, className, white, noPadding, special }:
         </Reveal>
       ) : (
         <div
-          className={`shadow-shadowColor space-y-4 rounded-3xl shadow-lg bg-${
+          className={`space-y-4 rounded-3xl shadow-lg shadow-shadowColor bg-${
             white ? "bgColor" : "secColor"
           } ${!noPadding && "p-6"}`}
         >

@@ -17,18 +17,19 @@ type HeaderLinkProps = {
   className: string;
   href: string;
   children: string;
+  onClick?: () => void;
 };
 
 export default function Header({ normal }: { normal: boolean }) {
   const pathname = usePathname();
 
-  const HeaderLink = ({ className, href, children }: HeaderLinkProps) => {
+  const HeaderLink = ({ className, href, children, onClick }: HeaderLinkProps) => {
     return normal ? (
-      <Link href={href} className={className}>
+      <Link href={href} className={className} onClick={onClick}>
         {children}
       </Link>
     ) : (
-      <a href={href} className={className}>
+      <a href={href} className={className} onClick={onClick}>
         {children}
       </a>
     );
@@ -63,7 +64,7 @@ export default function Header({ normal }: { normal: boolean }) {
             </HeaderLink>
           ))}
         </nav>
-        <details className="group absolute top-0 w-full sm:hidden">
+        <details className="group absolute top-0 w-full sm:hidden" id="navDropdown">
           <summary className="absolute right-0 m-0.5 cursor-pointer list-none p-5">
             <svg
               width="28"
@@ -83,6 +84,10 @@ export default function Header({ normal }: { normal: boolean }) {
                 key={link.path}
                 className="block border-b border-fgColor py-4 text-center font-medium hover:bg-secColor sm:hidden"
                 href={link.path}
+                onClick={() => {
+                  const navDropdown = document.getElementById("navDropdown") as HTMLDetailsElement;
+                  navDropdown.open = false;
+                }}
               >
                 {link.name}
               </HeaderLink>

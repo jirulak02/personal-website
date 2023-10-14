@@ -10,12 +10,7 @@ import {
   useAnimation,
 } from "framer-motion";
 
-type CircleProps = {
-  amount: number;
-  name: string;
-};
-
-export default function Circle({ amount, name }: CircleProps) {
+export default function Circle({ amount, name }: { amount: number; name: string }) {
   const [isClient, setIsClient] = useState(false);
   const circleRef = useRef(null);
   const isInView = useInView(circleRef, { once: true });

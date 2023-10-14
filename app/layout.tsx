@@ -8,11 +8,7 @@ import ThemeProvider from "@/components/utils/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
-export type Children = {
-  children: React.ReactNode;
-};
-
-export default function RootLayout({ children }: Children) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} font-sans`} suppressHydrationWarning>
       <body className="relative flex min-h-screen flex-col">
