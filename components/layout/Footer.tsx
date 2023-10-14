@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import ThemedIcon from "../ui/ThemedIcon";
 
 const links = [
@@ -24,7 +25,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="sm:justify-right border-fgColor bg-bgColor z-10 mt-auto w-full border-t-2">
+    <footer className="sm:justify-right z-10 mt-auto w-full border-t-2 border-fgColor bg-bgColor">
       <div className="m-auto flex h-16 max-w-6xl items-center justify-between px-3">
         <div>
           <p>Copyright © {new Date().getFullYear()}</p>

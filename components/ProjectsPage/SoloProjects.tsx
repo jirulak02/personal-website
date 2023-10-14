@@ -71,7 +71,7 @@ export default function SoloProjects() {
             />
             <h4>Matěj Šimeček</h4>
           </div>
-          <div className="flex min-w-max justify-center">
+          <div className="flex justify-center">
             <Image
               style={{ width: "280px" }}
               src="/ProjectsPage/matej-simecek.png"
@@ -83,7 +83,7 @@ export default function SoloProjects() {
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
             />
           </div>
-          <p>A business website for a financial advisor.</p>
+          <p>A one page business website for a financial advisor.</p>
           <a
             href="https://github.com/jirulak02/Matej-simecek"
             className="block underline"

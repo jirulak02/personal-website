@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import Card from "../ui/Card";
-import Reveal from "../animations/Reveal";
 import ThemedIcon from "../ui/ThemedIcon";
 
 export default function GroupProjects() {

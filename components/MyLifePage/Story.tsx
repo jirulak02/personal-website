@@ -9,7 +9,7 @@ export default function Story() {
             <h3>2002 - 2014</h3>
             <p>Born and raised in the Czech Republic.</p>
           </div>
-          <div className="border-fgColor col-span-1 hidden min-w-max items-center justify-center border-l-2 md:flex">
+          <div className="col-span-1 hidden min-w-max items-center justify-center border-l-2 border-fgColor md:flex">
             <h2>0x1</h2>
           </div>
         </div>
@@ -31,7 +31,7 @@ export default function Story() {
         </div>
         <Card noPadding className="relative z-10">
           <div className="grid gap-6 md:grid-cols-4 lg:grid-cols-5">
-            <div className="border-fgColor col-span-1 hidden min-w-max items-center justify-center border-r-2 md:flex">
+            <div className="col-span-1 hidden min-w-max items-center justify-center border-r-2 border-fgColor md:flex">
               <h2>0x2</h2>
             </div>
             <div className="col-span-3 space-y-3 p-6 md:pl-0 lg:col-span-4">
@@ -65,7 +65,7 @@ export default function Story() {
                 improved my English language skills and broadened my perspective on life.
               </p>
             </div>
-            <div className="border-fgColor col-span-1 hidden min-w-max items-center justify-center border-l-2 md:flex">
+            <div className="col-span-1 hidden min-w-max items-center justify-center border-l-2 border-fgColor md:flex">
               <h2>0x3</h2>
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function Story() {
         </div>
         <Card noPadding className="relative z-10">
           <div className="grid gap-6 md:grid-cols-4 lg:grid-cols-5">
-            <div className="border-fgColor col-span-1 hidden min-w-max items-center justify-center border-r-2 md:flex">
+            <div className="col-span-1 hidden min-w-max items-center justify-center border-r-2 border-fgColor md:flex">
               <h2>0x4</h2>
             </div>
             <div className="col-span-3 space-y-3 p-6 md:pl-0 lg:col-span-4">
@@ -137,7 +137,7 @@ export default function Story() {
                 and TypeScript.
               </p>
             </div>
-            <div className="border-fgColor col-span-1 hidden min-w-max items-center justify-center border-l-2 md:flex">
+            <div className="col-span-1 hidden min-w-max items-center justify-center border-l-2 border-fgColor md:flex">
               <h2>0x5</h2>
             </div>
           </div>
@@ -160,7 +160,7 @@ export default function Story() {
         </div>
         <Card noPadding className="relative z-10">
           <div className="grid gap-6 md:grid-cols-4 lg:grid-cols-5">
-            <div className="border-fgColor col-span-1 hidden min-w-max items-center justify-center border-r-2 md:flex">
+            <div className="col-span-1 hidden min-w-max items-center justify-center border-r-2 border-fgColor md:flex">
               <h2>'\0'</h2>
             </div>
             <div className="col-span-3 space-y-3 p-6 md:pl-0 lg:col-span-4">
