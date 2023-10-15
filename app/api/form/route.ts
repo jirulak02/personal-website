@@ -1,13 +1,13 @@
+import { log } from "next-axiom";
+
 import { ContactFormData } from "@/components/ContactPage/ContactForm";
 import { mailOptions, transporter } from "@/lib/nodemailer";
-
-type FieldsType = {
-  [key: string]: string;
-};
 
 export async function POST(req: Request) {
   const data: ContactFormData = await req.json();
   if (!data.name || !data.email || !data.message) {
+    log.error("Invalid form got past client side checks and hit api.", data);
+
     return new Response("Invalid form", {
       status: 400,
     });
@@ -24,14 +24,16 @@ export async function POST(req: Request) {
     return new Response("Success", {
       status: 200,
     });
-  } catch (e) {
+  } catch (error) {
+    log.error("Error sending mail.", { error });
+
     return new Response("Error", {
       status: 500,
     });
   }
 }
 
-const ContactMessageFields: FieldsType = {
+const ContactMessageFields: { [key: string]: string } = {
   name: "Name:",
   email: "Email:",
   message: "Message:",
