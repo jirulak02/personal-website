@@ -1,4 +1,5 @@
 export { useReportWebVitals } from "next-axiom";
+import { AxiomWebVitals } from "next-axiom";
 import { Inter } from "next/font/google";
 
 import "./globals.css";
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className="pt-16">{children}</main>
           <Footer />
         </ThemeProvider>
+        <AxiomWebVitals />
       </body>
     </html>
   );

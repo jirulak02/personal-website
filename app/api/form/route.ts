@@ -20,6 +20,7 @@ export async function POST(req: Request) {
       ...generateEmailContent(escapedData),
       subject: "Formulář z osobního webu",
     });
+    log.info("Email sent.", escapedData);
 
     return new Response("Success", {
       status: 200,
