@@ -1,6 +1,6 @@
 import { log } from "next-axiom";
 
-import { ContactFormData } from "@/components/ContactPage/ContactForm";
+import { ContactFormData } from "@/components/pages/ContactPage/ContactForm";
 import { mailOptions, transporter } from "@/lib/nodemailer";
 
 export async function POST(req: Request) {

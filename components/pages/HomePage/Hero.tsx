@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import Button from "../ui/Button";
-import ThemedIcon from "../ui/ThemedIcon";
+import Button from "../../ui/Button";
+import ThemedIcon from "../../ui/ThemedIcon";
 
 export default function Hero() {
   return (

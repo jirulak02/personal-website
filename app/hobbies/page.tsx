@@ -1,4 +1,4 @@
-import HobbiesList from "@/components/HobbiesPage/HobbiesList";
+import HobbiesList from "@/components/pages/HobbiesPage/HobbiesList";
 import Container from "@/components/layout/Container";
 import ScrollUp from "@/components/layout/ScrollUp";
 import Title from "@/components/ui/Title";

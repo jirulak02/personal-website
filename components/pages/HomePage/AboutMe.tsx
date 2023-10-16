@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import Card from "../ui/Card";
+import Card from "../../ui/Card";
 
 export default function AboutMe() {
   return (

@@ -4,7 +4,7 @@ import { Form, useForm } from "react-hook-form";
 import { toast, Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
 
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
 export type ContactFormData = {
   name: string;

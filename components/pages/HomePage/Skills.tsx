@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import Circle from "../animations/Circle";
-import ThemedIcon from "../ui/ThemedIcon";
+import Circle from "../../animations/Circle";
+import ThemedIcon from "../../ui/ThemedIcon";
 
 const skills = [
   { name: "TypeScript", amount: 65 },

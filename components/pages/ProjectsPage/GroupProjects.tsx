@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import Card from "../ui/Card";
-import ThemedIcon from "../ui/ThemedIcon";
+import Card from "../../ui/Card";
+import ThemedIcon from "../../ui/ThemedIcon";
 
 export default function GroupProjects() {
   return (

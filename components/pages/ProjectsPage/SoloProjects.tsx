@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import Card from "../ui/Card";
-import ThemedIcon from "../ui/ThemedIcon";
-import Button from "../ui/Button";
+import Card from "../../ui/Card";
+import ThemedIcon from "../../ui/ThemedIcon";
+import Button from "../../ui/Button";
 
 export default function SoloProjects() {
   return (

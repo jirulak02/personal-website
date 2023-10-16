@@ -1,4 +1,4 @@
-import Story from "@/components/MyLifePage/Story";
+import Story from "@/components/pages/MyLifePage/Story";
 import Container from "@/components/layout/Container";
 import ScrollUp from "@/components/layout/ScrollUp";
 import Title from "@/components/ui/Title";
