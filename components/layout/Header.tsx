@@ -65,7 +65,7 @@ export default function Header({ normal }: { normal: boolean }) {
           ))}
         </nav>
         <details className="group absolute top-0 w-full sm:hidden" id="navDropdown">
-          <summary className="absolute right-0 m-0.5 cursor-pointer list-none p-5">
+          <summary className="absolute right-0 m-0.5 cursor-pointer list-none p-5 marker:hidden">
             <svg
               width="28"
               height="20"
