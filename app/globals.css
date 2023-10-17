@@ -15,6 +15,10 @@
   background: rgb(var(--primary-rgb));
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
 [data-theme="dark"] {
   --foreground-rgb: 245, 245, 245;
   --background-rgb: 38, 38, 38;
