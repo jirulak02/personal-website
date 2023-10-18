@@ -15,10 +15,6 @@
   background: rgb(var(--primary-rgb));
 }
 
-summary::-webkit-details-marker {
-  display: none;
-}
-
 [data-theme="dark"] {
   --foreground-rgb: 245, 245, 245;
   --background-rgb: 38, 38, 38;
@@ -29,6 +25,10 @@ summary::-webkit-details-marker {
 
 body {
   @apply bg-bgColor text-fgColor;
+}
+
+#navDropdown > summary::-webkit-details-marker {
+  display: none;
 }
 
 .font-medium {

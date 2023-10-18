@@ -1,4 +1,3 @@
-export { useReportWebVitals } from "next-axiom";
 import { AxiomWebVitals } from "next-axiom";
 import { Inter } from "next/font/google";
 

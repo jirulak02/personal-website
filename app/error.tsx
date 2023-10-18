@@ -1,11 +1,13 @@
 "use client";
 
-import { log } from "next-axiom";
+import { useLogger } from "next-axiom";
 
 import Header from "@/components/layout/Header";
 import Button from "@/components/ui/Button";
 
 export default function Error({ error, reset }: { error: Error; reset: () => void }) {
+  const log = useLogger();
+
   log.error("Error caught in app/error.tsx", error);
 
   return (

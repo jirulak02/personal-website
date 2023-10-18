@@ -1,12 +1,12 @@
-import { log } from "next-axiom";
+import { withAxiom, AxiomRequest } from "next-axiom";
 
 import { ContactFormData } from "@/components/pages/ContactPage/ContactForm";
 import { mailOptions, transporter } from "@/lib/nodemailer";
 
-export async function POST(req: Request) {
+export const POST = withAxiom(async (req: AxiomRequest) => {
   const data: ContactFormData = await req.json();
   if (!data.name || !data.email || !data.message) {
-    log.error("Invalid form got past client side checks and hit api.", data);
+    req.log.error("Invalid form got past client side checks and hit api.", data);
 
     return new Response("Invalid form", {
       status: 400,
@@ -20,19 +20,19 @@ export async function POST(req: Request) {
       ...generateEmailContent(escapedData),
       subject: "Formulář z osobního webu",
     });
-    log.info("Email sent.", escapedData);
+    req.log.info("Email sent.", escapedData);
 
     return new Response("Success", {
       status: 200,
     });
   } catch (error) {
-    log.error("Error sending mail.", { error });
+    req.log.error("Error sending mail.", { error });
 
     return new Response("Error", {
       status: 500,
     });
   }
-}
+});
 
 const ContactMessageFields: { [key: string]: string } = {
   name: "Name:",
