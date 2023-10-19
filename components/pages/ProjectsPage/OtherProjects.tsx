@@ -17,10 +17,7 @@ export default function OtherProjects() {
           </a>
         </Card>
         <Card reveal className="mx-auto max-w-sm">
-          <p>
-            Currently I'm building client projects, upgrading websites and getting into mobile
-            development.
-          </p>
+          <p>Currently I'm upgrading my current projects and websites.</p>
         </Card>
       </div>
     </section>
