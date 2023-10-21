@@ -43,14 +43,14 @@ export default function SoloProjects() {
           </div>
           <p>A fully functional Sudoku game application for Windows.</p>
           <a
-            href="https://github.com/jirulak02/Sudoku"
+            href="https://github.com/jirulak02/sudoku"
             className="block underline"
             target="_blank"
             rel="noopener noreferrer"
           >
             View the code{">"}
           </a>
-          <Button href="https://github.com/jirulak02/Sudoku/raw/main/Sudoku.exe">
+          <Button href="https://github.com/jirulak02/sudoku/raw/main/Sudoku.exe">
             Download game
           </Button>
         </Card>
@@ -85,7 +85,7 @@ export default function SoloProjects() {
           </div>
           <p>A one page business website for a financial advisor.</p>
           <a
-            href="https://github.com/jirulak02/Matej-simecek"
+            href="https://github.com/jirulak02/matej-simecek"
             className="block underline"
             target="_blank"
             rel="noopener noreferrer"
@@ -127,7 +127,7 @@ export default function SoloProjects() {
           </div>
           <p>A business website for a client, who specialises in building green roofs.</p>
           <a
-            href="https://github.com/jirulak02/Zelene-staveni"
+            href="https://github.com/jirulak02/zelene-staveni"
             className="block underline"
             target="_blank"
             rel="noopener noreferrer"

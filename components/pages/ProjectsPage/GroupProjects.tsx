@@ -35,7 +35,7 @@ export default function GroupProjects() {
             limited code capabilities, because of the CMS resources.
           </p>
           <a
-            href="https://github.com/jirulak02/Rugby-ricany"
+            href="https://github.com/jirulak02/rugby-ricany"
             className="block underline"
             target="_blank"
             rel="noopener noreferrer"
