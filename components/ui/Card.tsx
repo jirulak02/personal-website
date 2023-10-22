@@ -14,7 +14,7 @@ export default function Card({
   reveal?: boolean;
 }) {
   return (
-    <div className={className}>
+    <div className={className || ""}>
       {reveal ? (
         <Reveal>
           <div

@@ -1,6 +1,6 @@
 import { withAxiom, AxiomRequest } from "next-axiom";
 
-import { ContactFormData } from "@/components/pages/ContactPage/ContactForm";
+import { ContactFormData } from "@/components/pages/Contact/ContactForm";
 import { mailOptions, transporter } from "@/lib/nodemailer";
 
 export const POST = withAxiom(async (req: AxiomRequest) => {

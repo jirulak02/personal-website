@@ -10,6 +10,7 @@ const links = [
   { path: "/my-life", name: "My life" },
   { path: "/hobbies", name: "Hobbies" },
   { path: "/projects", name: "Projects" },
+  { path: "/blog", name: "Blog" },
   { path: "/contact", name: "Contact" },
 ];
 
@@ -55,8 +56,14 @@ export default function Header({ normal }: { normal: boolean }) {
           {links.map((link) => (
             <HeaderLink
               key={link.path}
-              className={`border-b-2 border-bgColor px-3 py-2 font-medium hover:border-fgColor ${
-                pathname === link.path && "border-fgColor"
+              className={`border-b-2 px-3 py-2 font-medium hover:border-fgColor ${
+                link.path === "/"
+                  ? pathname === link.path
+                    ? "border-fgColor"
+                    : "border-bgColor"
+                  : pathname.startsWith(link.path)
+                  ? "border-fgColor"
+                  : "border-bgColor"
               }`}
               href={link.path}
             >
