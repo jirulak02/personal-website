@@ -40,9 +40,9 @@ export default function Header({ normal }: { normal: boolean }) {
     <header
       className={`${
         normal ? "z-30" : "z-50"
-      } sm:justify-right fixed top-0 w-full bg-bgColor sm:border-b-2 sm:border-fgColor`}
+      } md:justify-right fixed top-0 w-full bg-bgColor md:border-b-2 md:border-fgColor`}
     >
-      <div className="relative m-auto flex h-16 max-w-6xl items-center justify-between border-b-2 border-fgColor sm:border-none">
+      <div className="relative m-auto flex h-16 max-w-6xl items-center justify-between border-b-2 border-fgColor md:border-none">
         <div className="flex items-center space-x-1">
           <HeaderLink
             className="z-10 px-3 py-2 text-base font-semibold sm:text-xl md:text-2xl"
@@ -52,7 +52,7 @@ export default function Header({ normal }: { normal: boolean }) {
           </HeaderLink>
           <ThemeSwitcher />
         </div>
-        <nav className="hidden space-x-1 sm:flex">
+        <nav className="hidden space-x-1 md:flex">
           {links.map((link) => (
             <HeaderLink
               key={link.path}
@@ -71,7 +71,7 @@ export default function Header({ normal }: { normal: boolean }) {
             </HeaderLink>
           ))}
         </nav>
-        <details className="group absolute top-0 w-full sm:hidden" id="navDropdown">
+        <details className="group absolute top-0 w-full md:hidden" id="navDropdown">
           <summary className="absolute right-0 m-0.5 cursor-pointer list-none p-5 marker:hidden">
             <svg
               width="28"
@@ -89,7 +89,7 @@ export default function Header({ normal }: { normal: boolean }) {
             {links.map((link) => (
               <HeaderLink
                 key={link.path}
-                className="block border-b border-fgColor py-4 text-center font-medium hover:bg-secColor sm:hidden"
+                className="block border-b border-fgColor py-4 text-center font-medium hover:bg-secColor md:hidden"
                 href={link.path}
                 onClick={() => {
                   const navDropdown = document.getElementById("navDropdown") as HTMLDetailsElement;
