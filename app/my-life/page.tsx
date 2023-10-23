@@ -1,4 +1,4 @@
-import Story from "@/components/pages/MyLifePage/Story";
+import Story from "@/components/pages/MyLife/Story";
 import Container from "@/components/layout/Container";
 import ScrollUp from "@/components/layout/ScrollUp";
 import Title from "@/components/ui/Title";
@@ -14,12 +14,10 @@ export default function MyLife() {
     <>
       <ScrollUp />
       <Title title="<MyLife>" />
-      <Container>
+      <Container className="mb-40">
         <Story />
-        <div className="mb-4 mt-12 text-center md:mt-20">
-          <h1 className="font-normal">{"</MyLife>"}</h1>
-        </div>
       </Container>
+      <Title title="</MyLife>" bottom />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import ContactForm from "@/components/pages/ContactPage/ContactForm";
+import ContactForm from "@/components/pages/Contact/ContactForm";
 import Container from "@/components/layout/Container";
 import ScrollUp from "@/components/layout/ScrollUp";
 import Card from "@/components/ui/Card";
@@ -15,7 +15,7 @@ export default function Contact() {
     <>
       <ScrollUp />
       <Title title="<Contact>" />
-      <Container>
+      <Container className="mb-40">
         <section className="mb-12 mt-12 grid gap-8 sm:grid-cols-2 sm:gap-12">
           <Card>
             <ContactForm />
@@ -29,7 +29,7 @@ export default function Contact() {
           </Card>
         </section>
         <h3>Or contact me elsewhere</h3>
-        <div className="mb-20 mt-3 flex flex-col gap-2">
+        <div className="mt-3 flex flex-col gap-2">
           <p>
             Email:{" "}
             <a href="mailto:jirulak02@gmail.com" className="underline">
@@ -66,9 +66,7 @@ export default function Contact() {
           </p>
         </div>
       </Container>
-      <div className="absolute bottom-16 mb-4 w-full text-center">
-        <h1 className="font-normal">{"</Contact>"}</h1>
-      </div>
+      <Title title="</Contact>" bottom />
     </>
   );
 }

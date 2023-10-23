@@ -1,4 +1,4 @@
-import HobbiesList from "@/components/pages/HobbiesPage/HobbiesList";
+import HobbiesList from "@/components/pages/Hobbies/HobbiesList";
 import Container from "@/components/layout/Container";
 import ScrollUp from "@/components/layout/ScrollUp";
 import Title from "@/components/ui/Title";
@@ -14,12 +14,10 @@ export default function Hobbies() {
     <>
       <ScrollUp />
       <Title title="<Hobbies>" />
-      <Container>
+      <Container className="mb-40">
         <HobbiesList />
-        <div className="mb-4 mt-12 text-center md:mt-20">
-          <h1 className="font-normal">{"</Hobbies>"}</h1>
-        </div>
       </Container>
+      <Title title="</Hobbies>" bottom />
     </>
   );
 }

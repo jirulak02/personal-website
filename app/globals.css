@@ -56,3 +56,7 @@ a,
 label {
   @apply text-sm sm:text-base md:text-lg;
 }
+
+hr {
+  @apply border-fgColor;
+}
