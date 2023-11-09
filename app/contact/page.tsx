@@ -39,7 +39,7 @@ export default function Contact() {
           <p>
             LinkedIn:{" "}
             <a
-              href="https://www.linkedin.com/in/ji%C5%99%C3%AD-%C5%A1ime%C4%8Dek-a95b5027b/"
+              href="https://www.linkedin.com/in/jiří-šimeček"
               className="underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -50,7 +50,7 @@ export default function Contact() {
           <p>
             Instagram:{" "}
             <a
-              href="https://www.instagram.com/jirulak02/"
+              href="https://www.instagram.com/jirulak02"
               className="underline"
               target="_blank"
               rel="noopener noreferrer"

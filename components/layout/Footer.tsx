@@ -12,7 +12,7 @@ const links = [
   {
     name: "LinkedIn",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg",
-    href: "https://www.linkedin.com/in/ji%C5%99%C3%AD-%C5%A1ime%C4%8Dek-a95b5027b",
+    href: "https://www.linkedin.com/in/jiří-šimeček",
   },
   {
     name: "Instagram",
