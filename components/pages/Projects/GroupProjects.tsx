@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import Card from "../../ui/Card";
 import ThemedIcon from "../../ui/ThemedIcon";
+import ExternalLink from "@/components/ui/ExternalLink";
 
 export default function GroupProjects() {
   return (
@@ -34,17 +35,14 @@ export default function GroupProjects() {
             A website for our local rugby team. My part was loading matches from Google Sheets with
             limited code capabilities, because of the CMS resources.
           </p>
-          <a
-            href="https://github.com/jirulak02/rugby-ricany"
-            className="block underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View the code{">"}
-          </a>
-          <a href="https://zwa7y.solidpixels.com/zapasy" className="underline" target="_blank">
-            Visit the website{">"}
-          </a>
+          <div>
+            <ExternalLink href="https://github.com/jirulak02/rugby-ricany">
+              View the code
+            </ExternalLink>
+            <ExternalLink href="https://zwa7y.solidpixels.com/zapasy">
+              Visit the website
+            </ExternalLink>
+          </div>
         </Card>
         <Card reveal className="mx-auto max-w-sm">
           <div className="flex items-center space-x-1">
@@ -80,9 +78,11 @@ export default function GroupProjects() {
             digital products. My part was for example implementing code highlighting and download
             forms.
           </p>
-          <a href="https://www.dxheroes.io/" className="block underline" target="_blank">
-            Visit the website{">"}
-          </a>
+          <div>
+            <ExternalLink href="https://www.dxheroes.io/" friendly>
+              Visit the website
+            </ExternalLink>
+          </div>
         </Card>
         <Card reveal className="mx-auto max-w-sm">
           <div className="flex items-center space-x-1">
@@ -120,14 +120,11 @@ export default function GroupProjects() {
             A program that finds space for the largest square and inserts 'x' characters in it's
             place.
           </p>
-          <a
-            href="https://github.com/jirulak02/42-piscine/tree/main/bsq"
-            className="block underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View the code{">"}
-          </a>
+          <div>
+            <ExternalLink href="https://github.com/jirulak02/42-piscine/tree/main/bsq">
+              View the code
+            </ExternalLink>
+          </div>
         </Card>
       </div>
     </section>

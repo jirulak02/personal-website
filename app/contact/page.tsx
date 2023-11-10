@@ -1,4 +1,4 @@
-import ContactForm from "@/components/pages/ContactPage/ContactForm";
+import ContactForm from "@/components/pages/Contact/ContactForm";
 import Container from "@/components/layout/Container";
 import ScrollUp from "@/components/layout/ScrollUp";
 import Card from "@/components/ui/Card";

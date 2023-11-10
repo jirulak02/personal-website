@@ -17,7 +17,7 @@ export default function AboutMe() {
           </p>
           <div className="text-right">
             <Link href="/my-life" className="underline">
-              Learn more{">"}
+              Learn more
             </Link>
           </div>
         </Card>
@@ -33,7 +33,7 @@ export default function AboutMe() {
           </p>
           <div className="text-right">
             <Link href="/hobbies" className="underline">
-              Other hobbies{">"}
+              Other hobbies
             </Link>
           </div>
         </Card>
@@ -49,7 +49,7 @@ export default function AboutMe() {
           </p>
           <div className="text-right">
             <Link href="/projects" className="underline">
-              Show me{">"}
+              Show me
             </Link>
           </div>
         </Card>

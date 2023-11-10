@@ -3,6 +3,7 @@ import Image from "next/image";
 import Card from "../../ui/Card";
 import ThemedIcon from "../../ui/ThemedIcon";
 import Button from "../../ui/Button";
+import ExternalLink from "@/components/ui/ExternalLink";
 
 export default function SoloProjects() {
   return (
@@ -42,17 +43,12 @@ export default function SoloProjects() {
             />
           </div>
           <p>A fully functional Sudoku game application for Windows.</p>
-          <a
-            href="https://github.com/jirulak02/sudoku"
-            className="block underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View the code{">"}
-          </a>
-          <Button href="https://github.com/jirulak02/sudoku/raw/main/Sudoku.exe">
-            Download game
-          </Button>
+          <div>
+            <ExternalLink href="https://github.com/jirulak02/sudoku">View the code</ExternalLink>
+            <ExternalLink href="https://github.com/jirulak02/sudoku/raw/main/Sudoku.exe">
+              Download game
+            </ExternalLink>
+          </div>
         </Card>
         <Card className="mx-auto max-w-sm">
           <div className="flex items-center space-x-1">
@@ -84,17 +80,14 @@ export default function SoloProjects() {
             />
           </div>
           <p>A one page business website for a financial advisor.</p>
-          <a
-            href="https://github.com/jirulak02/matej-simecek"
-            className="block underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View the code{">"}
-          </a>
-          <a href="https://www.matejsimecek.cz/" className="underline" target="_blank">
-            Visit the website{">"}
-          </a>
+          <div>
+            <ExternalLink href="https://github.com/jirulak02/matej-simecek">
+              View the code
+            </ExternalLink>
+            <ExternalLink href="https://www.matejsimecek.cz/" friendly>
+              Visit the website
+            </ExternalLink>
+          </div>
         </Card>
         <Card className="mx-auto max-w-sm">
           <div className="flex items-center space-x-1">
@@ -126,17 +119,14 @@ export default function SoloProjects() {
             />
           </div>
           <p>A business website for a client, who specialises in building green roofs.</p>
-          <a
-            href="https://github.com/jirulak02/zelene-staveni"
-            className="block underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View the code{">"}
-          </a>
-          <a href="https://www.zelenestaveni.cz/" className="underline" target="_blank">
-            Visit the website{">"}
-          </a>
+          <div>
+            <ExternalLink href="https://github.com/jirulak02/zelene-staveni">
+              View the code
+            </ExternalLink>
+            <ExternalLink href="https://www.zelenestaveni.cz/" friendly>
+              Visit the website
+            </ExternalLink>
+          </div>
         </Card>
       </div>
     </section>
