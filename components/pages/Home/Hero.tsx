@@ -5,7 +5,7 @@ import ThemedIcon from "../../ui/ThemedIcon";
 
 export default function Hero() {
   return (
-    <section>
+    <section id="content-start">
       <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-7 lg:mt-16">
         <div className="col-span-4 space-y-3 text-center sm:mt-32">
           <h1>/the_next generati*n of tech t^lent.</h1>

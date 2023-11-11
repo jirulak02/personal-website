@@ -16,9 +16,7 @@ export default function Hobbies() {
       <Title title="<Hobbies>" />
       <Container>
         <HobbiesList />
-        <div className="mb-4 mt-12 text-center md:mt-20">
-          <h1 className="font-normal">{"</Hobbies>"}</h1>
-        </div>
+        <Title title="</Hobbies>" bottom />
       </Container>
     </>
   );

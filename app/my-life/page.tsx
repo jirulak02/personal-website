@@ -16,9 +16,7 @@ export default function MyLife() {
       <Title title="<MyLife>" />
       <Container>
         <Story />
-        <div className="mb-4 mt-12 text-center md:mt-20">
-          <h1 className="font-normal">{"</MyLife>"}</h1>
-        </div>
+        <Title title="</MyLife>" bottom />
       </Container>
     </>
   );

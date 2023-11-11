@@ -28,47 +28,47 @@ export default function Contact() {
             </p>
           </Card>
         </section>
-        <h3>Or contact me elsewhere</h3>
-        <div className="mb-20 mt-3 flex flex-col gap-2">
-          <p>
-            Email:{" "}
-            <a href="mailto:jirulak02@gmail.com" className="underline">
-              jirulak02@gmail.com
-            </a>
-          </p>
-          <p>
-            LinkedIn:{" "}
-            <a
-              href="https://www.linkedin.com/in/jiří-šimeček"
-              className="underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Jiří Šimeček
-            </a>
-          </p>
-          <p>
-            Instagram:{" "}
-            <a
-              href="https://www.instagram.com/jirulak02"
-              className="underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @jirulak02
-            </a>
-          </p>
-          <p>
-            Phone:{" "}
-            <a href="tel:+420777898501" className="underline">
-              777 898 501
-            </a>
-          </p>
-        </div>
+        <section>
+          <h3>Or contact me elsewhere</h3>
+          <div className="mb-20 mt-3 flex flex-col gap-2">
+            <p>
+              Email:{" "}
+              <a href="mailto:jirulak02@gmail.com" className="underline">
+                jirulak02@gmail.com
+              </a>
+            </p>
+            <p>
+              LinkedIn:{" "}
+              <a
+                href="https://www.linkedin.com/in/jiří-šimeček"
+                className="underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Jiří Šimeček
+              </a>
+            </p>
+            <p>
+              Instagram:{" "}
+              <a
+                href="https://www.instagram.com/jirulak02"
+                className="underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @jirulak02
+              </a>
+            </p>
+            <p>
+              Phone:{" "}
+              <a href="tel:+420777898501" className="underline">
+                777 898 501
+              </a>
+            </p>
+          </div>
+        </section>
+        <Title title="</Contact>" bottom />
       </Container>
-      <div className="absolute bottom-16 mb-4 w-full text-center">
-        <h1 className="font-normal">{"</Contact>"}</h1>
-      </div>
     </>
   );
 }

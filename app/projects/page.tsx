@@ -20,9 +20,7 @@ export default function Projects() {
         <SoloProjects />
         <GroupProjects />
         <OtherProjects />
-        <div className="mb-4 mt-12 text-center md:mt-20">
-          <h1 className="font-normal">{"</Projects>"}</h1>
-        </div>
+        <Title title="</Projects>" bottom />
       </Container>
     </>
   );

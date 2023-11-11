@@ -1,5 +1,6 @@
 import { AxiomWebVitals } from "next-axiom";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 import "./globals.css";
 import Header from "@/components/layout/Header";
@@ -12,6 +13,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} font-sans`} suppressHydrationWarning>
       <body className="relative flex min-h-screen flex-col">
+        <Link href="#content-start" className="sr-only">
+          Skip to content
+        </Link>
         <ThemeProvider defaultTheme="system" enableSystem>
           <Header normal />
           <main className="pt-16">{children}</main>

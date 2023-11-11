@@ -1,6 +1,14 @@
 import Image from "next/image";
 
-export default function Title({ title }: { title: string }) {
+export default function Title({ title, bottom }: { title: string; bottom?: boolean }) {
+  if (bottom) {
+    return (
+      <div className="mb-4 mt-12 text-center md:mt-20">
+        <p className="text-3xl font-normal sm:text-5xl md:text-6xl">{title}</p>
+      </div>
+    );
+  }
+
   return (
     <div className="relative h-24 sm:h-36 md:h-48 lg:h-56">
       <div className="absolute z-10 flex h-full w-full items-center justify-center text-neutral-200">

@@ -5,7 +5,9 @@ import Card from "../../ui/Card";
 export default function AboutMe() {
   return (
     <section className="w-full bg-secColor px-3 py-2">
-      <h1 className="py-8 text-center">A few bits about me</h1>
+      <h2 className="py-8 text-center text-3xl font-semibold sm:text-5xl md:text-6xl">
+        A few bits about me
+      </h2>
       <div className="m-auto grid max-w-6xl grid-cols-1 gap-8 pb-12 md:grid-cols-2">
         <Card white reveal className="max-w-2xl">
           <h3>My life</h3>
