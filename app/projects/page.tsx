@@ -15,7 +15,7 @@ export default function Projects() {
   return (
     <>
       <ScrollUp />
-      <Title title="<Projects>" />
+      <Title title="<Projects>" id="content-start" />
       <Container>
         <SoloProjects />
         <GroupProjects />

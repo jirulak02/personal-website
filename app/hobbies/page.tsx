@@ -13,7 +13,7 @@ export default function Hobbies() {
   return (
     <>
       <ScrollUp />
-      <Title title="<Hobbies>" />
+      <Title title="<Hobbies>" id="content-start" />
       <Container>
         <HobbiesList />
         <Title title="</Hobbies>" bottom />

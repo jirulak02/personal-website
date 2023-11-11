@@ -13,7 +13,7 @@ export default function MyLife() {
   return (
     <>
       <ScrollUp />
-      <Title title="<MyLife>" />
+      <Title title="<MyLife>" id="content-start" />
       <Container>
         <Story />
         <Title title="</MyLife>" bottom />

@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <>
       <ScrollUp />
-      <Title title="<Contact>" />
+      <Title title="<Contact>" id="content-start" />
       <Container>
         <section className="mb-12 mt-12 grid gap-8 sm:grid-cols-2 sm:gap-12">
           <Card>

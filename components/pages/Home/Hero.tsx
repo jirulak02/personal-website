@@ -5,10 +5,10 @@ import ThemedIcon from "../../ui/ThemedIcon";
 
 export default function Hero() {
   return (
-    <section id="content-start">
+    <section>
       <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-7 lg:mt-16">
         <div className="col-span-4 space-y-3 text-center sm:mt-32">
-          <h1>/the_next generati*n of tech t^lent.</h1>
+          <h1 id="content-start">/the_next generati*n of tech t^lent.</h1>
           <h2>Jiří Šimeček</h2>
           <Button href="/contact">Contact me</Button>
         </div>
