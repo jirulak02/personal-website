@@ -5,8 +5,9 @@ import { mailOptions, transporter } from "@/lib/nodemailer";
 
 export const POST = withAxiom(async (req: AxiomRequest) => {
   const data: ContactFormData = await req.json();
+
   if (!data.name || !data.email || !data.message) {
-    req.log.error("Invalid form got past client side checks and hit api.", data);
+    req.log.error("FormRouteLog: Invalid form got past client side checks and hit api.", data);
 
     return new Response("Invalid form", {
       status: 400,
@@ -20,13 +21,13 @@ export const POST = withAxiom(async (req: AxiomRequest) => {
       ...generateEmailContent(escapedData),
       subject: "Formulář z osobního webu",
     });
-    req.log.info("Email sent.", escapedData);
+    req.log.info("FormRouteLog: Email sent.", escapedData);
 
     return new Response("Success", {
       status: 200,
     });
   } catch (error) {
-    req.log.error("Error sending mail.", { error });
+    req.log.error("FormRouteLog: Error sending mail.", { error });
 
     return new Response("Error", {
       status: 500,
