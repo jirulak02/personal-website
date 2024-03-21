@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import Card from "../../ui/Card";
 import ThemedIcon from "../../ui/ThemedIcon";
-import Button from "../../ui/Button";
 import ExternalLink from "@/components/ui/ExternalLink";
 
 export default function SoloProjects() {
