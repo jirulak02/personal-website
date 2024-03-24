@@ -33,7 +33,7 @@ export default function ContactForm() {
         toast.success("Message sent succesfully.");
       }}
       onError={() => {
-        toast.error("Message failed to send.");
+        toast.error("Message failed to send. Please let me know.");
       }}
       className="flex flex-col"
     >
@@ -101,9 +101,9 @@ export default function ContactForm() {
             className: "text-lg font-semibold h-16 w-80 border-2 border-priColor",
           },
           error: {
-            duration: 3000,
+            duration: 8000,
             position: "bottom-center",
-            className: "text-lg font-semibold h-16 w-80 border-2 border-red-500",
+            className: "text-lg font-semibold h-16 border-2 border-red-500",
           },
         }}
       />
