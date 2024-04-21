@@ -31,7 +31,7 @@ export default function AboutMe() {
           </p>
           <p>
             Recently, I found myself enjoying the taste of nonalcoholic beer, so I seized the
-            opportunity and started a 6-month challenge of not drinking alcohol.
+            opportunity and completed a 6-month challenge of not drinking alcohol.
           </p>
           <div className="text-right">
             <Link href="/hobbies" className="underline">
@@ -43,7 +43,7 @@ export default function AboutMe() {
           <h3>My projects</h3>
           <p>
             I have worked on a bunch of projects, from personal endeavors to client websites and
-            group projects as part of the 42 Prague school.
+            group projects as part of the 42 Prague school or at work.
           </p>
           <p>
             Currently, some of my biggest projects were production grade business websites, which I

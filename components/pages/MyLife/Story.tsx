@@ -165,8 +165,9 @@ export default function Story() {
             </div>
             <div className="col-span-3 space-y-3 p-6 md:pl-0 lg:col-span-4">
               <h3>2023 - Now</h3>
-              <p>Started building client websites in Next.js.</p>
+              <p>Started building client websites in Next.js and Docusaurus.</p>
               <p>Joined a great team of developers at DX Heroes.</p>
+              <p>Slowly moving to backend development, to truly become a full-stack engineer.</p>
             </div>
           </div>
         </Card>
