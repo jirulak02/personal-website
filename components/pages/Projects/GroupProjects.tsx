@@ -74,9 +74,9 @@ export default function GroupProjects() {
             />
           </div>
           <p>
-            Contributing to a website of a company that helps other companies with the adoption of
-            digital products. My part was for example implementing code highlighting and download
-            forms.
+            Contributing to a website of a company that helps with the adoption of digital products.
+            My part was for example implementing infinite scroll and search bar for filtering
+            articles.
           </p>
           <div>
             <ExternalLink href="https://www.dxheroes.io/" friendly>
