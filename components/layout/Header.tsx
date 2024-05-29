@@ -39,7 +39,7 @@ export default function Header({ normal }: { normal: boolean }) {
     <header
       className={`${
         normal ? "z-30" : "z-50"
-      } sm:justify-right fixed top-0 w-full bg-bgColor sm:border-b-2 sm:border-fgColor`}
+      } sm:justify-right fixed top-0 w-full bg-bgColor text-fgColor sm:border-b-2 sm:border-fgColor`}
     >
       <div className="relative m-auto flex h-16 max-w-6xl items-center justify-between border-b-2 border-fgColor sm:border-none">
         <div className="flex items-center space-x-1">
