@@ -1,6 +1,6 @@
-import Story from "@/components/pages/MyLife/Story";
 import Container from "@/components/layout/Container";
 import ScrollUp from "@/components/layout/ScrollUp";
+import Story from "@/components/pages/MyLife/Story";
 import Title from "@/components/ui/Title";
 
 export const metadata = {

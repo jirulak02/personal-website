@@ -1,6 +1,6 @@
-import HobbiesList from "@/components/pages/Hobbies/HobbiesList";
 import Container from "@/components/layout/Container";
 import ScrollUp from "@/components/layout/ScrollUp";
+import HobbiesList from "@/components/pages/Hobbies/HobbiesList";
 import Title from "@/components/ui/Title";
 
 export const metadata = {

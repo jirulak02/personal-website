@@ -1,5 +1,5 @@
-import ExternalLink from "@/components/ui/ExternalLink";
 import Card from "../../ui/Card";
+import ExternalLink from "@/components/ui/ExternalLink";
 
 export default function OtherProjects() {
   return (

@@ -1,14 +1,14 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
 import {
-  motion,
-  useMotionValue,
-  useInView,
-  useTransform,
   animate,
+  motion,
   useAnimation,
+  useInView,
+  useMotionValue,
+  useTransform,
 } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 export default function Circle({ amount, name }: { amount: number; name: string }) {
   const [isClient, setIsClient] = useState(false);

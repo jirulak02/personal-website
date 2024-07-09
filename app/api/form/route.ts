@@ -1,4 +1,4 @@
-import { withAxiom, AxiomRequest } from "next-axiom";
+import { AxiomRequest, withAxiom } from "next-axiom";
 
 import { ContactFormData } from "@/components/pages/Contact/ContactForm";
 import { mailOptions, transporter } from "@/lib/nodemailer";

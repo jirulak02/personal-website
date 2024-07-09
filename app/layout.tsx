@@ -1,11 +1,12 @@
 import { AxiomWebVitals } from "next-axiom";
 import { Inter } from "next/font/google";
 
-import "./globals.css";
-import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import ThemeProvider from "@/components/utils/ThemeProvider";
+import Header from "@/components/layout/Header";
 import SkipToContent from "@/components/layout/SkipToContent";
+import ThemeProvider from "@/components/utils/ThemeProvider";
+
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
