@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import Copyright from "../ui/Copyright";
 import ThemedIcon from "../ui/ThemedIcon";
 
 const links = [
@@ -28,7 +29,7 @@ export default function Footer() {
     <footer className="sm:justify-right z-10 mt-auto w-full border-t-2 border-fgColor bg-bgColor text-fgColor">
       <div className="m-auto flex h-16 max-w-6xl items-center justify-between px-3">
         <div>
-          <p>Copyright © 2023-{new Date().getFullYear()}</p>
+          <Copyright />
         </div>
         <div className="flex gap-4">
           {links.map((link) => (
