@@ -1,6 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+
+  --color-fgColor: rgb(var(--foreground-rgb));
+  --color-bgColor: rgb(var(--background-rgb));
+  --color-priColor: rgb(var(--primary-rgb));
+  --color-secColor: rgb(var(--secondary-rgb));
+  --color-shadowColor: rgb(var(--shadow-rgb));
+
+  @keyframes dropdown {
+    0% {
+      transform: scaleY(0);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 :root {
   --foreground-rgb: 38, 38, 38;
