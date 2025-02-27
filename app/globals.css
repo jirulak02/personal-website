@@ -27,31 +27,53 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
-}
 
-:root {
-  --foreground-rgb: 38, 38, 38;
-  --background-rgb: 245, 245, 245;
-  --primary-rgb: 63, 98, 18;
-  --secondary-rgb: 229, 229, 229;
-  --shadow-rgb: 163, 163, 163;
-}
+  :root {
+    --foreground-rgb: 38, 38, 38;
+    --background-rgb: 245, 245, 245;
+    --primary-rgb: 63, 98, 18;
+    --secondary-rgb: 229, 229, 229;
+    --shadow-rgb: 163, 163, 163;
+  }
 
-::selection {
-  color: rgb(245, 245, 245);
-  background: rgb(var(--primary-rgb));
-}
+  ::selection {
+    color: rgb(245, 245, 245);
+    background: rgb(var(--primary-rgb));
+  }
 
-[data-theme="dark"] {
-  --foreground-rgb: 245, 245, 245;
-  --background-rgb: 38, 38, 38;
-  --primary-rgb: 77, 124, 15;
-  --secondary-rgb: 64, 64, 64;
-  --shadow-rgb: 10, 10, 10;
-}
+  [data-theme="dark"] {
+    --foreground-rgb: 245, 245, 245;
+    --background-rgb: 38, 38, 38;
+    --primary-rgb: 77, 124, 15;
+    --secondary-rgb: 64, 64, 64;
+    --shadow-rgb: 10, 10, 10;
+  }
 
-main {
-  @apply bg-bgColor text-fgColor;
+  main {
+    @apply bg-bgColor text-fgColor;
+  }
+
+  h1 {
+    @apply text-3xl font-semibold sm:text-5xl md:text-6xl;
+  }
+
+  h2 {
+    @apply text-xl font-normal sm:text-2xl md:text-3xl;
+  }
+
+  h3 {
+    @apply text-lg font-semibold sm:text-xl md:text-2xl;
+  }
+
+  h4 {
+    @apply text-base font-semibold sm:text-lg;
+  }
+
+  p,
+  a,
+  label {
+    @apply text-sm sm:text-base md:text-lg;
+  }
 }
 
 #navDropdown > summary::-webkit-details-marker {
@@ -60,26 +82,4 @@ main {
 
 .font-medium {
   font-weight: 400; /* fix font-weight to only have 400 and 600 */
-}
-
-h1 {
-  @apply text-3xl font-semibold sm:text-5xl md:text-6xl;
-}
-
-h2 {
-  @apply text-xl font-normal sm:text-2xl md:text-3xl;
-}
-
-h3 {
-  @apply text-lg font-semibold sm:text-xl md:text-2xl;
-}
-
-h4 {
-  @apply text-base font-semibold sm:text-lg;
-}
-
-p,
-a,
-label {
-  @apply text-sm sm:text-base md:text-lg;
 }

@@ -98,7 +98,7 @@ export default function Story() {
                 Říčany.
               </p>
               <p>
-                Started learning programming in JavaScript and Python, plus did Harvard's CS50
+                Started learning programming in JavaScript and Python, plus did Harvard&apos;s CS50
                 course.
               </p>
             </div>
@@ -161,7 +161,7 @@ export default function Story() {
         <Card noPadding className="relative z-10">
           <div className="grid gap-6 md:grid-cols-4 lg:grid-cols-5">
             <div className="col-span-1 hidden min-w-max items-center justify-center border-r-2 border-fgColor md:flex">
-              <h2>'\0'</h2>
+              <h2>&apos;\0&apos;</h2>
             </div>
             <div className="col-span-3 space-y-3 p-6 md:pl-0 lg:col-span-4">
               <h3>2023 - Now</h3>

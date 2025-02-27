@@ -13,7 +13,7 @@ export default function OtherProjects() {
           </div>
         </Card>
         <Card reveal className="mx-auto max-w-sm">
-          <p>Currently I'm upgrading my current projects and websites.</p>
+          <p>Currently I&apos;m upgrading my current projects and websites.</p>
         </Card>
       </div>
     </section>
