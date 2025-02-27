@@ -16,7 +16,7 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
       <div className="absolute top-1/2 flex w-full -translate-y-1/2 flex-col space-y-3 p-3 text-center">
         <h2 className="font-semibold">Something went wrong!</h2>
         <Button onClick={() => reset()}>Try again</Button>
-        <p>If trying again doesn't help, please navigate back.</p>
+        <p>If trying again doesn&apos;t help, please navigate back.</p>
       </div>
     </>
   );

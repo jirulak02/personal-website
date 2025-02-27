@@ -26,7 +26,7 @@ export default function AboutMe() {
         <Card white reveal className="max-w-2xl md:mt-72">
           <h3>Personality</h3>
           <p>
-            Even though I consider myself to be more of an introvert, I won't miss out on team
+            Even though I consider myself to be more of an introvert, I won&apos;t miss out on team
             bonding activities such as bowling, gaming, or just going out for a beer.
           </p>
           <p>

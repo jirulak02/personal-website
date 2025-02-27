@@ -24,7 +24,7 @@ export default function Contact() {
             <h3>Get in touch</h3>
             <p>
               If I have sparked your interest for collaboration or you just want to talk, please
-              don't hesitate to reach out to me.
+              don&apos;t hesitate to reach out to me.
             </p>
           </Card>
         </section>

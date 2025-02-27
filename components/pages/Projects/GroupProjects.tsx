@@ -117,8 +117,8 @@ export default function GroupProjects() {
             />
           </div>
           <p>
-            A program that finds space for the largest square and inserts 'x' characters in it's
-            place.
+            A program that finds space for the largest square and inserts &apos;x&apos; characters
+            in it&apos;s place.
           </p>
           <div>
             <ExternalLink href="https://github.com/jirulak02/42-piscine/tree/main/bsq">
