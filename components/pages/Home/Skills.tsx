@@ -31,6 +31,15 @@ const tools = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
   },
   {
+    name: "Strapi",
+    src: "/HomePage/strapi.png",
+  },
+  {
+    name: "Payload",
+    src: "/HomePage/payload.png",
+    darkSrc: "/HomePage/payload-white.png",
+  },
+  {
     name: "Docusaurus",
     src: "/HomePage/docusaurus.png",
   },
