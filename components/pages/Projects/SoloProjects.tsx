@@ -64,45 +64,6 @@ export default function SoloProjects() {
               height="25"
               alt="TypeScript language logo"
             />
-            <h4>Matěj Šimeček</h4>
-          </div>
-          <div className="flex justify-center">
-            <Image
-              style={{ width: "280px" }}
-              src="/ProjectsPage/matej-simecek.png"
-              width="840"
-              height="474"
-              quality={100}
-              alt="Business website for a client"
-              placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
-            />
-          </div>
-          <p>A one page business website for a financial advisor.</p>
-          <div>
-            <ExternalLink href="https://github.com/jirulak02/matej-simecek">
-              View the code
-            </ExternalLink>
-            <ExternalLink href="https://www.matejsimecek.cz/" friendly>
-              Visit the website
-            </ExternalLink>
-          </div>
-        </Card>
-        <Card className="mx-auto max-w-sm">
-          <div className="flex items-center space-x-1">
-            <ThemedIcon
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-              darkSrc="/HomePage/next.png"
-              width={25}
-              height={25}
-              alt="Nextjs logo"
-            />
-            <Image
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-              width="25"
-              height="25"
-              alt="TypeScript language logo"
-            />
             <h4>Zelené stavění</h4>
           </div>
           <div className="flex justify-center">
@@ -123,6 +84,45 @@ export default function SoloProjects() {
               View the code
             </ExternalLink>
             <ExternalLink href="https://www.zelenestaveni.cz/" friendly>
+              Visit the website
+            </ExternalLink>
+          </div>
+        </Card>
+        <Card className="mx-auto max-w-sm">
+          <div className="flex items-center space-x-1">
+            <ThemedIcon
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+              darkSrc="/HomePage/next.png"
+              width={25}
+              height={25}
+              alt="Nextjs logo"
+            />
+            <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+              width="25"
+              height="25"
+              alt="TypeScript language logo"
+            />
+            <h4>Matěj Šimeček</h4>
+          </div>
+          <div className="flex justify-center">
+            <Image
+              style={{ width: "280px" }}
+              src="/ProjectsPage/matej-simecek.png"
+              width="840"
+              height="474"
+              quality={100}
+              alt="Business website for a client"
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO88h8AAq0B1REmZuEAAAAASUVORK5CYII="
+            />
+          </div>
+          <p>A one page business website for a financial advisor.</p>
+          <div>
+            <ExternalLink href="https://github.com/jirulak02/matej-simecek">
+              View the code
+            </ExternalLink>
+            <ExternalLink href="https://www.matejsimecek.cz/" friendly>
               Visit the website
             </ExternalLink>
           </div>

@@ -3,7 +3,6 @@ import ScrollUp from "@/components/layout/ScrollUp";
 import AboutMe from "@/components/pages/Home/AboutMe";
 import Greeting from "@/components/pages/Home/Greeting";
 import Hero from "@/components/pages/Home/Hero";
-import Skills from "@/components/pages/Home/Skills";
 import Wow from "@/components/pages/Home/Wow";
 import Wave from "@/components/ui/Wave";
 
@@ -20,7 +19,6 @@ export default function Home() {
       <Container>
         <Hero />
         <Greeting />
-        <Skills />
       </Container>
       <Wave />
       <AboutMe />

@@ -1,8 +1,8 @@
 import Container from "@/components/layout/Container";
 import ScrollUp from "@/components/layout/ScrollUp";
-import GroupProjects from "@/components/pages/Projects/GroupProjects";
 import OtherProjects from "@/components/pages/Projects/OtherProjects";
 import SoloProjects from "@/components/pages/Projects/SoloProjects";
+import WorkProjects from "@/components/pages/Projects/WorkProjects";
 import Title from "@/components/ui/Title";
 
 export const metadata = {
@@ -17,8 +17,8 @@ export default function Projects() {
       <ScrollUp />
       <Title title="<Projects>" id="content-start" />
       <Container>
+        <WorkProjects />
         <SoloProjects />
-        <GroupProjects />
         <OtherProjects />
         <Title title="</Projects>" bottom />
       </Container>

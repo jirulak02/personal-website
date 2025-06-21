@@ -19,7 +19,7 @@ export default function Button({
     return (
       <div className="text-center">
         <Link href={href} target={target} className="inline-block rounded-2xl">
-          <div className="rounded-2xl border-2 border-priColor bg-priColor px-4 py-2 text-lg text-neutral-100 hover:bg-transparent hover:text-priColor sm:text-xl md:text-2xl">
+          <div className="rounded-2xl border-2 border-priColor bg-priColor px-4 py-2 text-lg text-neutral-800 hover:bg-transparent hover:text-priColor sm:text-xl md:text-2xl">
             {children}
           </div>
         </Link>

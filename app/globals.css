@@ -29,9 +29,12 @@
   }
 
   :root {
-    --foreground-rgb: 38, 38, 38;
-    --background-rgb: 245, 245, 245;
-    --primary-rgb: 63, 98, 18;
+    --white-rgb: 245, 245, 245;
+    --black-rgb: 38, 38, 38;
+    --primary-rgb: 205, 161, 116;
+
+    --foreground-rgb: var(--black-rgb);
+    --background-rgb: var(--white-rgb);
     --secondary-rgb: 229, 229, 229;
     --shadow-rgb: 163, 163, 163;
   }
@@ -42,9 +45,8 @@
   }
 
   [data-theme="dark"] {
-    --foreground-rgb: 245, 245, 245;
-    --background-rgb: 38, 38, 38;
-    --primary-rgb: 77, 124, 15;
+    --foreground-rgb: var(--white-rgb);
+    --background-rgb: var(--black-rgb);
     --secondary-rgb: 64, 64, 64;
     --shadow-rgb: 10, 10, 10;
   }

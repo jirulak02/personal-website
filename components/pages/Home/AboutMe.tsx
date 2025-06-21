@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import Card from "../../ui/Card";
+import ExternalLink from "@/components/ui/ExternalLink";
 
 export default function AboutMe() {
   return (
@@ -10,30 +11,30 @@ export default function AboutMe() {
       </h2>
       <div className="m-auto grid max-w-6xl grid-cols-1 gap-8 pb-12 md:grid-cols-2">
         <Card white reveal className="max-w-2xl">
-          <h3>My life</h3>
-          <p>I am always up for learning, trying out new challenges and growing as a person.</p>
-          <p>One such challenge was spending a year with a host family in the United States.</p>
+          <h3>Experience</h3>
           <p>
-            Currently, I am focusing on my job as well as building personal projects on a daily
-            basis.
+            I have experience working with a variety of programming languages, but mostly specialize
+            in TypeScript, with React and Next.js as my main technologies. But overall I&apos;m
+            mostly a problem solver, so I don&apos;t mind working with anything that is required by
+            the problem.
           </p>
-          <div className="text-right">
-            <Link href="/my-life" className="underline">
-              Learn more
-            </Link>
+          <div className="flex justify-end">
+            <ExternalLink href="https://www.linkedin.com/in/jiří-šimeček">
+              See more on LinkedIn
+            </ExternalLink>
           </div>
         </Card>
         <Card white reveal className="max-w-2xl md:mt-72">
           <h3>Personality</h3>
           <p>
-            Even though I consider myself to be more of an introvert, I won&apos;t miss out on team
-            bonding activities such as bowling, gaming, or just going out for a beer.
+            Even though I consider myself to be more of an introvert, I love being active, whether
+            it&apos;s sports, singing, or other crazy things people come up with.
           </p>
           <p>
-            Recently, I found myself enjoying the taste of nonalcoholic beer, so I seized the
-            opportunity and completed a 6-month challenge of not drinking alcohol.
+            I also have a strong mental and can accomplish pretty much anything I set my mind to,
+            e.g. a 6-month challenge of not drinking alcohol.
           </p>
-          <div className="text-right">
+          <div className="flex justify-end">
             <Link href="/hobbies" className="underline">
               Other hobbies
             </Link>
@@ -43,13 +44,12 @@ export default function AboutMe() {
           <h3>My projects</h3>
           <p>
             I have worked on a bunch of projects, from personal endeavors to client websites and
-            group projects as part of the 42 Prague school or at work.
+            team projects at work.
           </p>
           <p>
-            Currently, some of my biggest projects were production grade business websites, which I
-            made in Next.js.
+            Currently, some of my biggest projects were complex admin portals and an SDK generator.
           </p>
-          <div className="text-right">
+          <div className="flex justify-end">
             <Link href="/projects" className="underline">
               Show me
             </Link>
