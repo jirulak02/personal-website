@@ -12,7 +12,7 @@ export default function ExternalLink({
   return (
     <Link
       href={href}
-      className="flex items-center gap-1 underline"
+      className="flex max-w-fit items-center gap-1 underline"
       target="_blank"
       rel={friendly ? "" : "noopener noreferrer"}
     >
