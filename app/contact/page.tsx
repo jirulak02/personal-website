@@ -5,8 +5,7 @@ import Title from "@/components/ui/Title";
 
 export const metadata = {
   title: "Contact | Jiří Šimeček",
-  description:
-    "All the important contact information, including my socials, e-mail and phone number.",
+  description: "All the important contact information, including my email and socials.",
 };
 
 export default function Contact() {
@@ -15,7 +14,7 @@ export default function Contact() {
       <ScrollUp />
       <Title title="<Contact>" id="content-start" />
       <Container>
-        <section className="mb-20 mt-12 grid gap-8 sm:grid-cols-2 sm:gap-12">
+        <section className="mt-12 grid gap-8 sm:grid-cols-2 sm:gap-12">
           <Card className="row-start-1 sm:row-auto">
             <h3>Get in touch</h3>
             <p>
@@ -38,23 +37,6 @@ export default function Contact() {
                   rel="noopener noreferrer"
                 >
                   Jiří Šimeček
-                </a>
-              </p>
-              <p>
-                Instagram:{" "}
-                <a
-                  href="https://www.instagram.com/jirulak02"
-                  className="underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  @jirulak02
-                </a>
-              </p>
-              <p>
-                Phone:{" "}
-                <a href="tel:+420777898501" className="underline">
-                  777 898 501
                 </a>
               </p>
             </div>

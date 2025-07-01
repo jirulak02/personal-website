@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SkipToContent />
         <ThemeProvider defaultTheme="system" enableSystem>
           <Header normal />
-          <main className="pt-16">{children}</main>
+          <main className="pt-16 grow flex flex-col">{children}</main>
           <Footer />
         </ThemeProvider>
         <AxiomWebVitals />

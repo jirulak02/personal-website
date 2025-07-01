@@ -53,7 +53,7 @@ export default function SoloProjects() {
           <div className="flex items-center space-x-1">
             <ThemedIcon
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-              darkSrc="/HomePage/next.png"
+              darkSrc="/ProjectsPage/next.png"
               width={25}
               height={25}
               alt="Nextjs logo"
@@ -92,7 +92,7 @@ export default function SoloProjects() {
           <div className="flex items-center space-x-1">
             <ThemedIcon
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-              darkSrc="/HomePage/next.png"
+              darkSrc="/ProjectsPage/next.png"
               width={25}
               height={25}
               alt="Nextjs logo"

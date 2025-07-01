@@ -15,13 +15,7 @@ const links = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg",
     href: "https://www.linkedin.com/in/jiří-šimeček",
   },
-  {
-    name: "Instagram",
-    src: "/instagram-logo.png",
-    href: "https://www.instagram.com/jirulak02",
-  },
   { name: "Mail", src: "/mail-logo.png", href: "mailto:jirulak02@gmail.com" },
-  { name: "Phone", src: "/phone-logo.png", href: "tel:+420777898501" },
 ];
 
 export default function Footer() {
