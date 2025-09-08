@@ -34,11 +34,6 @@ export default function AboutMe() {
             I also have a strong mental and can accomplish pretty much anything I set my mind to,
             e.g. a 6-month challenge of not drinking alcohol.
           </p>
-          <div className="flex justify-end">
-            <Link href="/hobbies" className="underline">
-              Other hobbies
-            </Link>
-          </div>
         </Card>
         <Card white reveal className="max-w-2xl md:-mt-28">
           <h3>My projects</h3>

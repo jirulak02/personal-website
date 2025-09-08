@@ -7,7 +7,6 @@ import ThemeSwitcher from "../utils/ThemeSwitcher";
 
 const links = [
   { path: "/", name: "Home" },
-  { path: "/hobbies", name: "Hobbies" },
   { path: "/projects", name: "Projects" },
   { path: "/contact", name: "Contact" },
 ];
