@@ -80,9 +80,6 @@ export default function SoloProjects() {
           </div>
           <p>A business website for a client, who specialises in building green roofs.</p>
           <div>
-            <ExternalLink href="https://github.com/jirulak02/zelene-staveni">
-              View the code
-            </ExternalLink>
             <ExternalLink href="https://www.zelenestaveni.cz/" friendly>
               Visit the website
             </ExternalLink>
@@ -119,9 +116,6 @@ export default function SoloProjects() {
           </div>
           <p>A one page business website for a financial advisor.</p>
           <div>
-            <ExternalLink href="https://github.com/jirulak02/matej-simecek">
-              View the code
-            </ExternalLink>
             <ExternalLink href="https://www.matejsimecek.cz/" friendly>
               Visit the website
             </ExternalLink>
