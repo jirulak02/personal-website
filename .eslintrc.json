@@ -1,7 +1,0 @@
-{
-  "plugins": ["eslint-plugin-react-compiler"],
-  "extends": ["next/core-web-vitals", "next/typescript"],
-  "rules": {
-    "react-compiler/react-compiler": "error"
-  }
-}
