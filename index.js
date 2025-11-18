@@ -1,3 +1,5 @@
+"use strict";
+
 const cursorEffect = document.createElement("div");
 cursorEffect.className = "cursor-effect";
 document.body.appendChild(cursorEffect);
@@ -7,8 +9,9 @@ let mouseY = 0;
 let cursorX = 0;
 let cursorY = 0;
 let hasMouseMoved = false;
+let animationFrameId = null;
 
-document.addEventListener("mousemove", (e) => {
+const handleMouseMove = (e) => {
   mouseX = e.clientX;
   mouseY = e.clientY;
 
@@ -20,7 +23,9 @@ document.addEventListener("mousemove", (e) => {
     cursorEffect.style.top = cursorY + "px";
     cursorEffect.style.opacity = "1";
   }
-});
+};
+
+document.addEventListener("mousemove", handleMouseMove, { passive: true });
 
 const animate = () => {
   cursorX += (mouseX - cursorX) * 0.15;
@@ -29,7 +34,15 @@ const animate = () => {
   cursorEffect.style.left = cursorX + "px";
   cursorEffect.style.top = cursorY + "px";
 
-  requestAnimationFrame(animate);
+  animationFrameId = requestAnimationFrame(animate);
 };
 
 animate();
+
+window.addEventListener("beforeunload", () => {
+  if (animationFrameId !== null) {
+    cancelAnimationFrame(animationFrameId);
+  }
+
+  document.removeEventListener("mousemove", handleMouseMove);
+});

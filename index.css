@@ -1,5 +1,21 @@
-* {
-  all: unset;
+:root {
+  --bg-color: #000000;
+  --text-color: #b5b5b5;
+  --text-hover-color: #e5e5e5;
+  --text-linear-gradient: linear-gradient(to bottom right, #ffffff, #808080);
+  --cursor-color: #b5b5b5;
+  --font-family: Helvetica, Arial, sans-serif;
+  --font-size-base: 16px;
+  --font-size-heading: 80px;
+  --font-size-subtitle: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 title,
@@ -7,19 +23,22 @@ style {
   display: none;
 }
 
-html,
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   height: 100%;
   overflow: hidden;
   cursor: default;
-}
-
-body {
-  background-color: #000000;
-  color: #b5b5b5;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  display: block;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -32,26 +51,30 @@ body {
 }
 
 h1 {
-  background: linear-gradient(to bottom right, #ffffff, #808080);
+  background: var(--text-linear-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  font-size: 80px;
+  font-size: var(--font-size-heading);
   line-height: 1.2;
   font-weight: 600;
 }
 
 p {
-  font-size: 20px;
+  font-size: var(--font-size-subtitle);
 }
 
 a {
-  padding-top: 30px;
+  margin-top: 30px;
+  border-radius: 4px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #e5e5e5;
+  color: var(--text-hover-color);
   text-decoration: underline;
   cursor: pointer;
 }
@@ -61,11 +84,40 @@ a:hover {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: #b5b5b5;
+  background: var(--cursor-color);
   mix-blend-mode: difference;
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 9999;
   transition: opacity 200ms;
   opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-effect {
+    transition: none;
+  }
+
+  a {
+    transition: none;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-heading: 48px;
+    --font-size-subtitle: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-heading: 36px;
+    --font-size-subtitle: 16px;
+  }
+
+  .cursor-effect {
+    width: 100px;
+    height: 100px;
+  }
 }
