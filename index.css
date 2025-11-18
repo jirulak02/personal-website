@@ -67,4 +67,5 @@ a:hover {
   transform: translate(-50%, -50%);
   z-index: 9999;
   transition: opacity 200ms;
+  opacity: 0;
 }

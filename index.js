@@ -6,10 +6,20 @@ let mouseX = 0;
 let mouseY = 0;
 let cursorX = 0;
 let cursorY = 0;
+let hasMouseMoved = false;
 
 document.addEventListener("mousemove", (e) => {
   mouseX = e.clientX;
   mouseY = e.clientY;
+
+  if (!hasMouseMoved) {
+    hasMouseMoved = true;
+    cursorX = mouseX;
+    cursorY = mouseY;
+    cursorEffect.style.left = cursorX + "px";
+    cursorEffect.style.top = cursorY + "px";
+    cursorEffect.style.opacity = "1";
+  }
 });
 
 const animate = () => {
