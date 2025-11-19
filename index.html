@@ -5,20 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self';"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self';"
     />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Jiří Šimeček's personal website" />
     <title>Jiří Šimeček</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="./index.css" />
-    <script src="./index.js" defer></script>
+    <!-- Both CSS and JS are inlined to fit the whole page within the 14KB first TCP round trip limit -->
+    <style>
+      :root {
+        --bg-color: #000000;
+        --text-color: #b5b5b5;
+        --text-hover-color: #e5e5e5;
+        --text-linear-gradient: linear-gradient(
+          to bottom right,
+          #ffffff,
+          #808080
+        );
+        --cursor-color: #b5b5b5;
+        --font-family: Helvetica, Arial, sans-serif;
+        --font-size-base: 16px;
+        --font-size-heading: 80px;
+        --font-size-subtitle: 20px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      title,
+      style {
+        display: none;
+      }
+
+      html {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      body {
+        height: 100%;
+        overflow: hidden;
+        cursor: default;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        font-family: var(--font-family);
+        font-size: var(--font-size-base);
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        background: var(--text-linear-gradient);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        font-size: var(--font-size-heading);
+        line-height: 1.2;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: var(--font-size-subtitle);
+      }
+
+      a {
+        margin-top: 30px;
+        border-radius: 4px;
+        color: var(--text-color);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      a:hover {
+        color: var(--text-hover-color);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .cursor-effect {
+        position: fixed;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: var(--cursor-color);
+        mix-blend-mode: difference;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        transition: opacity 200ms;
+        opacity: 0;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .cursor-effect {
+          transition: none;
+        }
+
+        a {
+          transition: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        :root {
+          --font-size-heading: 48px;
+          --font-size-subtitle: 18px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        :root {
+          --font-size-heading: 36px;
+          --font-size-subtitle: 16px;
+        }
+
+        .cursor-effect {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
+    <main>
       <h1>Jiří Šimeček</h1>
       <p>physical and digital minimalist</p>
       <a href="mailto:jirulak02@gmail.com">jirulak02@gmail.com</a>
-    </div>
+    </main>
+    <script>
+      "use strict";
+
+      const cursorEffect = document.createElement("div");
+      cursorEffect.className = "cursor-effect";
+      document.body.appendChild(cursorEffect);
+
+      let mouseX = 0;
+      let mouseY = 0;
+      let cursorX = 0;
+      let cursorY = 0;
+      let hasMouseMoved = false;
+      let animationFrameId = null;
+
+      const handleMouseMove = (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        if (!hasMouseMoved) {
+          hasMouseMoved = true;
+          cursorX = mouseX;
+          cursorY = mouseY;
+          cursorEffect.style.left = cursorX + "px";
+          cursorEffect.style.top = cursorY + "px";
+          cursorEffect.style.opacity = "1";
+        }
+      };
+
+      document.addEventListener("mousemove", handleMouseMove, {
+        passive: true,
+      });
+
+      const animate = () => {
+        cursorX += (mouseX - cursorX) * 0.15;
+        cursorY += (mouseY - cursorY) * 0.15;
+
+        cursorEffect.style.left = cursorX + "px";
+        cursorEffect.style.top = cursorY + "px";
+
+        animationFrameId = requestAnimationFrame(animate);
+      };
+
+      animate();
+
+      window.addEventListener("beforeunload", () => {
+        if (animationFrameId !== null) {
+          cancelAnimationFrame(animationFrameId);
+        }
+
+        document.removeEventListener("mousemove", handleMouseMove);
+      });
+    </script>
   </body>
 </html>
