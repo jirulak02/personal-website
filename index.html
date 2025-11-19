@@ -37,14 +37,8 @@
         padding: 0;
       }
 
-      title,
-      style {
-        display: none;
-      }
-
       html {
         height: 100%;
-        overflow: hidden;
       }
 
       body {
@@ -71,7 +65,6 @@
 
       h1 {
         background: var(--text-linear-gradient);
-        -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         color: transparent;
@@ -86,16 +79,13 @@
 
       a {
         margin-top: 30px;
-        border-radius: 4px;
         color: var(--text-color);
         text-decoration: none;
-        transition: color 0.2s ease;
       }
 
       a:hover {
         color: var(--text-hover-color);
         text-decoration: underline;
-        cursor: pointer;
       }
 
       .cursor-effect {
@@ -108,18 +98,8 @@
         pointer-events: none;
         transform: translate(-50%, -50%);
         z-index: 9999;
-        transition: opacity 200ms;
+        transition: opacity 500ms;
         opacity: 0;
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        .cursor-effect {
-          transition: none;
-        }
-
-        a {
-          transition: none;
-        }
       }
 
       @media (max-width: 768px) {
@@ -151,54 +131,55 @@
     <script>
       "use strict";
 
-      const cursorEffect = document.createElement("div");
-      cursorEffect.className = "cursor-effect";
-      document.body.appendChild(cursorEffect);
+      const runCursorEffect = () => {
+        const cursorEffect = document.createElement("div");
+        cursorEffect.className = "cursor-effect";
+        document.body.appendChild(cursorEffect);
 
-      let mouseX = 0;
-      let mouseY = 0;
-      let cursorX = 0;
-      let cursorY = 0;
-      let hasMouseMoved = false;
-      let animationFrameId = null;
+        let mouseX = 0;
+        let mouseY = 0;
+        let cursorX = 0;
+        let cursorY = 0;
+        let hasMouseMoved = false;
 
-      const handleMouseMove = (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
+        const handleMouseMove = (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
 
-        if (!hasMouseMoved) {
-          hasMouseMoved = true;
-          cursorX = mouseX;
-          cursorY = mouseY;
+          if (!hasMouseMoved) {
+            hasMouseMoved = true;
+            cursorX = mouseX;
+            cursorY = mouseY;
+            cursorEffect.style.left = cursorX + "px";
+            cursorEffect.style.top = cursorY + "px";
+            cursorEffect.style.opacity = "1";
+          }
+        };
+
+        document.addEventListener("mousemove", handleMouseMove, {
+          passive: true,
+        });
+
+        const animate = () => {
+          cursorX += (mouseX - cursorX) * 0.15;
+          cursorY += (mouseY - cursorY) * 0.15;
+
           cursorEffect.style.left = cursorX + "px";
           cursorEffect.style.top = cursorY + "px";
-          cursorEffect.style.opacity = "1";
-        }
+
+          requestAnimationFrame(animate);
+        };
+
+        animate();
       };
 
-      document.addEventListener("mousemove", handleMouseMove, {
-        passive: true,
-      });
+      const prefersReducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
 
-      const animate = () => {
-        cursorX += (mouseX - cursorX) * 0.15;
-        cursorY += (mouseY - cursorY) * 0.15;
-
-        cursorEffect.style.left = cursorX + "px";
-        cursorEffect.style.top = cursorY + "px";
-
-        animationFrameId = requestAnimationFrame(animate);
-      };
-
-      animate();
-
-      window.addEventListener("beforeunload", () => {
-        if (animationFrameId !== null) {
-          cancelAnimationFrame(animationFrameId);
-        }
-
-        document.removeEventListener("mousemove", handleMouseMove);
-      });
+      if (!prefersReducedMotion) {
+        runCursorEffect();
+      }
     </script>
   </body>
 </html>
