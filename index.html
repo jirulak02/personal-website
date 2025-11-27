@@ -11,7 +11,7 @@
     <meta name="description" content="Jiří Šimeček's personal website" />
     <title>Jiří Šimeček</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <!-- Both CSS and JS are inlined to fit the whole page within the 14KB first TCP round trip limit -->
+    <!-- Both CSS and JS are inlined to fit the whole page within the 14KB first TCP round trip -->
     <style>
       :root {
         --bg-color: #000000;
@@ -24,9 +24,9 @@
         );
         --cursor-color: #b5b5b5;
         --font-family: Helvetica, Arial, sans-serif;
-        --font-size-base: 16px;
-        --font-size-heading: 80px;
-        --font-size-subtitle: 20px;
+        --font-size-base: 1rem;
+        --font-size-heading: 5rem;
+        --font-size-subtitle: 1.25rem;
       }
 
       *,
@@ -78,7 +78,7 @@
       }
 
       a {
-        margin-top: 30px;
+        margin-top: 1.875rem;
         color: var(--text-color);
         text-decoration: none;
       }
@@ -90,8 +90,8 @@
 
       .cursor-effect {
         position: fixed;
-        width: 150px;
-        height: 150px;
+        width: 9.375rem;
+        height: 9.375rem;
         border-radius: 50%;
         background: var(--cursor-color);
         mix-blend-mode: difference;
@@ -104,20 +104,20 @@
 
       @media (max-width: 768px) {
         :root {
-          --font-size-heading: 48px;
-          --font-size-subtitle: 18px;
+          --font-size-heading: 3rem;
+          --font-size-subtitle: 1.125rem;
         }
       }
 
       @media (max-width: 480px) {
         :root {
-          --font-size-heading: 36px;
-          --font-size-subtitle: 16px;
+          --font-size-heading: 2.25rem;
+          --font-size-subtitle: 1rem;
         }
 
         .cursor-effect {
-          width: 100px;
-          height: 100px;
+          width: 6.25rem;
+          height: 6.25rem;
         }
       }
     </style>
